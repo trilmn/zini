@@ -1,0 +1,713 @@
+/*CSS for HASHTAG PAGE*/
+.page-body .content{
+    padding-top: 20px;
+}
+.page-body .main-content{
+    width: 680px;
+    float: left;
+}
+
+.page-body .sidebar{
+    width: 260px;
+    float: right;
+}
+    .page-body .sidebar .block{
+        margin-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+/*Hashtag Cover*/
+    .hashtag-cover{
+        background-image: url('../images/bg-cover-df.png');
+        background-color: #555;
+        position: relative;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        color: #fff;
+        overflow: hidden;
+    }
+        .hashtag-cover:after{
+            content: "";
+            background: url("../images/cover-gradient.png") repeat-x scroll left top transparent;
+            width: 100%;
+            height: 95px;
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            bottom: 0;
+        }
+    .hashtag-cover .hashtag-info{
+        position: absolute;
+        bottom: 15px;
+        left: 17px;
+        z-index: 10;
+    }
+    .hashtag-cover .main-hashtag{
+        font-size: 34px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1em;
+        text-shadow: 0px 2px 2px #000;
+        margin-bottom: 10px;
+    }
+    
+    .hashtag-cover .main-hashtag:before{
+        content: "#";
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+.hashtag-cover .page-util{
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+}
+    .hashtag-cover .page-util span{
+        display: block;
+        float: left;
+        background: transparent url('../images/bullet-hashtag-stats.png') no-repeat right 8px;
+        padding: 0 18px 0 0;
+        margin-right: 10px;
+        text-shadow: 0px 1px 2px #000;
+    }
+        .hashtag-cover .page-util span:last-of-type{
+            padding: 0;
+            margin: 0;
+            background: none;
+        }
+    .hashtag-cover .page-util strong{
+        font-size: 14px;
+    }
+
+.hashtag-wrap .media-wrap{
+    overflow: hidden;
+    padding-left: 20px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+    .hashtag-wrap .media-wrap .fancybox,
+    .hashtag-wrap .media-wrap .fancybox img{
+        width: 104px;
+        height: 104px;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox{
+        float: left;
+        margin-left: 10px;
+        border: 2px solid #f2f2f2;
+        overflow: hidden;
+        display: block;
+        -webkit-transition: 0.3s ease-in;  
+        -moz-transition: 0.3s ease-in;  
+        -o-transition: 0.3s ease-in;  
+        transition: 0.3s ease-in;
+        outline: none;
+    }
+    .hashtag-wrap .media-wrap .fancybox:first-of-type{
+        margin-left: 0;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox:hover{
+        border: 2px solid #f15a24;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox:last-of-type{
+        margin-right: 0;
+    }
+    
+    .hashtag-wrap .media-wrap .viewmore{
+        display: inline-block;
+        margin-left: 12px;
+        margin: 10px 0 10px 0px;
+        font-size: 13px;
+        color: #466b8e;
+    }
+    .hashtag-wrap .media-wrap .viewmore:hover{
+        color: #f15a24;
+    }
+
+.related-fun-facts{
+    background: url("../images/icon-zini_announce.jpg") no-repeat scroll 10px 15px #fff;
+    min-height: 48px;
+    padding: 20px 15px 10px 90px;
+    margin: 20px 0 0 0;
+    color: #737373;
+    border-bottom: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.related-fun-facts .current-hashtag{
+    color: #f15a24; display: inline;
+}
+
+/* @group TOP MEDIAS */
+.top-media{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e3e5e6;
+    overflow: hidden;
+}
+.top-media .list-media li{
+    width: 162px;
+    height: 162px;
+    border: 1px solid #d8d9d9;
+    float: left;
+    overflow: hidden;
+    margin-right: 8px;
+}
+    .top-media .list-media li:last-child{
+        margin-right: 0;
+    }
+    
+    .top-media .list-media li a{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid #FFFFFF;
+        height: 100%;
+        transition: all 0.3s ease 0s;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: relative;
+    }
+        .top-media .list-media li a img{
+            display: none;
+        }
+
+    .top-media .list-media li a .icon-isGif,
+    .top-media .list-media li a .icon-isGif-small, .top-media .list-media li a .play-icon {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: 0.3s ease-in;  
+        -moz-transition: 0.3s ease-in;  
+        -o-transition: 0.3s ease-in;  
+        transition: 0.3s ease-in;
+    }
+    .top-media .list-media li a .icon-isGif-small{
+        margin-left: -17px;
+        margin-top: -17px;
+    }
+    
+    .top-media .list-media li a .media-info{
+        background: rgba(172,84,5,0.5);
+        position: absolute;
+        width: 156px;
+        height: 156px;
+        color: #fff;
+        font-size: 12px;
+        padding: 50px 0 0 50px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        opacity: 0;
+          -webkit-transition: 0.25s ease-in;  
+          -moz-transition: 0.25s ease-in;  
+          -o-transition: 0.25s ease-in;  
+          transition: 0.25s ease-in;
+    }
+        .top-media .list-media li a .media-info span{
+            display: block;
+            margin-bottom: 3px;
+        }
+            .top-media .list-media li a .media-info span .icn{
+                display: inline-block;
+                background: transparent url('../images/tweet-interact-sprites-1.06.png') no-repeat left top;
+                margin-right: 10px;
+                position: relative;
+                top: 1px;
+                width: 15px;
+            }
+                .top-media .list-media li a .media-info span .icn.icn-retwt{
+                    width: 18px;
+                    height: 12px;
+                    margin-right: 7px;
+                    background-position: 0 -618px;
+                }
+                .top-media .list-media li a .media-info span .icn.icn-cmt{
+                    height: 12px;
+                    background-position: 1px -632px;
+                }
+                .top-media .list-media li a .media-info span .icn.icn-like{
+                    height: 13px;
+                    background-position: 1px -645px;
+                }
+
+    .top-media .list-media li a:hover{
+    }
+        .top-media .list-media li a:hover .icon{
+            opacity: 0;
+            top: -100px;
+        }
+        .top-media .list-media li a:hover .media-info{
+              opacity: 1;
+        }
+/* @end */
+
+/* @group POST TWEET FORM */
+.post-tweet-wrap{
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 15px 0;
+    position: relative;
+    overflow: visible;
+}
+    .post-tweet{
+        padding: 15px 15px 15px 48px;
+    }
+    .post-tweet .avatar{
+        position: absolute;
+        top: 10px;
+        left: -15px;
+        box-shadow: -2px 0 1px #B1B2B3;
+        z-index: 5;
+        -webkit-transition: 0.25s ease-in;  
+        -moz-transition: 0.25s ease-in;  
+        -o-transition: 0.25s ease-in;  
+        transition: 0.25s ease-in;
+    }
+        .post-tweet .avatar:hover{
+            border-color: #f15a24;
+        }
+
+/*When form Collapsed*/
+.post-tweet-wrap.collapsed .post-tweet,
+.post-tweet-wrap.collapsed{
+    padding: 0;
+    background: none;
+    border: none;
+}      
+    .post-tweet-wrap.collapsed{
+        margin: 15px 0;
+    }
+.post-tweet-wrap.collapsed .post-util,
+.post-tweet-wrap.collapsed .btn-submit,
+.post-tweet-wrap.collapsed .add-media,
+.post-tweet-wrap.collapsed .char-counter,
+.post-tweet-wrap.collapsed .avatar{
+    visibility: hidden;
+    display: none;
+}
+    .post-tweet-wrap.collapsed .form-wrap{
+        margin-bottom: 0;
+    }
+    .post-tweet-wrap.collapsed .textarea{
+        border: 1px solid #D9D9D9;
+        box-shadow: none;
+        height: 40px;
+        min-height: 0;
+        overflow: hidden;
+        padding: 8px 15px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        word-break: break-all;
+        display: inline;
+    }
+/* @end */
+
+/* @group TWEET STREAM */
+.twtstream-wrap{
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+    .twtstream-wrap .stream-head{
+        border-top: none;
+        height: 45px;
+        background: #f2f4f5 url('../images/bg-stream-head-1.00.png') repeat-x left bottom;
+        border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        overflow: visible;
+    }
+    .twtstream-wrap .stream-head .sort-tweet li{
+        height: 45px;
+        margin: 0;
+        border-top: 3px solid #f2f4f5;
+        border-right: 1px solid #ddd;
+        line-height: 43px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: relative;
+        -webkit-transition: 0.15s ease-in;  
+        -moz-transition: 0.15s ease-in;  
+        -o-transition: 0.15s ease-in;  
+        transition: 0.15s ease-in;
+    }
+        .twtstream-wrap .stream-head .sort-tweet li:first-child{
+            border-radius: 4px 0 0 0;
+            -moz-border-radius: 4px 0 0 0;
+            -webkit-border-radius: 4px 0 0 0;
+        }
+
+        .twtstream-wrap .stream-head .sort-tweet li a{
+            padding: 0 28px;
+            background: none;
+            color: #666;
+        }
+    
+    .twtstream-wrap .stream-head .sort-tweet li:hover{
+        border-top: 3px solid #ffbe85;
+        background: #fff;
+    }    
+        .twtstream-wrap .stream-head .sort-tweet li:hover a{
+            color: #666;
+        }
+        
+    .twtstream-wrap .stream-head .sort-tweet .active:hover,    
+    .twtstream-wrap .stream-head .sort-tweet .active{
+        background-color: #fff;
+        border-top: 3px solid #ff800f;
+        border-bottom: 1px solid #fff;
+    }
+        .twtstream-wrap .stream-head .sort-tweet .active:hover a,
+        .twtstream-wrap .stream-head .sort-tweet .active a{
+            color: #f15a24;
+        }
+    
+    .twtstream-wrap .filter-twt{
+        background: #e0e0e0;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        width: 144px;
+        float: right;
+        overflow: hidden;
+        margin: 9px;
+    }
+        .twtstream-wrap .filter-twt a{
+            display: block;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #898989;
+            width: 72px;
+            float: left;
+            line-height: 26px;
+            text-align: center;
+            -webkit-transition: 0.15s ease-in;  
+            -moz-transition: 0.15s ease-in;  
+            -o-transition: 0.15s ease-in;  
+            transition: 0.15s ease-in;
+            text-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }    
+            .twtstream-wrap .filter-twt a:hover{
+                background: #fbaa7c;
+                color: #fff;
+            }
+        .twtstream-wrap .filter-twt a.active{
+            background-color: #f27935;
+            color: #fff;
+        }
+        
+.noti-newtweet{
+    background: none;
+    text-align: center;
+    position: relative;
+    margin: 15px 0 0 0;
+}
+    .noti-newtweet a{
+        background: #e6f1f7;
+        margin: 0 auto;
+        padding: 0 12px;
+        color: #609dbd;
+        font-size: 13px;
+        line-height: 32px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        width: 170px;
+        -webkit-transition: background-color 0.25s ease-in;  
+        -moz-transition: background-color 0.25s ease-in;  
+        -o-transition: background-color 0.25s ease-in;  
+        transition: background-color 0.25s ease-in;
+    }
+        .noti-newtweet .icn-noti-newtwt{
+            background: transparent url('../images/icon-sprites-1.16.png') no-repeat -43px -222px;
+            width: 16px;
+            height: 16px;
+            position: relative; top: 3px;
+            margin-right: 10px;
+        }
+    .noti-newtweet a:hover{
+        background: #609dbd;
+        color: #e6f1f7;
+    }
+        .noti-newtweet a:hover .icn-noti-newtwt{
+            background-position: -60px -222px;
+        }
+        
+    .tweet .photo-content.multi-photo{
+        padding-left: 65px;
+    }
+        .tweet .photo-content.multi-photo.thumbs-2,
+        .tweet .photo-content.multi-photo.thumbs-4{
+            padding-left: 110px;
+        }
+        
+    .back2top{
+        display: block;
+    }
+/* @end */
+
+/* @group HASHTAG DESCRIPTION */
+.hashtag-desc{
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.hashtag-desc .icn-hashtag-desc{
+    width: 40px;
+    height: 40px;
+    background-position: -77px -221px;
+    position: absolute;
+    left: -55px;
+    top: 10px;
+}
+.hashtag-desc p{
+    text-align: justify;
+}
+    .hashtag-desc .btn-wrap{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .hashtag-desc .btn-suggest-hashtag-desc{    background: #78979b;}
+    .hashtag-desc .btn-suggest-hashtag-desc:hover{    background: #94b5b9;}
+/* @end */
+
+/* @group HASHTAG MODERATOR */
+.hstg-mod .user{
+    position: relative;
+    overflow: hidden;
+}
+
+.hstg-mod .icn-question{
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    background-position: -1px -235px;
+    width: 19px;
+    height: 18px;
+    -webkit-transition: opacity 0.25s ease-in;  
+    -moz-transition: opacity 0.25s ease-in;  
+    -o-transition: opacity 0.25s ease-in;  
+    transition: opacity 0.25s ease-in;
+}
+    .hstg-mod .icn-question:hover{
+        opacity: 0.7;
+    }
+    
+.hstg-mod .user .avatar,
+.hstg-mod .user .avatar img{
+    width: 42px;
+    height: 42px;
+}
+    .hstg-mod .user .avatar{    border: 2px solid #b6d557;
+        -webkit-transition: border-color 0.3s ease-in;  
+        -moz-transition: border-color 0.3s ease-in;  
+        -o-transition: border-color 0.3s ease-in;  
+        transition: border-color 0.3s ease-in;
+    }
+    .hstg-mod .user .avatar:hover{    border-color: #f15a24;}
+    .hstg-mod .user .user-info{
+        margin: 0 32px 0 58px;
+    }    
+    .hstg-mod .user .user-info .display-name{
+        font-weight: bold;
+        color: #466b8e;
+        font-size: 14px;
+        clear: both;
+    }
+    .hstg-mod .user .user-info .display-name:hover{    color: #f15a24;}
+    .hstg-mod .user .user-info .mention-name{    font-size: 12px; color: #f15a24; display: block;}
+    
+    .hstg-mod .user .btn{
+        margin: 0;
+        width: 28px;
+        height: 28px;
+        display: block;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        background-image: none;
+        overflow: hidden;
+        text-indent: -9999px;
+        font-size: 0;
+        line-height: 0;
+        outline:none;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -14px;
+    }
+        .hstg-mod .user .btn .icon{
+            -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s ease;
+            display: block;
+            margin: 8px auto;
+        }
+        
+        .hstg-mod .user .btn-follow:hover{
+            background-color: #adca53;
+        }
+        .hstg-mod .user .btn-following{
+            background-color: #d7d9d2;
+            color: #81827e;
+        }
+        .hstg-mod .user .btn-following:hover{
+            background-color: #caccc6;
+        }
+            .hstg-mod .user .btn-following:hover .icon{
+                width: 13px;
+                height: 5px;
+                background-position: -29px -224px;
+                margin: 12px 9px;
+            }
+/* @end */
+
+/* @group TOP USERS */
+.top-users{
+    padding-right: 0;
+}
+.top-users .list-users{
+    overflow: hidden;
+}
+.top-users .list-users .user{
+    border-bottom: none;
+    float: left;
+    padding: 0;
+    margin-right: 5px;
+}
+    .top-users .list-users .user:last-of-type{
+        margin-right: 0;
+    }
+    .top-users .list-users .user:hover{
+        background-color: transparent;
+    }
+    
+.top-users .list-users .user-info{
+    display: none;
+}
+    .top-users .list-users .avatar,
+    .top-users .list-users .avatar img{
+        width: 42px;
+        height: 42px;
+    }
+    .top-users .list-users .avatar{
+        border: 2px solid #c8cdd0;
+        margin-left: 0;
+    }
+/* @end */
+
+/* @group TOP HAHSTAG */
+.block.top-hashtag .block-title{
+    margin-left: 0;
+}
+    .block.top-hashtag .list-hashtag li{
+        margin-left: -10px;
+    }
+    .block.top-hashtag .list-hashtag li a{
+        padding: 2px 10px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+    }
+/* @end */
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #466b8e;
+}
+
+/*Back to top button*/
+.back2top{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    font-size: 0;
+    line-height: 0px;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    margin-left: 450px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none; 
+    transition: none;
+    z-index: 10;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+    .back2top .icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+.back2top:hover{
+    background-color: #fff8f1;
+    margin-left: 450px;
+}

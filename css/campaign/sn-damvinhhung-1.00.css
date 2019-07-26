@@ -1,0 +1,661 @@
+/*CSS for VNG9 PAGE*/
+.page-body .container{     width: 980px; margin: 0 auto; position: relative;}
+
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background: none;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.page-body .col-right .main-content{
+    background: #fff;
+    margin: 0;
+    border: none;  
+}
+   
+.page-body .content-wrap{
+    width: 640px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 0px;
+    float: left;
+    display: block;
+}
+    .page-body .count-down{    margin-top: 20px; min-height: 0;}
+    .page-body .count-down .counter-title{    color: #fff; font-size: 14px; line-height: 44px; font-weight: normal; text-align : center; padding : 0; text-transform: uppercase; background: transparent url('../../images/campaign/sn-dvh/bg-ribbon.png') no-repeat left top; height: 44px; width: 420px; margin: 0 auto; position: relative; top: -16px;}
+    
+        .page-body .count-down .counter-title span{   display: block; margin-left: 22px; background: transparent url('../../images/campaign/sn-dvh/bg-ribbon.png') no-repeat right bottom; height: 100%;padding-right: 22px; text-align: center;}
+        .page-body .count-down .counter-title strong{    color: #ffdd3f; margin: 0 5px;}
+    
+    /*Page Cover Heading*/
+    .page-cover{
+        height: 360px;
+        position: relative;
+        background: #705293;
+        overflow: hidden;
+    }
+    
+    .page-cover .bxslider li{    position: relative;}
+    .page-cover .slide-01 h2{    background: transparent url('../../images/campaign/sn-dvh/cmsn-dvh.png') no-repeat left top; width: 537px; height: 163px; position: absolute; top: 60px; left: 360px;}
+        
+/* @group Counter */
+#counterWrap{    text-align: center; border-bottom: 1px solid #ddd;padding-bottom: 15px; height: 110px;}
+    #counterWrap canvas{    margin: 0 auto; }
+/* @end */
+
+/*Banner Call add Hashtag*/
+.call-add-hashtag{    background: transparent url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat -254px -92px; width: 190px;height: 100px; display: block; position: absolute; right : -25px; top : 140px; margin-left : 0px; }
+
+hr{    background : transparent url('../images/hr-bg.png') repeat-x left center; border : 0; height : 33px; margin : 15px 0; position : relative; }
+    hr:after{    content: ''; background: transparent url('../images/hr-vng.png') no-repeat center center; width: 34px; height: 33px; display: block;margin: 0 auto; position : relative; left: -30px;}
+
+.post-util{    bottom : 13px; }
+
+/*Post Tweet Form*/
+.post-form-wrap .form-title{    text-align: left;  text-shadow: none; text-transform: none; margin: 20px 20px 15px 20px;}
+    .post-form-wrap .form-title h4{    font-size: 18px; font-weight: bold; color: #747474;}
+        .post-form-wrap .form-title h4 strong{    color: #d18400;}
+    .post-form-wrap .form-title span{     font-size: 12px; color: #8c8c8c;}
+
+.post-tweet{    margin-top: -56px;}    
+.post-tweet .form-wrap{    margin-bottom: 0;}
+    .post-tweet .char-counter{    margin-bottom: 0; margin-right: 64px;}
+
+/*Tweet Content*/
+.top-tweet-title{    background: transparent url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat left top; width: 418px;height: 92px; margin-top: 20px;}
+.page-body .content-wrap .count-down,
+.page-body .content-wrap .tweet-content-wrap{    background: #fff; border: 1px solid #ddd;}
+
+.top-tweet-stream{    margin-bottom: 20px;}
+    
+    .stream-head{
+        height: 45px;
+        background: #f2f4f5 url('../../images/bg-stream-head-1.00.png') repeat-x left bottom;
+        border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        overflow: visible;
+        margin-top: -1px;
+    }
+    .stream-head .sort-tweet li{
+        height: 43px;
+        margin: 0;
+        border-right: 1px solid #ddd;
+        line-height: 43px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: relative;
+        -webkit-transition: 0.15s ease-in;  
+        -moz-transition: 0.15s ease-in;  
+        -o-transition: 0.15s ease-in;  
+        transition: 0.15s ease-in;
+        width: 25%;
+    }
+        .stream-head .sort-tweet li:first-child,
+        .stream-head .sort-tweet li:first-child a{
+            border-radius: 4px 0 0 0;
+            -moz-border-radius: 4px 0 0 0;
+            -webkit-border-radius: 4px 0 0 0;
+        }
+        .stream-head .sort-tweet li:last-child{
+            border-right: 0;
+        }
+        .stream-head .sort-tweet li a{
+            padding: 0 28px;
+            background: none;
+            color: #666;
+            border-top: 3px solid #f2f4f5;
+            display: block;
+            text-align: center;
+        }
+            .stream-head .sort-tweet li:last-child,
+            .stream-head .sort-tweet li:last-child a{
+                border-radius: 0 4px 0 0;
+                -moz-border-radius: 0 4px 0 0;
+                -webkit-border-radius: 0 4px 0 0;
+            }
+    
+    .stream-head .sort-tweet li:hover{
+        background: #fff;
+    }    
+        .stream-head .sort-tweet li:hover a{
+            color: #666;
+            border-top: 3px solid #ffbe85;
+        }
+        
+    .stream-head .sort-tweet .active:hover,    
+    .stream-head .sort-tweet .active{
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+        .stream-head .sort-tweet li.active a,
+        .stream-head .sort-tweet .active:hover a,
+        .stream-head .sort-tweet .active a{
+            border-top: 3px solid #ff800f;
+            color: #f15a24;
+            background-image: none;
+        }
+        
+.page-body .main-content .block.hot-today{
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+    .page-body .main-content .block.hot-today li{
+        margin-right: 10px;
+    }
+    .page-body .main-content .block.hot-today li a{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: 64px;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 70px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+/*Tweet photo*/
+.tweet .photo-content{
+    width: 570px; /*Ti le 3:2*/
+}
+
+.tweet .photo-content,
+.tweet .photo-content img{
+    max-width: 570px;
+    max-height: 365px;
+    display: block;
+}
+
+.tweet .retweet-content .photo-content{
+    width: 570px;
+    max-height: 365px;
+    background: url("../../images/bg-rt-media-content.png") repeat scroll left top transparent;
+}
+
+.tweet .photo-content.multi-photo{
+    padding-left: 50px;
+}
+    .tweet .retweet-content .photo-content.multi-photo{
+        max-height: none;
+    }
+    .tweet .photo-content.multi-photo.thumbs-2,
+    .tweet .photo-content.multi-photo.thumbs-4{
+        padding-left: 90px;
+    }
+
+/*Block Hashtag's Retated News */
+.related-news{
+    margin-right: 20px;
+}
+.related-news .news-thumb{
+    border: 1px solid #ddd;
+    width: 66px;
+    height: 66px;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;
+    float: left;
+    margin: 0 10px 5px 0 ;
+}
+.related-news .news-thumb img{
+    width: 62px;
+    height: 62px;
+    border: 2px solid #f9f9f9;
+    -webkit-transition: 0.3s ease-in;  
+    -moz-transition: 0.3s ease-in;  
+    -o-transition: 0.3s ease-in;  
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.related-news .news-thumb:hover img{
+    border-color: #f15a24;
+}
+
+.related-news .news-title,
+.related-news .news-title a{
+    font-size: 16px;
+    line-height: 1.15em;
+    color: #466b8e;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.related-news .news-title a:hover{
+    color: #f15a24;
+}
+
+.related-news .chapo{
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.related-news .re-tweet{
+    margin: 0;
+}
+
+.related-news .read-more{
+    font-size: 11px;
+    color: #466b8e;
+}
+
+.related-news .read-more:hover{
+    color: #f15a24;
+}
+
+.related-news .read-more:hover .icon{
+    background-position: -199px -40px;
+}
+
+
+/*Thanh Vien hay binh luan*/
+.top-cmt-users{
+
+}
+
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #466b8e;
+}
+
+.top-cmt-users ul{
+    overflow: hidden;
+}
+
+.btn.btn-showmore, .btn-showmore{
+    width: auto;
+    display: block;
+}
+
+.back2top{
+    bottom: 113px;
+    margin-left: 227px;
+}
+
+.back2top:hover{
+    margin-left: 312px;    
+}
+
+/* @group EVENT INFO */
+.sidebar .block{    margin: 20px 0 0 0; padding: 0;}
+.event-info{    width: 320px; font-size: 12px; position: relative; float: right;}
+    .event-info .block{    padding-right: 0; border-bottom: none;}
+    .event-info .block:first-of-type{    padding-top: 0; }
+    
+    /*EVENT TIME*/
+    .event-info .block.event-time{    background: #c14500 url('../../images/campaign/sn-dvh/bg-event-time.png') repeat left top; color: #ffc869; padding: 20px 10px; overflow: hidden;}
+        .event-info .event-time .block-title{    display: none;}
+        .event-info .event-time .info{    font-size: 15px; text-align: center;}
+        .event-info .event-time .info h4{    font-size: 24px; font-weight: normal; margin-bottom: 10px;}
+        .event-info .event-time .info .icn-clock{     background: transparent url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat -420px -1px; width: 20px; height: 20px; display: inline-block; position: relative; top: 1px; margin-right: 8px;}
+    
+    /*CALL TO JOIN CAMPAIGN*/
+    .event-info .event-campaign{    background: #a8d3ea url('../../images/campaign/sn-dvh/bg-call-join-event.jpg') no-repeat left top; padding: 18px; overflow: hidden; background-size: cover;}
+        .event-info .event-campaign .block-title{    font-size: 14px; color: #2c4a68; width: 180px;float: right; text-transform: none; text-shadow: none; font-weight: normal; margin-top: 10px;}
+        
+        .event-info .event-campaign .avatar,
+        .event-info .event-campaign .avatar img{    width: 80px; height: 80px;}
+        
+        .event-info .event-campaign .avatar{    border: 3px solid #fff; float: left; -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;}
+            .event-info .event-campaign .avatar:hover{    border-color: #f15a24; }
+        .event-info .event-campaign .call-join{     background: transparent url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat -1px -95px; width: 246px; height: 56px; display: block;-webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease; opacity: 1; float: none; clear: both; margin: 94px auto 0 auto;}
+        .event-info .event-campaign .call-join:hover{    opacity: 0.8; }
+    .event-info .block.widget-profile{    border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px; border: 1px solid #ddd; background: #fff;
+    }
+/* @end */
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+    .bx-wrapper .bx-pager{    bottom: 20px;}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url('../../images/loading-media.gif') center center no-repeat #6f7f9a;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	opacity: 0.4;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #d6d6d6;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #ffc869;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -32px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+	background-color: #fff;
+	opacity: 0.6;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat -468px -31px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url('../../images/campaign/sn-dvh/sn-dvh-sprites-1.00.png') no-repeat -467px 0px;
+}
+
+.bx-wrapper .bx-prev:hover, 
+.bx-wrapper .bx-next:hover {
+    opacity: 0.8;
+}
+
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+/* Smaller screens */
+/* ===== == = === 63.9375em (1023px) === = == ===== */
+@media only screen and (max-width: 63.9375em) {    
+    #globalUserControl .list-settings{
+        right: 0;
+    }
+    #globalUserControl .list-settings .list-anchor{
+        right: 10px;
+    }
+    
+    /*Back to top button*/
+    .back2top{
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        font-size: 0;
+        line-height: 0px;
+        position: fixed;
+        bottom: 60px;
+        left: 50%;
+        margin-left: 450px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none; 
+        transition: none;
+        z-index: 10;
+        display: none;
+        box-shadow: 0px 1px 2px #444;
+    }
+        .back2top .icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+    .back2top:hover{
+        margin-left: 450px;
+    }
+}
+
+

@@ -1,0 +1,166 @@
+/*CSS for HASHTAG PAGE*/
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background-position: 615px top;
+}
+
+.page-body .col-right .main-content{
+    margin-right: 308px;
+}
+
+.page-body .col-right .right-sidebar{
+    width: 308px;
+}
+
+.page-body .page-head{
+    overflow: hidden;
+    margin: 0 0px 10px 0;
+    padding: 40px 20px 10px 20px;
+}
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: auto;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 24px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+
+/*Thanh Vien hay binh luan*/
+.top-cmt-users{
+
+}
+
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 0 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+    width: 55%;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    width: 45%;
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    color: #466b8e;
+}
+
+.btn.btn-showmore, .btn-showmore{
+    width: 580px;
+    display: none;
+}
+
+
+/*List notification*/
+.list-notif li.notif-item{
+    padding: 10px 15px;
+}
+    .list-notif li.notif-item:last-child{
+        border-bottom: none;
+    }
+
+/*blank state của trang*/
+.blank-state.blank-notif{
+    line-height: 44px;
+    border-bottom: none;
+    border-bottom: 1px dashed #ddd;
+    margin: 20px;
+    padding-bottom: 15px;
+}   
+    .blank-state.blank-notif .icon{
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+

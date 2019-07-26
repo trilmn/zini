@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Zini - User Ranking Page</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/font.css" />        
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/user-ranking.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/zini-ui.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox.css" />
+    </head>
+    <body>
+        <div id="globalNav"><!--START global-nav-->
+            <div class="content container-12">
+                <div id="logo" class="align-left"><!--START logo-->
+                    <a href="#" title="Zini - Make # not war">
+                        <h1 class="hide-text">Zini</h1>
+                        <img src="images/logo-flat.png" alt="logo zini"/>
+                    </a>
+                </div><!--END logo-->
+                
+                <ul id="globalMenu"><!--START Global Menu-->
+                    <li><a href="" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="" title="Khám phá">Khám phá</a></li>
+                    <li><a href="" title="Bảng xếp hạng" class="active">Bảng xếp hạng</a></li>
+                </ul><!--END Global Menu-->
+                
+                <div id="globalSearch" class="search-bar"><!--START Global Search-->
+                    <form method="" action="" class="form-search">
+                        <input type="submit" name="" value="Bắt đầu tìm kiếm" title="Bắt đầu tìm kiếm" class="btn btn-submit hide-text"/>
+                        <input type="text" name="" class="round-corner text-field text-search" placeholder="Tìm kiếm"/>
+                    </form>
+                </div><!--END Global Search-->
+                
+                <ul id="globalUserControl" class="align-right"><!--START Global user control-->
+                    <li class="new-tweet hide-text"><a href="" title="Gửi thông điệp mới">Gửi thông điệp mới</a></li>
+                    <li class="notif-msg hide-text"><a href="" title="Bạn có 6 tin nhắn">Tin nhắn cá nhân</a></li>
+                    <li class="profile-settings">
+                        <a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+                        <i class="icon icon-smallcog"></i><!--just for decoration-->
+                        <ul class="list-settings round-corner">
+                            <li class="overlay-trick"></li>
+                            <li class="list-anchor"></li>
+                            <li><a href=""><i class="icon icon-to_profile"></i>Trang cá nhân</a></li>
+                            <li><a href=""><i class="icon icon-to_setting"></i>Cài đặt tài khoản</a></li>
+                            <li><a href=""><i class="icon icon-logout"></i>Thoát</a></li>
+                        </ul>
+                    </li>
+                </ul><!--END Global user control-->
+            </div>
+        </div><!--END global-nav-->
+        
+        <div class="page-body"><!--START Page body-->
+            <div class="content container-12 round-corner">
+                <div class="col-left align-left"><!--START Column left-->                    
+                    <ul class="home-nav">
+                        <li>
+                            <a href="" title="Đến trang chủ"><i class="icon icon-home"></i>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="icon icon-mention"></i>Nhắc đến tôi</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="icon icon-fav"></i>Yêu thích</a>
+                        </li>
+                    </ul><!--END Home Vertical Navigator-->
+                </div><!--END Column left-->
+                
+                <div class="col-right">
+                    <div class="right-sidebar align-right">
+                    
+                        <div class="block related-news">
+                            <a href="" class="news-thumb"><img src="medias/images/Long-ruoi(00).jpg" alt="" /></a>
+                            <h4 class="news-title"><a href="">Cư dân mạng shock vì clip cướp Ipad trong quán café ở Sài Gòn</a></h4>
+                            <p class="chapo"><strong>Kênh 14</strong> - Clip về một vụ cướp táo tợn ngay trong quán cafe do một nickname tên là Danh Nguyen up lên Youtube ngày hôm qua ...</p>
+                            <div class="clearfix"></div>
+                            <div class="tweet-interact align-right">
+                                <a href="javascript:void(0)" class="re-tweet">Loan tin này</a>
+                            </div>
+                            <a href="" class="read-more">Đọc thêm tin này <i class="icon icon-chervon-right"></i></a>
+                        </div><!--END Tin liên quan-->
+                        
+                        <div class="block top-hashtag">
+                            <h3 class="block-title">Chủ đề nóng <i class="icon icon-hot-topic"></i></h3>
+                            <ul class="list-hashtag">
+                                <li><a href="">#Tết<span>669</span></a></li>
+                                <li><a href="">#Cảnh-sát-giao-thông<span>123</span></a></li>
+                                <li><a href="">#MC-Anh-Tuấn<span>23</span></a></li>
+                                <li><a href="">#Lý-Nhã-Kỳ<span>58</span></a></li>
+                                <li><a href="">#Nguyễn-Bá-Thanh<span>76</span></a></li>
+                                <li><a href="">#The-Voice<span>234</span></a></li>
+                                <li><a href="">#Đinh-Hương<span>4369</span></a></li>
+                                <li><a href="">#Hot-girl<span>341</span></a></li>
+                                <li><a href="">#Phim-Hàn<span>142</span></a></li>
+                                <li><a href="">#Gangnam-Style<span>945</span></a></li>
+                            </ul>
+                        </div><!--END Ds Hashtag-->
+                        
+                    </div><!--END Column Right-->
+                
+                    <div class="main-content">
+                        <div class="page-head page-cover page-user-ranking">
+                            <h2 class="page-title"><i class="icon icon-ranking"></i> Bảng xếp hạng Zini</h2>
+                        </div><!--END Header của page-->
+
+                        <div class="page-content">
+                            <ol class="list-user list-ranking">
+                                <li class="user first-rank">
+                                    <h1 class="user-rank">1</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Trương Quốc Hậu</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-community"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.5</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4856</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user second-rank">
+                                    <h1 class="user-rank">2</h1>
+                                            
+                                    <div class="user-info">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_12.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Trần Văn Triết</a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.5</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-following">Đang quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4756</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user third-rank">
+                                    <h1 class="user-rank">3</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_13.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-community"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.4</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4656</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                <li class="rank-separator"></li>
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">386</h1>
+                                            
+                                    <div class="user-info">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_14.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.3</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-following">Đang quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4556</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">387</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_16.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">388</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_17.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">389</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_18.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">400</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_19.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">401</h1>
+                                            
+                                    <div class="user-info">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_20.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.3</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4556</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">402</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_21.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">403</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_22.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user current-user">
+                                    <h1 class="user-rank">404</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_23.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user begin-after-current">
+                                    <h1 class="user-rank">405</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_24.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">406</h1>
+                                            
+                                    <div class="user-info">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_25.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.3</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>4556</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">407</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_26.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">408</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_27.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">409</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_28.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">410</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_05.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">411</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_06.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                	
+                                	<a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>3456</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                                <li class="user">
+                                    <h1 class="user-rank">412</h1>
+                                            
+                                    <div class="user-info has-vip">
+                                        <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_07.jpg" alt="User's avatar" /></a>
+                                        
+                                        <a href="" class="display-name">Long Lắc Lư</a>
+                                        <a href="" class="icon-info"><i class="icon icon-vip icon-celeb"></i></a>
+                                        <span class="mention-name">@hau_truong</span>
+                                        <div class="clear-fix"></div>
+                                        <span class="user-lv" >Lv.2</span>
+                                        <span class="numb-follower"><strong>552</strong> người quan tâm</span>
+                                    </div><!--END User info-->
+                                    
+                                    <a href="" class="btn btn-follow">Quan tâm</a>
+                                	
+                                	<span class="user-score"><strong>56</strong> điểm</span>
+                                </li><!--Một user-->
+                                
+                            </ol><!--List thứ thự-->
+                            
+                            <div class="btn btn-showmore">Xem thêm</div>
+                        </div><!--END Page content-->
+                    </div><!--END Main content-->
+                </div><!--END Right column-->	
+            </div><!--END Main content-->
+        </div><!--END Page body-->
+        
+        <div id="footer">
+            <div class="content container-12">
+                <div class="align-left">
+                    <a href="/" id="logoFooter"></a>
+                    <p class="info">
+                    <span class="intro">Phiên bản thử nghiệm</span>
+                    <br />
+                    Một sản phẩm của <a href="http://zing.vn" title="" id="logo-Zing-footer"></a> &copy; 2013
+                    </p>
+                </div>
+                <div class="align-right creators">Powered by <a href="http://epi.com.vn" title="" id="logo-ePi" class="hide-text">ePi's logo</a></div>
+            </div><!--END container-->
+        </div><!--END Footer-->
+
+        
+        <script src="js/jquery-1.9.0.min.js"></script>
+
+        <script type="text/javascript">
+            $(function(){	
+
+            });
+        </script>
+    </body>
+</html>

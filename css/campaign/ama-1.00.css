@@ -1,0 +1,586 @@
+/*CSS for VNG9 PAGE*/
+.page-body .container{     width: 980px; margin: 0 auto; position: relative;}
+
+.page-body .col-right .main-content{
+    background: #fff;
+    margin: 0;
+    border: none;  
+}
+   
+.page-body .content-wrap{
+    width: 640px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 0px;
+    float: left;
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    min-height: 0;
+}
+    
+    /*Page Cover*/
+    .page-cover{
+        height: 358px;
+        position: relative;
+        background: #282829;
+        overflow: hidden;
+    }
+        .page-cover img{    position: absolute;top: 0; left: 50%; margin-left: -640px; height: 312px; width: auto;z-index: 0;}
+        .page-cover .content{    height: 312px;min-height: 0;}
+        
+        .page-cover .main-title{    position: relative; top: 140px; z-index: 1; font-size: 30px; font-weight: normal; color: #fff;}
+            .page-cover .main-title strong{    font-weight: bold; font-size: 48px;display: block;line-height: 1.5em;}
+        
+
+hr{    background : transparent url('../../images/hr-bg.png') repeat-x left center; border : 0; height : 33px; margin : 10px 0; position : relative; }
+
+.post-util{    bottom : 13px; }
+
+/*Post Tweet Form*/
+.post-form-wrap .form-title{    text-align: left;  text-shadow: none; text-transform: none; margin: 20px 20px 15px 20px;}
+    .post-form-wrap .form-title h4{    font-size: 18px; font-weight: bold; color: #747474;}
+        .post-form-wrap .form-title h4 strong{    color: #d18400;}
+    .post-form-wrap .form-title span{     font-size: 12px; color: #8c8c8c;}
+
+.post-tweet{
+    margin-left: 0;
+}   
+.post-tweet .form-wrap{    margin-bottom: 0;}
+    .post-tweet .char-counter{    margin-bottom: 0;}
+    
+    .post-tweet .avatar{    float: left;}
+
+/*TOP CAMPAIGN BLOCK*/
+.page-body .container.top-campg{    margin-top: -57px; z-index: 2;}
+.top-campg .campg-intro{    padding: 20px 160px 30px 25px; font-size: 15px; line-height: 1.5em; color: #6d6d6d; border-bottom: 1px solid #ddd; background: transparent url('../../images/campaign/ama/bg-campg-intro.png') no-repeat 476px center;}
+.top-campg .campg-intro .intro-head{    font-size: 22px; font-weight: normal; margin-bottom: 10px; margin-top: 10px;}
+
+.top-campg .post-form-illus{    background: transparent url('../../images/campaign/ama/post-form-illus.png') no-repeat left top; display: inline-block; width: 78px; height: 75px; position: absolute; top: 120px; left: -110px;}
+.top-campg .avatar.current-user{    margin-top: 15px; margin-left: -20px; box-shadow: -2px 0 1px #B1B2B3;}
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: 64px;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+/*SECTION HEADER*/
+.section-head{    height: 74px; line-height: 84px; padding: 0 20px 0 48px; overflow: hidden; border-bottom: 1px solid #ddd;}
+    .section-head .section-title{    float: left; font-size: 24px;}
+    .section-head .stats{    float: right; font-size: 12px; line-height: 94px; color: #676767;}
+    
+.content-wrap .section-title{    color: #f15a24;}
+    
+.content-wrap-title{     background: #a3bf4d; color: #fff; padding: 10px 20px 10px 48px; font-size: 13px; line-height: 24px; text-transform: uppercase;}
+    .content-wrap-title .icn{    width: 20px; height: 20px; display: inline-block; float: left; margin-right: 5px;}
+        .content-wrap-title .icn.icn-good-question{    background: transparent url('../../images/campaign/ama/icn-good-question.png') no-repeat center center; }
+
+.content-wrap.questions{    border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px 0 0 4px; }
+
+.second-section{    overflow: hidden;}
+.second-section,
+.second-section .content-wrap-title{    background: #83aab6; padding: 0;}
+
+    .second-section .latest-question{    width: 67%; float: left;}
+    .second-section .declined-question{    width: 33%; float: right; text-align: center;}
+       
+    .second-section .content-wrap-title:hover{    background-color: #99b4bc;}
+    
+    .second-section .content-wrap-title.active{     background: #5692a4;}
+    .second-section .content-wrap-title.active:hover{    background-color: #61a1b4;}
+    
+    .second-section a{    color: #fff; padding: 10px; display: block;}
+    .second-section .latest-question a{    padding: 10px 20px 10px 48px;}
+    
+    .second-section .latest-question .icn{    background: transparent url('../../images/campaign/ama/icn-question-list.png') no-repeat left top; width: 20px; height: 19px; position: relative; top: 3px;}
+    
+/*Tweet photo*/
+.tweet-stream{    font-size: 14px; }
+.tweet .tweet-content p{    margin-right: 12 0px; padding-right: 80px;}
+.answers .tweet .tweet-content p{    padding-right: 0px;}
+.tweet .photo-content{
+    width: 570px; /*Ti le 3:2*/
+}
+
+.tweet .photo-content,
+.tweet .photo-content img{
+    max-width: 570px;
+    max-height: 365px;
+    display: block;
+}
+
+.tweet .retweet-content .photo-content{
+    width: 572px;
+    max-height: 365px;
+    background: url("../images/bg-rt-media-content.png") repeat scroll left top transparent;
+}
+    .tweet .retweet-content p{
+        padding-right: 0;
+    }
+
+.tweet .photo-content.multi-photo{
+    padding-left: 50px;
+}
+    .tweet .retweet-content .photo-content.multi-photo{
+        max-height: none;
+    }
+    .tweet .photo-content.multi-photo.thumbs-2,
+    .tweet .photo-content.multi-photo.thumbs-4{
+        padding-left: 90px;
+    }
+    
+.tweet .tweet-interact .decline-answer{    background: transparent url('../../images/campaign/ama/icn-vote-down.png') no-repeat 6px 2px;}
+    .tweet .tweet-interact .decline-answer:hover{    background-image: url('../../images/campaign/ama/icn-vote-down-hover.png'); }
+
+/*CHOSEN QUESTION*/
+.tweet-stream.chosen-question{    margin-bottom: 50px;}
+.tweet-stream.chosen-question .tweet{    background: #eff7e7; }
+.tweet .icn{    width: 20px; height: 20px; display: inline-block;}
+
+.tweet .vote-stats{    color: #f15a24; line-height: 14px; font-size: 14px; font-weight: bold; padding: 5px 10px; border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px; border: 1px solid #d5baa5; position: absolute; right: 15px; top: 15px;background: #fff; max-width: 100px;}
+    .tweet .vote-stats:hover{    background-color: #feeee9;}
+    
+.tweet .icn-vote-up{    background: transparent url('../../images/campaign/ama/icn-vote-up.png') no-repeat center center; width: 15px; height: 12px; position: relative; top: 1px; margin-right: 5px;}
+
+.tweet .vote-stats.active{
+    background: #ffd6c8;
+}
+
+.tweet .vote-stats .icn-heart{
+    content: '';
+    background: transparent url('../../images/campaign/ama/icn-heart-large.png') no-repeat left top;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    opacity: 0;
+}
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #466b8e;
+}
+
+.top-cmt-users ul{
+    overflow: hidden;
+}
+
+.btn.btn-showmore, .btn-showmore{
+    width: auto;
+    display: block;
+}
+
+.back2top{
+    bottom: 113px;
+    margin-left: 227px;
+}
+    .back2top:hover{
+        margin-left: 312px;    
+    }
+
+/* @group SIDEBAR */
+.sidebar{    width: 320px;  float: right;z-index: 2;}
+    .sidebar .block{    margin: 20px 0 0 0; padding: 0;}
+    
+    .sidebar.profile-info .avatar img,
+    .sidebar.profile-info .avatar{    width: 120px; height: 120px;}
+    
+    .sidebar.profile-info .avatar{    border: 4px solid #fff; float: left; margin-right: 10px; margin-bottom: 10px; position: relative;}
+    
+    .sidebar.profile-info .user-info{    margin-bottom: 7px; }
+    .sidebar.profile-info .user-info .display-name{    font-size: 22px; color: #333; display: inline-block;margin-top: 70px; margin-bottom: 0px;}
+    .sidebar.profile-info .user-info .icon-vip{    top: 2px;}
+    .sidebar.profile-info .user-info .username{    float: none; clear: both; display: inline-block; margin-top: 10px;}
+    .sidebar.profile-info .profile-desc{    float: none; clear: both; margin-top: 5px; font-size: 14px; color: #666;}
+    
+    .sidebar.profile-info .user-stat{    font-size: 12px; display: block;}
+        .sidebar.profile-info .user-stat span{    display: inline;}
+        .sidebar.profile-info .user-stat .stat-numb{    font-weight: normal;}
+        .sidebar.profile-info .user-stat .stat-type{    text-transform: lowercase; font-size: 12px;}
+        
+        .sidebar.profile-info .btn-wrap{    text-align: center; padding: 15px 0; border-top: 1px solid #ddd; margin: 15px 0 0 0;}
+        .sidebar.profile-info .btn{
+            background-position: 52px center;
+            font-size: 12px;
+            line-height: 30px;
+            margin: 10px auto;
+            min-height: 30px;
+            padding: 0 11px 0 0px;
+            text-align: left;
+            text-transform: uppercase;
+            display: inline-block;
+            width: auto;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            background-image: none;
+            text-transform: none;
+            overflow: hidden;
+        }
+            .sidebar.profile-info .btn .icon{
+                margin: 9px;
+                float: left;
+                -moz-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                -o-transition: all .25s ease;
+                transition: all .25s ease;
+            }
+            
+            .sidebar.profile-info .btn-follow:hover{
+                background-color: #adca53;
+            }
+            .sidebar.profile-info .btn-following{
+                background-color: #d7d9d2;
+                color: #81827e;
+            }
+            .sidebar.profile-info .btn-following:hover{
+                background-color: #caccc6;
+            }
+                .sidebar.profile-info .btn-following:hover .icon{
+                    width: 13px;
+                    height: 5px;
+                    background-position: -29px -224px;
+                    margin: 12px 9px;
+                }
+/*ANSWERS SIDEBAR*/                
+.sidebar.answers{    float: left; width: 336px; background: #d5e6eb url('../../images/campaign/ama/bg-answers.png') repeat-y left top; border: 1px solid #ddd; border-left: none; border-radius: 0 4px 4px 0; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0 4px 4px 0; margin-left: -1px;
+}
+    .sidebar.answers .section-head{    padding-left: 0; border-bottom-color: #aaccd7;}
+    .sidebar.answers .section-title{    margin-left: 20px; float: none; color: #555;
+    }
+    
+    /*Question Tweet*/
+    .answers-wrap .tweet.question .user-info, 
+    .answers-wrap .tweet.question .tweet-content{
+        margin-left: 20px;
+    }
+    .answers-wrap .tweet.question{
+        padding-bottom: 10px;
+        border-bottom: 0;
+        border-top: 1px solid #aaccd7;
+        padding-top: 20px;
+    }
+        .answers-wrap .tweet.question .post-time{
+            font-size: 11px;
+            color: #999;
+            float: right;
+        }
+        
+            .answers-wrap .tweet.question .post-time:hover{
+                color: #f15a24;
+            }
+            
+            .answers-wrap .tweet.question .post-time.hint--top:after{
+                margin-left: -56px;
+            }
+    
+    .answers-wrap .tweet.question:first-of-type{
+        border: none;
+    }
+    
+    /*Answer Tweet*/
+    .answers-wrap .tweet.answer{
+        background: #fff;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        margin: 10px 10px 15px 20px;
+        padding-right: 10px;
+    }
+
+        .answers-wrap .tweet.answer .avatar,
+        .answers-wrap .tweet.answer .avatar img{
+            width: 40px;
+            height: 40px;
+        }
+        .answers-wrap .tweet.answer .avatar{
+            margin: -16px 0 0 10px;
+            box-shadow: none;
+        }
+        
+        .answers-wrap .tweet.answer .user-info{
+            margin-left: 62px;
+            overflow: hidden;
+        }
+            .answers-wrap .tweet.answer .user-info .display-name{
+                font-size: 12px;
+            }
+            .answers-wrap .tweet.answer .user-info .post-time{
+                font-size: 11px;
+                float: right;
+            }
+                .answers-wrap .tweet.answer .user-info .post-time:hover{
+                    color: #f15a24;
+                }
+        .answers-wrap .tweet.answer .tweet-content,
+        .answers-wrap .tweet.answer .tweet-interact{
+            margin-left: 10px;
+        }
+        
+        .answers-wrap .tweet.answer .tweet-content{
+            margin: 15px 10px 15px 15px;
+        }
+        
+        .answers-wrap .tweet.answer .tweet-interact  .fav-tweet{
+            margin-right: 0;
+        }
+/* @end */
+
+
+/* Smaller screens */
+/* ===== == = === 63.9375em (1023px) === = == ===== */
+@media only screen and (max-width: 63.9375em) {    
+    #globalUserControl .list-settings{
+        right: 0;
+    }
+    #globalUserControl .list-settings .list-anchor{
+        right: 10px;
+    }
+    
+    /*Back to top button*/
+    .back2top{
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        font-size: 0;
+        line-height: 0px;
+        position: fixed;
+        bottom: 60px;
+        left: 50%;
+        margin-left: 450px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none; 
+        transition: none;
+        z-index: 10;
+        display: none;
+        box-shadow: 0px 1px 2px #444;
+    }
+        .back2top .icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+    .back2top:hover{
+        margin-left: 450px;
+    }
+}
+
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes bounceOut {
+	0% {
+		-webkit-transform: scale(1);
+	}	25% {
+		-webkit-transform: scale(.95);
+	}
+	
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.1);
+	}
+	
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(.3);
+	}	
+}
+
+@-moz-keyframes bounceOut {
+	0% {
+		-moz-transform: scale(1);
+	}
+	
+	25% {
+		-moz-transform: scale(.95);
+	}
+	
+	50% {
+		opacity: 1;
+		-moz-transform: scale(1.1);
+	}
+	
+	100% {
+		opacity: 0;
+		-moz-transform: scale(.3);
+	}	
+}
+
+@-o-keyframes bounceOut {
+	0% {
+		-o-transform: scale(1);
+	}
+	
+	25% {
+		-o-transform: scale(.95);
+	}
+	
+	50% {
+		opacity: 1;
+		-o-transform: scale(1.1);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: scale(.3);
+	}	
+}
+
+@keyframes bounceOut {
+	0% {
+		transform: scale(1);
+	}
+	
+	25% {
+		transform: scale(.95);
+	}
+	
+	50% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: scale(.3);
+	}	
+}
+
+.bounceOut {
+	-webkit-animation-name: bounceOut;
+	-moz-animation-name: bounceOut;
+	-o-animation-name: bounceOut;
+	animation-name: bounceOut;
+}
+@-webkit-keyframes rotateOutDownRight {
+	0% {
+		-webkit-transform-origin: right bottom;
+		-webkit-transform: rotate(0);
+		opacity: 1;
+	}
+	
+	100% {
+		-webkit-transform-origin: right bottom;
+		-webkit-transform: rotate(-90deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes rotateOutDownRight {
+	0% {
+		-moz-transform-origin: right bottom;
+		-moz-transform: rotate(0);
+		opacity: 1;
+	}
+	
+	100% {
+		-moz-transform-origin: right bottom;
+		-moz-transform: rotate(-90deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes rotateOutDownRight {
+	0% {
+		-o-transform-origin: right bottom;
+		-o-transform: rotate(0);
+		opacity: 1;
+	}
+	
+	100% {
+		-o-transform-origin: right bottom;
+		-o-transform: rotate(-90deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rotateOutDownRight {
+	0% {
+		transform-origin: right bottom;
+		transform: rotate(0);
+		opacity: 1;
+	}
+	
+	100% {
+		transform-origin: right bottom;
+		transform: rotate(-90deg);
+		opacity: 0;
+	}
+}
+
+.rotateOutDownRight {
+	-webkit-animation-name: rotateOutDownRight;
+	-moz-animation-name: rotateOutDownRight;
+	-o-animation-name: rotateOutDownRight;
+	animation-name: rotateOutDownRight;
+}
+
+/*BLANK STATE WHEN NO ACTIVITY*/
+.blank-no_ativity{
+    padding: 160px 0 20px 0;
+    margin: 0px auto;
+    text-align: center;
+    background: transparent url('../../images/icon-no-activity.png') no-repeat center 20px;
+}
+.blank-no_ativity p{
+    margin-top: 15px;
+    color: #737373;
+}

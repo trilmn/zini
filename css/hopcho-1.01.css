@@ -1,0 +1,360 @@
+/*CSS for HOP CHO PAGE*/
+
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background: none;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+}
+
+.page-body .col-right .main-content{
+    background: #fff;
+    margin: 0;
+    border: none;  
+}
+
+.page-cover{
+    background: #ffbb72;
+    height: 270px;
+}
+.page-body .content-wrap{
+    margin-top: -60px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 640px;
+    background: #fff;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.stream-head{
+    padding: 0;
+    margin: 10px 20px 0 20px;
+    border-top: none;
+}
+    .stream-head .sort-tweet{
+        overflow: hidden;
+    }
+    .stream-head .sort-tweet li{
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 10px 0px;
+    }
+        .stream-head .sort-tweet li a{
+            font-size: 16px;
+            display: block;
+            border-right: 1px solid #ddd;
+            padding-bottom: 0;
+            padding: 10px;
+        }
+                .stream-head .sort-tweet li a:last-of-type{
+                    border-right: none;
+                }
+
+        .stream-head .sort-tweet li.active a{
+            background: none;
+        }
+        .stream-head .sort-tweet li.active a:after,
+        .stream-head .sort-tweet li.active a:before{
+
+        }
+        
+.page-body .main-content .block.hot-today{
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+    .page-body .main-content .block.hot-today li{
+        margin-right: 10px;
+    }
+    .page-body .main-content .block.hot-today li a{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: 64px;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 70px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+/*Tweet photo*/
+.tweet .photo-content{
+    width: 568px; /*Ti le 3:2*/
+}
+
+.tweet .photo-content,
+.tweet .photo-content img{
+    max-width: 548px;
+    max-height: 365px;
+    display: block;
+}
+
+.tweet .retweet-content .photo-content{
+    width: 548px;
+    max-height: 365px;
+    background: url("../images/bg-rt-media-content.png") repeat scroll left top transparent;
+}
+
+.tweet .photo-content.superlong-photo img.img-crop-large{
+    width: 100%;
+    height: auto;
+}
+
+.tweet .photo-content.multi-photo{
+    width: 490px;
+    padding-left: 48px;
+}
+
+.tweet .retweet-content .photo-content.multi-photo{
+    width: 490px;
+}
+
+/*Block Hashtag's Retated News */
+.related-news{
+    margin-right: 20px;
+    //padding-bottom: 10px;
+    //border-bottom: 1px solid #ccc;
+}
+.related-news .news-thumb{
+    border: 1px solid #ddd;
+    width: 66px;
+    height: 66px;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;
+    float: left;
+    margin: 0 10px 5px 0 ;
+}
+.related-news .news-thumb img{
+    width: 62px;
+    height: 62px;
+    border: 2px solid #f9f9f9;
+    -webkit-transition: 0.3s ease-in;  
+    -moz-transition: 0.3s ease-in;  
+    -o-transition: 0.3s ease-in;  
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.related-news .news-thumb:hover img{
+    border-color: #f15a24;
+}
+
+.related-news .news-title,
+.related-news .news-title a{
+    font-size: 16px;
+    line-height: 1.15em;
+    color: #466b8e;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.related-news .news-title a:hover{
+    color: #f15a24;
+}
+
+.related-news .chapo{
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.related-news .re-tweet{
+    margin: 0;
+}
+
+.related-news .read-more{
+    font-size: 11px;
+    color: #466b8e;
+}
+
+.related-news .read-more:hover{
+    color: #f15a24;
+}
+
+.related-news .read-more:hover .icon{
+    background-position: -199px -40px;
+}
+
+
+/*Thanh Vien hay binh luan*/
+.top-cmt-users{
+
+}
+
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #466b8e;
+}
+
+.top-cmt-users ul{
+    overflow: hidden;
+}
+
+.btn.btn-showmore, .btn-showmore{
+    width: auto;
+    display: block;
+}
+
+.back2top{
+    bottom: 113px;
+    margin-left: 227px;
+}
+
+.back2top:hover{
+    margin-left: 312px;    
+}
+
+/* Smaller screens */
+/* ===== == = === 63.9375em (1023px) === = == ===== */
+@media only screen and (max-width: 63.9375em) {    
+    #globalUserControl .list-settings{
+        right: 0;
+    }
+    #globalUserControl .list-settings .list-anchor{
+        right: 10px;
+    }
+    
+    /*Back to top button*/
+    .back2top{
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        font-size: 0;
+        line-height: 0px;
+        position: fixed;
+        bottom: 60px;
+        left: 50%;
+        margin-left: 450px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none; 
+        transition: none;
+        z-index: 10;
+        display: none;
+        box-shadow: 0px 1px 2px #444;
+    }
+        .back2top .icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+    .back2top:hover{
+        margin-left: 450px;
+    }
+}

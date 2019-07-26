@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Zini - Tweet Details</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,300,400,700,800&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />		
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style-1.13.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/profile.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/zini-ui.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox.css" />
+	</head>
+	<body>
+		<div id="globalNav"><!--START global-nav-->
+			<div class="content container-12">
+				<div id="logo" class="align-left"><!--START logo-->
+				    <a href="#" title="Zini - Make # not war">
+				        <h1 class="hide-text">Zini</h1>
+				        <img src="images/logo-flat.png" alt="logo zini"/>
+				    </a>
+				</div><!--END logo-->
+				
+				<ul id="globalMenu"><!--START Global Menu-->
+					<li><a href="" title="Trang chủ" class="active">Trang chủ</a></li>
+					<li><a href="" title="Khám phá">Khám phá</a></li>
+					<li><a href="" title="Quảng trường">Quảng trường</a></li>
+					<li><a href="" title="Bảng xếp hạng">Bảng xếp hạng</a></li>
+				</ul><!--END Global Menu-->
+				
+				<div id="globalSearch" class="search-bar"><!--START Global Search-->
+					<form method="" action="" class="form-search">
+						<input type="submit" name="" value="Bắt đầu tìm kiếm" title="Bắt đầu tìm kiếm" class="btn btn-submit hide-text"/>
+						<input type="text" name="" class="round-corner text-field text-search" placeholder="Tìm kiếm"/>
+					</form>
+				</div><!--END Global Search-->
+				
+				<ul id="globalUserControl" class="align-right"><!--START Global user control-->
+					<li class="new-tweet hide-text"><a href="" title="Gửi thông điệp mới">Gửi thông điệp mới</a></li>
+					<li class="notif-msg hide-text"><a href="" title="Bạn có 6 tin nhắn">Tin nhắn cá nhân</a></li>
+					<li class="profile-settings">
+                        <a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+                        <i class="icon icon-smallcog"></i><!--just for decoration-->
+                        <ul class="list-settings round-corner">
+                            <li class="overlay-trick"></li>
+                            <li class="list-anchor"></li>
+                            <li><a href=""><i class="icon icon-to_profile"></i>Trang cá nhân</a></li>
+                            <li><a href=""><i class="icon icon-to_setting"></i>Cài đặt tài khoản</a></li>
+                            <li><a href=""><i class="icon icon-logout"></i>Thoát</a></li>
+                        </ul>
+                        
+                    </li>
+				</ul><!--END Global user control-->
+			</div>
+		</div><!--END global-nav-->
+		
+		<div class="page-body tweet-details"><!--START Page body-->
+			<div class="content container-12">
+				<div class="cover-img">
+					<img src="medias/images/df-cover.jpg" alt="profile's cover" />
+				</div>
+				
+				<div id="userProfile">
+					<div class="profile-info">
+						<a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_11.jpg"></a>
+						<span class="user-info">
+							<a href="" class="display-name">Long lắc lư</a>
+							<a href="" class="icon-info"><i class="icon icon-vip icon-business"></i></a>
+						</span><!--END User info-->
+						<p class="profile-desc">“Bày bừa + quét dọn :-s....úm ba la xì bùa....”</p>
+						<a href="" class="tagging">@zonion</a>
+						<span class="profile-location">Hồ Chí Minh</span>
+						
+						<a href="" class="btn btn-submit btn-follow">Quan tâm</a>
+						
+						<ul class="user-stat">
+							<li>
+								<a href="">
+									<span class="stat-numb">156</span>
+									<span class="stat-type">Thông điệp</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="stat-numb">26</span>
+									<span class="stat-type">Quan tâm</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="stat-numb">13</span>
+									<span class="stat-type">Fan</span>
+								</a>
+							</li>
+						</ul><!--END User stat-->
+					</div><!--END Profile info-->
+				</div><!--END #UserProfile-->
+
+<div id="profileNav">
+	<ul>
+		<li><a href="">Hoạt động</a></li>
+		<li><a href="">Thông tin</a></li>
+		<li><a href="">Hình ảnh</a></li>
+	</ul>
+</div><!--END Profile navigator-->
+
+<div class="clear-fix"></div>
+
+<div class="col-right">
+	<div class="block user-badges">
+		<h3 class="block-title">Huy hiệu <span class="type-numb">(204)</span></h3>
+		<ul class="list-badge">
+			<li><a href=""><img src="medias/images/sample-badge-1.png" alt="sample 1" /></a></li>
+			<li><a href=""><img src="medias/images/sample-badge-2.png" alt="sample 2" /></a></li>
+			<li><a href=""><img src="medias/images/sample-badge-3.png" alt="sample 3" /></a></li>
+			<li><a href=""><img src="images/df-badge.png" alt="default icon" /></a></li>
+			<li><a href="" class="view-more hide-text" title="Xem tất cả các huy hiệu của Long Lắc Lư">View more...</a></li>
+		</ul>
+	</div><!--END Ds Huy hiệu-->
+	
+	<div class="block following">
+		<h3 class="block-title">Đang quan tâm <span class="type-numb">(69)</span></h3>
+		
+		<ul class="list-following list-user">
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_03.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_09.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_05.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_16.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_08.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_13.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_14.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_12.jpg" alt="User's avatar" /></a>
+			</li>
+			<li><a href="" class="view-more hide-text" title="Xem tất cả các thành viên Long Lắc Lư đang quan tâm">View more...</a></li>
+		</ul>
+	</div><!--END Following list-->
+	
+	<div class="block followers">
+		<h3 class="block-title">Được quan tâm <span class="type-numb">(24)</span></h3>
+		
+		<ul class="list-followers list-user">
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_08.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_13.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_14.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_12.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_03.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_09.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_05.jpg" alt="User's avatar" /></a>
+			</li>
+			<li>
+				<a href="" title="Đến trang tài khoản" class="avatar"><img src="medias/images/temp-avatar/avatar_16.jpg" alt="User's avatar" /></a>
+			</li>
+			<li><a href="" class="view-more hide-text" title="Xem tất cả các thành viên đang quan tâm Long Lắc Lư">View more...</a></li>
+		</ul>
+	</div><!--END Followers-->
+</div><!--END Column right-->
+
+				<div class="col-left">
+					<div class="tweet-stream">
+						<!-- ReTweet Photo 4 ảnh --><div class="tweet">
+                                <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_18.jpg" alt="User's avatar" /></a>
+                                
+                                <span class="user-info">
+                                    <a href="" class="display-name">Hoàng Bửu</a>
+                                </span><!--END User info-->
+                                
+                                <div class="tweet-content">
+                                    <p>Khi tui đưa plan cho khách hàng mà sau cùng nó đổi hết mọi thứ :/</p>
+                                    <div class="retweet-content retweet-photo round-corner">
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_16.jpg"></a>
+                                        
+                                        <span class="user-info">
+                                            <a class="display-name" href="">Trương Quốc Hậu</a>
+                                            <a class="icon-info" href=""><i class="icon icon-vip icon-community"></i></a>
+                                        </span><!--END User info-->
+                                        
+                                        <div class="tweet-content">
+                                            <p>Khi tui đưa plan cho khách hàng mà sau cùng nó đổi hết mọi thứ :/</p>
+                                            <div class="photo-content multi-photo thumbs-4">
+                                                <a class="fancybox" rel="uniqueID4retweet" href="medias/images/IMGP2449_2.jpg">
+                                                    <img src="medias/images/IMGP2449_2.jpg" alt="" class="img-thumb" />
+                                                    <div class="hover-indicator"><i class="icon icon-viewlarge-small"></i></div>
+                                                </a>
+                                                
+                                                <a class="fancybox" rel="uniqueID4retweet" href="medias/images/IMG_5202copy.jpg">
+                                                    <img src="medias/images/IMG_5202copy.jpg" alt="" class="img-thumb" />
+                                                    <div class="hover-indicator"><i class="icon icon-viewlarge-small"></i></div>
+                                                </a>
+                                                
+                                                <a class="fancybox" rel="uniqueID4retweet" href="medias/images/tiep-dai-ca-big.jpg">
+                                                    <img src="medias/images/tiep-dai-ca.jpg" alt="" class="img-thumb" />
+                                                    <div class="hover-indicator"><i class="icon icon-viewlarge-small"></i></div>
+                                                </a>
+                                                <a class="fancybox" rel="uniqueID4retweet" href="medias/images/IMGP2357.jpg">
+                                                    <img src="medias/images/IMGP2357.jpg" alt="" class="img-thumb" />
+                                                    <div class="hover-indicator"><i class="icon icon-viewlarge-small"></i></div>
+                                                </a>
+                                            </div><!--END Mediacontent-->
+                                        </div>
+                                        
+                                        <div class="tweet-interact">
+                                            <a class="re-tweet" href="javascript:void(0)">Loan tin</a>
+                                            <a class="comt-tweet" href="javascript:void(0)">Bình luận</a>
+                                            <a class="fav-tweet" href="javascript:void(0)">Yêu thích</a>
+                                            <a class="share-tweet" href="javascript:void(0)">Chia sẻ</a>
+                                            
+                                            <a class="post-time align-right">1 phút trước</a>
+                                        </div>
+                                    </div><!--END ReTweet content-->
+                                </div><!--END Tweet content-->
+                                
+                                <div class="tweet-interact">
+                                    <a href="javascript:void(0)" class="re-tweet">Loan tin</a>
+                                    <a href="javascript:void(0)" class="comt-tweet">Bình luận</a>
+                                    <a href="javascript:void(0)" class="fav-tweet">Yêu thích</a>
+                                    <a class="share-tweet" href="javascript:void(0)">Chia sẻ</a>
+<!--Đây nha đại ka Triết-->
+<a class="embed-tweet" href="javascript:void(0)">Nhúng</a>
+
+                                    <a class="post-time align-right">1 phút trước</a>
+                                </div>
+                                
+                                <div class="list-wrap" style="width: 620px;">
+                                    
+<!--Loading của cái div này đây Quân ơi<div class="loading cmt-box">
+                                       <span>Dữ liệu đang được tải về</span>     
+                                    </div>-->
+                                    
+                                    
+                                    <div style="display: block;" class="list-retweeter cmt-box">
+                                    
+                                        <div class="post-retweet post-tweet">
+                                            <textarea name="" id="" cols="30" rows="10" class="text-field textarea" placeholder="Bạn loan tin này vì...">//@Hoàng Bửu Khi tui đưa plan cho khách hàng mà sau cùng nó đổi hết mọi thứ :/</textarea>
+                                            
+                                            <input type="button" class="btn btn-submit" value="Loan tin"/>
+                                            
+                                            <span class="char-counter align-left">Bạn còn nhập được <span class="remain-char">200</span> kí tự nữa</span>
+                                            
+                                            <ul class="add-media align-right">
+                                            <li><a href="javascript:void(0);" class="hide-text"><i class="icon icon-emo"></i>Đính kèm emoticons</a></li>
+                                            </ul>
+                                        </div><!--END Posting Tweet-->
+                                        
+                                        <div class="cmt">
+                                            <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_05.jpg"></a>
+                                            <span class="cmt-head"><a class="display-name" href="">Lê Trung Quân</a>, 7 phút trước</span>
+                                            
+                                            <div class="cmt-content">
+                                                #Tết Chúc mừng năm mới Tân niên vạn lộc Trung niên vạn tài Hậu niên vạn phúc Trường niên vạn đức Thiên niên vạn đại.
+                                            </div>
+                                        </div><!--a comment-->
+                                                
+                                        <div class="cmt">
+                                            <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_08.jpg"></a>
+                                            <span class="cmt-head"><a class="display-name" href="">Hoàng Lão Tà</a>, 7 phút trước</span>
+                                            
+                                            <div class="cmt-content"></div>
+                                        </div><!--a comment-->
+                                        
+                                        <div class="cmt">
+                                            <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_11.jpg"></a>
+                                            <span class="cmt-head"><a class="display-name" href="">Long lắc lư</a>, 7 phút trước</span>
+                                            
+                                            <div class="cmt-content">
+                                                Đây là nội dung comment của Long. Long được phép xoá comment này và ko có icon reply hay báo xấu comment của bản thân.
+                                            </div>
+                                        </div><!--a comment-->
+                                        
+                                        <div class="cmt">
+                                            <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_06.jpg"></a>
+                                            <span class="cmt-head"><a class="display-name" href="">Long ruồi</a>, 7 phút trước</span>
+                                            
+                                            <div class="cmt-content"></div>
+                                        </div><!--a comment-->
+                                        
+                                        <div class="cmt">
+                                            <a class="avatar align-left" title="Đến trang tài khoản" href=""><img alt="User's avatar" src="medias/images/temp-avatar/avatar_07.jpg"></a>
+                                            <span class="cmt-head"><a class="display-name" href="">Linh linh tinh</a>, 7 phút trước</span>
+                                            <div class="cmt-content">
+                                                Sắp rồi đó ông nội.
+                                            </div>
+                                        </div><!--a comment-->
+                                        
+                                        <div class="paging">
+                                            <a href="" class="paging-item page-prev"><span>&lsaquo;</span> Trang trước</a>
+                                            <a href="" class="paging-item active">1</a>
+                                            <a href="" class="paging-item">2</a>
+                                            <a href="" class="paging-item">3</a>
+                                            <a href="" class="paging-item">4</a>
+                                            <a href="" class="paging-item">5</a>
+                                            <a href="" class="paging-item">...</a><!--load tiếp từ 6 tới 11-->
+                                            <a href="" class="paging-item">74</a>
+                                            <a href="" class="paging-item page-next">Trang sau <span>&rsaquo;</span></a>
+                                        </div><!--Phân trang-->
+                                    </div><!--Danh sách những người đã retweet-->
+                                    
+                                    <div class="list-comt cmt-box">
+                                    
+                                        <div class="post-cmt cmt">
+                                            <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+                                            
+                                            <div class="post-cmt-form">
+                                                <div class="form-controls">
+                                                    <span class="text-box-decor"></span>
+                                                    <textarea placeholder="Bình luận của bạn..." class="text-field textarea" rows="10" cols="30" id="" name=""></textarea>
+                                                </div>
+                                                
+                                                <div class="form-more-info">
+                                                    <span class="post-guide">Bình luận bằng tiếng Việt có dấu và trên 25 ký tự.</span>
+                                                    
+                                                    <input type="button" value="Gửi" class="btn btn-submit align-right btn-disabled">
+                                                    
+                                                    <ul class="add-media align-right">
+                                                        <li><a class="hide-text" href="javascript:void(0)"><i class="icon icon-emo"></i>Đính kèm emoticons</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!--user post comment-->
+                                    
+                                        <div id="cmtList"><div class="cmt">
+                                                <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_05.jpg" alt="User's avatar" /></a>
+                                                <span class="cmt-head"><a href="" class="display-name">Lê Trung Quân</a>, 7 phút trước</span>
+                                                
+                                                <div class="cmt-content">
+                                                    #Tết Chúc mừng năm mới Tân niên vạn lộc Trung niên vạn tài Hậu niên vạn phúc Trường niên vạn đức Thiên niên vạn đại.
+                                                </div>
+                                                
+                                                <div class="cmt-interact">
+                                                    <a href="" class="reply-cmt">Trả lời</a>
+                                                </div>
+                                                
+                                                <div class="tweet-ulti">
+                                                    <ul class="list-ulti round-corner">
+                                                        <li><a href="" class="report-tweet">Báo xấu</a></li>
+                                                    </ul>
+                                                </div><!--END Tweet Ultility-->
+                                            </div><!--a comment-->
+                                            
+                                            <div class="cmt">
+                                                <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_08.jpg" alt="User's avatar" /></a>
+                                                <span class="cmt-head"><a href="" class="display-name">Hoàng Lão Tà</a>, 7 phút trước</span>
+                                                
+                                                <div class="cmt-content">
+                                                    Chưa tết mà :(
+                                                </div>
+                                                
+                                                <div class="cmt-interact">
+                                                    <a href="" class="reply-cmt">Trả lời</a>
+                                                </div>
+                                                
+                                                <div class="tweet-ulti">
+                                                    <ul class="list-ulti round-corner">
+                                                        <li><a href="" class="report-tweet">Báo xấu</a></li>
+                                                    </ul>
+                                                </div><!--END Tweet Ultility-->
+                                            </div><!--a comment-->
+                                            
+                                            <div class="cmt">
+                                                <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_11.jpg" alt="User's avatar" /></a>
+                                                <span class="cmt-head"><a href="" class="display-name">Long lắc lư</a>, 7 phút trước</span>
+                                                
+                                                <div class="cmt-content">
+                                                    Đây là nội dung comment của Long. Long được phép xoá comment này và ko có icon reply hay báo xấu comment của bản thân.
+                                                </div>
+                                                
+                                                <div class="tweet-ulti">
+                                                    <ul class="list-ulti round-corner">
+                                                        <li><a href="javascript:void();" class="delete-tweet">Xoá</a></li>
+                                                    </ul>
+                                                </div><!--END Tweet Ultility-->
+                                            </div><!--a comment-->
+                                            
+                                            <div class="cmt">
+                                                <a href="" title="Đến trang tài khoản" class="avatar align-left"><img src="medias/images/temp-avatar/avatar_07.jpg" alt="User's avatar" /></a>
+                                                <span class="cmt-head"><a href="" class="display-name">Linh linh tinh</a>, 7 phút trước</span>
+                                                
+                                                <div class="cmt-content">
+                                                    Sắp rồi đó ông nội.
+                                                </div>
+                                                
+                                                <div class="cmt-interact">
+                                                    <a href="" class="reply-cmt">Trả lời</a>
+                                                </div>
+                                                
+                                                <div class="tweet-ulti">
+                                                    <ul class="list-ulti round-corner">
+                                                        <li><a href="" class="report-tweet">Báo xấu</a></li>
+                                                    </ul>
+                                                </div><!--END Tweet Ultility-->
+                                            </div><!--a comment-->
+                                        </div>
+                                        
+                                        <div class="paging">
+                                            <a href="" class="paging-item page-prev"><span>&lsaquo;</span> Trang trước</a>
+                                            <a href="" class="paging-item active">1</a>
+                                            <a href="" class="paging-item">2</a>
+                                            <a href="" class="paging-item">3</a>
+                                            <a href="" class="paging-item">4</a>
+                                            <a href="" class="paging-item">5</a>
+                                            <a href="" class="paging-item">...</a><!--load tiếp từ 6 tới 11-->
+                                            <a href="" class="paging-item">74</a>
+                                            <a href="" class="paging-item page-next">Trang sau <span>&rsaquo;</span></a>
+                                        </div><!--Phân trang-->
+                                    </div><!-- END Danh sách bình luận-->
+                                    
+                                    <div class="list-fav cmt-box">
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_11.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_12.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_13.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_18.jpg">
+                                        </a>
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_11.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_12.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_13.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_18.jpg">
+                                        </a>
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_13.jpg">
+                                        </a>
+                                        
+                                        <a class="avatar align-left" title="Đến trang tài khoản" href="">
+                                            <img alt="User's avatar" src="medias/images/temp-avatar/avatar_18.jpg">
+                                        </a>
+                                        <a href="javascript:void();" class="btn btn-view-more">Xem thêm...</a>
+                                    </div><!--END Danh sách những người đã liked-->    
+                                </div><!--END Wrapper của các list-->
+                            </div><!--END a feed-->
+
+					</div><!--END Tweet Stream-->
+				</div><!--END column left-->
+				
+				
+			</div><!--END Page Content-->
+		</div><!--END Page body wrap-->
+		
+		<div id="footer">
+            <div class="content container-12">
+                <div class="align-left">
+                    <a href="/" id="logoFooter"></a>
+                    <p class="info">
+                    <span class="intro">Phiên bản thử nghiệm</span>
+                    <br />
+                    Một sản phẩm của <a href="http://zing.vn" title="" id="logo-Zing-footer"></a> &copy; 2013
+                    </p>
+                </div>
+                <div class="align-right creators">Powered by <a href="http://epi.com.vn" title="" id="logo-ePi" class="hide-text">ePi's logo</a></div>
+            </div><!--END container-->
+        </div><!--END Footer-->
+		
+		
+<div id="ShareToolTip" style="left: 50%; top: 50%; position: absolute; z-index:2000">
+    <div class="tip-wrap round-corner">
+        <span class="tip-anchor"></span>
+        <div class="tip-share-sns tip-content">
+            <div class="list-login-sns">
+                <a href="" id="zid_zingme" class="btn btn-zingme hide-text hint--top hint--rounded" data-hint="Chia sẻ thông này lên Zingme" >Chia sẻ thông điệp này lên Zingme</a>
+                <a href="" id="zid_facebook" class="btn btn-fb hide-text hint--top hint--rounded" data-hint="Chia sẻ thông này lên Facebook" >Chia sẻ thông điệp này lên Facebook</a>
+                <a href="" id="zid_twitter" class="btn btn-tt hide-text hint--top hint--rounded" data-hint="Chia sẻ thông này lên Twitter" >Chia sẻ thông điệp trên Twitter</a>
+                <a href="" id="zid_google" class="btn btn-google hide-text hint--top hint--rounded" data-hint="Chia sẻ thông này lên Google Plus">Chia sẻ thông điệp này lên Google Plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		<script src="js/jquery-1.9.0.min.js"></script>
+				<script src="js/jquery.fancybox.js"></script>
+				<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+				<script type="text/javascript">
+					$(function(){				
+		
+						
+						//fancyBox cho ảnh
+							$(".fancybox").fancybox({
+									openEffect	: 'none',
+									closeEffect	: 'none',
+									maxWidth: $(window).width()-200,
+									fitToView: false
+									
+								});
+							
+							//Show-Hide box Binh luan
+						    $(".cmt-box").hide();
+				    $(".list-retweeter").show();
+						    $(".loading").show();
+						    $('.tweet .comt-tweet').addClass('active');
+						    $('.tweet .retweet-content .comt-tweet').removeClass('active');
+							
+							$('.tweet .re-tweet').click(function(){
+							        $('.tweet .tweet-interact a').removeClass('active');
+							        $(".cmt-box").hide();
+									if(!$(this).hasClass('active')){
+										$(this).addClass('active');
+									}
+									else{
+										$(this).removeClass('active');
+									}
+									
+									$(this).parent().siblings(".list-retweeter").stop().slideToggle(300);
+							});
+							
+							$('.tweet .comt-tweet').click(function(){
+							        $('.tweet .tweet-interact a').removeClass('active');
+							        $(".cmt-box").hide();
+									if(!$(this).hasClass('active')){
+										$(this).addClass('active');
+									}
+									else{
+										$(this).removeClass('active');
+									}
+									
+									$(this).parent().siblings(".list-comt").stop().slideToggle(300);
+							});
+							
+							$('.tweet .fav-tweet').click(function(){
+    							    $('.tweet .tweet-interact a').removeClass('active');
+							        $(".cmt-box").hide();
+									if(!$(this).hasClass('active')){
+										$(this).addClass('active');
+									}
+									else{
+										$(this).removeClass('active');
+									}
+									
+									$(this).parent().siblings(".list-fav").stop().slideToggle(300);
+
+							});
+		
+							
+							//Check comment có blank hay ko rồi mới visible nút Gửi comment
+							$('.post-cmt-form .text-field').bind("keyup",function(){
+		
+								var sendbtn = $(this).parent().next('.form-more-info').find('.btn-submit');
+								
+								if ($(this).val()){
+									if(sendbtn.hasClass('btn-disabled')){
+										sendbtn.removeClass('btn-disabled');
+										sendbtn.attr('disabled','');
+									}
+								}
+								else {
+									if(!sendbtn.hasClass('btn-disabled')){
+										sendbtn.addClass('btn-disabled');
+										sendbtn.attr('disabled','disabled');
+									}
+								}
+							});
+							
+							
+							//Show / Hide chia sẻ
+							$('.share-tweet').mouseover(function(e){
+                                e.stopPropagation();
+                                var tip = $('#ShareToolTip');
+                                var p = $(this).offset();
+                                var x = p.left;
+                            	var y = p.top;
+                            	
+                            	if(!tip.hasClass('active')){
+                                    tip.stop().fadeIn(250);
+                                    tip.addClass('active');
+                                    tip.css('position','absolute');
+                                    tip.css('left',x-26);
+                                    tip.css('top',y+30);
+                                }
+                                else {
+                                    tip.removeClass('active');
+                                    tip.fadeOut(250);
+                                }
+                            })
+                            
+                            $('#ShareToolTip').mouseleave(function(){
+                                var tip = $('#ShareToolTip');
+                                tip.removeClass('active');
+                                    tip.fadeOut(250);
+                    });
+							
+					});
+				</script>
+	</body>
+</html>

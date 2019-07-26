@@ -1,0 +1,1022 @@
+/*Style for Profile page*/
+.page-body .content{
+    background: #f7f7f7 url('../images/bg-right_side_bar.png') repeat-y 636px top;
+}
+/*Columm Left*/
+.page-body .col-left{
+    width: auto;
+    margin-right: 340px;
+    border-right: none;
+    background: #fff;
+    //padding-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/*Column Right*/
+.page-body .col-right{
+    width: 330px;
+    float: right;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.page-body .col-right .block{
+    margin-left: 10px;
+}
+
+.page-body .col-right .block ul{
+    overflow: hidden;
+}
+
+.stream-head, .notify, .tweet-stream .tweet{
+    padding-right: 20px;
+}    
+
+/*Profile cover*/
+.cover-img{
+    overflow: hidden;
+    max-height: 260px;
+    width: 978px;
+    height: 260px;
+    background: #ccc;
+    position: relative;
+}
+    .cover-img-temp:after,
+    .cover-img:after{
+        content: "";
+        background: transparent url('../images/cover-gradient.png') repeat-x left top;
+        width: 100%;
+        height: 75px;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    
+.cover-img img{
+    max-width: 978px;
+    max-height: 280px;
+    width: 978px;
+    height: 280px;
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+.cover-groupbtn{
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    z-index: 11;
+    display: none;
+}
+    .cover-groupbtn .btn{
+        margin-left: 5px;
+    }
+
+/*CHANGING COVER*/
+.cover-img-temp{
+    cursor: -webkit-grab; cursor: -moz-grab;
+    overflow: hidden; 
+    max-height: 280px; width: 978px; height: 280px;  position: relative;
+    background: #ccc;
+}
+    .cover-img-temp .loading-indicator{
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        opacity: 0.4;
+        cursor: no-drop;
+        z-index: 2;
+    }
+.cover-img-temp:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 2px; left: 2px; right: 2px; bottom: 2px;
+    border: 1px dashed #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+#userProfile.being-placeholder{
+    background: #F6F7F9;
+}
+    #userProfile.being-placeholder .user-info,
+    #userProfile.being-placeholder .profile-desc,
+    #userProfile.being-placeholder .tagging,
+    #userProfile.being-placeholder .profile-location,
+    #userProfile.being-placeholder .btn,
+    #userProfile.being-placeholder .user-stat{
+        visibility: hidden;
+    }
+
+
+/*Profile Info*/
+.profile-info{
+    background: #f6f7f9;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+    min-height: 90px; 
+    color: #737373;
+}
+
+.profile-info .avatar img,
+.profile-info .avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.profile-info .avatar{
+    border: 5px solid #fff;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: 6;
+    box-shadow: 0px 2px 2px #B7B7B7;
+    -moz-box-shadow: 0px 2px 2px #B7B7B7;
+    -webkit-box-shadow: 0px 2px 2px #B7B7B7;
+    background: #c8c8c8 url('../images/df-avatar-120x120.png') no-repeat center center;
+}
+
+    .edit-cover,
+    .profile-info .avatar ~ .edit-avatar{
+        position: absolute;
+        top: 42px;
+        left: 30px;
+        z-index: 2;
+        display: block;
+        background: #009acd;
+        color: #fff;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -webkit-transition: all 0.25s ease-in;  
+        -moz-transition: all 0.25s ease-in;  
+        -o-transition: all 0.25s ease-in;  
+        transition: all 0.25s ease-in;
+        padding: 5px 10px;
+        //display: none;
+        box-shadow: 0px 1px 3px #ccc;
+    }
+        .edit-cover{
+            left: inherit;
+            right: 20px;
+            top: 20px;
+            -webkit-transition: none;
+            -moz-transition: none;  
+            -o-transition: none;  
+            transition: none;
+        }
+        .cover-img:hover .edit-cover{
+            top: 20px;
+        }
+
+        .icon-change-avatar{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: transparent url('../images/icon-sprites-1.03.png') no-repeat -413px -51px;           
+            position: relative;
+            top: 1px;
+            margin-right: 5px;
+        }
+        
+        .edit-cover:hover,    
+        .profile-info .avatar ~ .edit-avatar:hover{
+            display: block;
+            background-color: #5abada;
+            color: #fff;
+        }
+
+        
+     .profile-info .avatar ~ .edit-avatar.active,        
+     .profile-info .avatar:hover ~ .edit-avatar{
+        top: 112px;
+        display: block;
+     }
+
+.profile-info .username,
+.profile-info .user-info,
+.profile-info .profile-desc,
+.profile-info .tagging{
+    margin-left: 150px;
+    display: inline-block;
+    max-width: 420px;
+    margin-bottom: 5px;
+}
+
+.profile-info .username,
+.profile-info .display-name{
+    font-size: 1.53846154em; /*20px/13px*/
+    color: #333;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 1em;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.profile-info .username:hover,
+.profile-info .display-name:hover{
+    color: #f15a24;	
+}
+
+.profile-info .user-info .icon{
+    top: 4px;
+}
+.profile-info .username .icon,        
+.profile-info .display-name .icon{
+    margin: 0 0 0 15px;
+    position: relative;
+    top: 5px;
+}
+
+.profile-info .profile-desc{
+    display: block;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+/*        .profile-info .profile-desc:before,    
+        .profile-info .profile-desc:after{
+            content: "";
+            background: transparent url('../images/profile-quote-mark.png') no-repeat left bottom;
+            width: 8px;
+            height: 6px;
+            display: inline-block;
+        }
+            .profile-info .profile-desc:before{
+                position: relative;
+                top: -7px;
+                margin-right: 3px;
+            }
+            .profile-info .profile-desc:after{
+                position: relative;
+                bottom: -3px;
+                margin-left: 3px;
+                background-position: left top;
+            }*/
+
+.profile-info .profile-location{
+    background: transparent url('../images/icon-location.png') no-repeat left 2px;
+    padding-left: 16px;
+    margin-left: 25px;
+}
+
+.profile-info .user-stat{
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    padding: 10px 0px 5px 15px;
+    background: #f9efeb;
+    border-radius: 40px 0 0 40px;
+    -moz-border-radius: 40px 0 0 40px;
+    -webkit-border-radius: 40px 0 0 40px;	
+}
+
+.profile-info .user-stat .stat-numb,
+.profile-info .user-stat .stat-type{
+    display: block;
+    text-align: left;
+    left: 0;
+    top: 0;
+}
+
+.profile-info .user-stat .stat-numb{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.profile-info .user-stat li{
+    float: left;
+    padding: 0 14px;
+}
+
+.profile-info .user-stat li:nth-child(1),
+.profile-info .user-stat li:nth-child(2){
+    border-right: 1px dashed #c7c7c7;
+}
+
+.profile-info .btn.btn-follow,
+.profile-info .btn.btn-following,
+.profile-info .btn.btn-unfollow{
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    width: 120px;
+    font-size: 11px;
+    padding: 7px 5px 7px 28px;
+    text-align: left;
+    position: relative;
+    z-index: 20;
+    bottom: 2px;
+    left: 15px;
+}
+
+.profile-info .btn.btn-follow{
+    background: #8fbf00 url('../images/icon-follow.png') no-repeat 5px 5px;
+}
+
+.profile-info .btn-follow:hover{
+    background-color: #abdb1b;
+}
+
+.profile-info .btn.btn-following{
+    background-color: #009acd;
+    text-align: center;
+    padding-left: 7px;
+}
+
+.profile-info .btn.btn-following.btn-unfollow{
+    background: #ce2013 url('../images/icon-unfollow.png') no-repeat 5px 5px;
+    padding-left: 26px;
+}
+
+
+/*Profile Sub Navigator*/
+#profileNav{
+    padding: 0;
+    background: #f2f2f2;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    height: 40px;
+}	
+#profileNav li{
+    float: left;
+    text-align: center;
+    margin-right: 0px;
+    border-right: 1px solid #e7e7e7;
+}
+
+#profileNav li a{
+    font-size: 1.23076923em; /*16px/13px*/
+    line-height: 2.5em; /*24px/16px*/
+    color: #737373;
+    padding: 0px 20px;
+    display: block;
+    height: 40px;
+}
+#profileNav li a:hover{
+    background: #fff7f4;
+}	
+#profileNav li a:hover,
+#profileNav li.active a{
+    color: #f15a24;
+}
+
+#profileNav li.active a{
+    height: 41px;
+    background: #fff;
+    cursor: default;
+}
+
+#profileNav li.active {
+    background: #fff;
+
+}
+
+/*List Badges*/	
+.list-badge li{
+    float: left;
+    margin-right: 10px;
+}
+.list-badge li a{
+    display: block;
+}
+.list-badge li img{
+    width: 50px;
+    height: 50px;
+}
+
+.col-right .list-user .view-more,	
+.list-badge .view-more{
+    background: transparent url('../images/icon-more.png') no-repeat center center;
+    display: block;
+    width: 21px;
+    height: 6px;
+    margin: 23px 14px 0 14px;
+}
+
+.col-right .list-user .view-more{
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.col-right .list-user .view-more:hover{
+    background-color: #ebebeb;
+}
+
+/*List users - right column*/
+.col-right .following,
+.col-right .followers{
+    padding-right: 0;
+}
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.col-right .list-user .avatar{
+    border: 3px solid #ddd;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;  
+}
+.col-right .list-user .avatar:hover{
+    border-color: #f15a24;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+.col-right .following .blank-state,
+.col-right .followers .blank-state{
+    text-align: center;
+    color: #a2a6a6;
+    font-size: 12px;
+}
+
+.btn.btn-showmore{
+    background: url("../images/icon-arrow-down.png") no-repeat scroll 330px center #FCEEE8;
+    width: 580px;
+    display: block;
+}
+
+
+/*Re-style post tweet*/
+.post-tweet{
+    padding: 20px 20px 0 20px;
+    margin: 0px 0 10px 0;
+    overflow: hidden;		
+}
+
+/*ADD PHOTO*/
+#addPhoto{
+    margin: 0;
+    padding: 10px;
+}
+#addPhoto #imageFile{
+    display: none;
+}
+
+#addPhoto .upload-btn-wrap{
+    float: none;
+    clear: both;
+    overflow: hidden;    
+}
+
+#addPhoto .btn-upload{
+    color: #1194cc;
+    padding: 13px;
+    border: 1px dashed #CECECE;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #F8F9FB;
+}
+
+    #addPhoto .btn-upload:hover{
+        background: #fff;    
+    }
+    
+    #addPhoto .btn-upload span{
+        color: #999;    
+    }
+    
+    #addPhoto .btn-upload .icon{
+        margin-right: 7px;
+    }
+    
+    #addPhoto .img-thumb,
+    #addPhoto .img-thumb img{
+        width: 46px;
+        height: 46px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    #addPhoto .img-thumb{
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border: 1px solid #ddd;
+    }
+    
+        #addPhoto .img-thumb.uploading-state{
+            background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;
+            border: 1px solid #ddd;
+            width: 46px;
+            height: 46px;
+        }
+        
+        /* Progress bar while UPLOADING */
+        #addPhoto .img-thumb.progress-bar{
+
+        }
+            #addPhoto .img-thumb.progress-bar .bar{
+                height: 46px;
+                width: 46px;
+                overflow: hidden;
+                z-index: 2;
+                background: #f0f0f0;
+                position: relative;
+                top: 0;
+                left: 0;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+            }
+                #addPhoto .img-thumb.progress-bar .progress{
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 0px;
+                    width: 100%;
+                    max-height: 100%;
+                    background-color: #009acd;
+                    overflow: hidden;
+
+                }
+                    #addPhoto .img-thumb.progress-bar .progress .percent{
+                        text-align: center;
+                        height: 14px;
+                        line-height: 14px;
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -6px;
+                        color: #fff;
+                    }
+                #addPhoto .img-thumb.progress-bar .progress.processing{
+                    text-indent: -9999px;height: 100%;
+                    font-size: 0;
+                    background: #009acd url('../images/upload-process.gif') no-repeat center center;
+                }
+    
+        /*icon delete thumb*/
+        #addPhoto .img-thumb .icon-deletePhoto{
+            position: absolute;
+            z-index: 5;
+            top: -3px;
+            right: -3px;
+            cursor: pointer;
+        }
+
+/*Tweet photo*/
+.tweet .photo-content{
+    width: 568px; /*Ti le 3:2*/
+}
+
+.tweet .photo-content,
+.tweet .photo-content img{
+    max-width: 568px; /*Ti le 3:2*/
+    max-height: 379px;
+    display: block;
+}
+
+.tweet .retweet-content .photo-content{
+    width: 568px;
+    max-height: 379px;
+    background: url("../images/bg-rt-media-content.png") repeat scroll left top transparent;
+}
+
+.tweet .photo-content.superlong-photo img.img-crop-large{
+    width: 100%;
+    height: auto;
+}
+
+.tweet .photo-content.multi-photo{
+    width: 510px;
+    padding-left: 48px;
+}
+
+.tweet .retweet-content .photo-content.multi-photo{
+    width: 510px;
+}
+
+/*For Tweet Details*/	
+.tweet-details .tweet{
+    margin-bottom: 20px;
+}
+
+
+.tweet-details .content{
+
+}
+
+/*List nhá»¯ng ngÆ°á»i Ä‘Ã£ loan tin*/
+.list-retweeter .cmt{
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-top: none;
+    border-bottom: 1px dashed #BFBFBF;
+}
+.list-retweeter .cmt:last-of-type{
+    border-bottom: none;
+}
+.list-retweeter .paging{
+    border: none;
+    margin-top: 0;
+}
+
+.list-retweeter .cmt .cmt-content{
+    margin-bottom: 0;
+}
+
+.list-retweeter .post-retweet{
+    margin: 0;
+    padding: 0 15px 10px 48px;
+}
+
+.list-retweeter .post-tweet .textarea{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* List nhá»¯ng ngÆ°á»i Ä‘Ã£ like*/
+.tweet .list-fav{
+    padding: 15px 15px 7px 48px;
+}
+.tweet .list-fav .avatar{
+    margin: 0 8px 8px 0;
+    border: 2px solid #fff;
+
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background: #c8c8c8 url('../images/df-avatar-36x36.png') no-repeat center center;
+}
+
+.tweet .list-fav .avatar:hover{
+    border-color: #f15a24;
+}
+
+.tweet .list-fav .avatar,
+.tweet .list-fav .avatar img{
+    width: 36px;
+    height: 36px;
+}
+
+.tweet .list-fav .btn-view-more{
+    position: relative;
+    top: 6px;
+    font-size: 11px;
+    text-transform: none;
+    font-weight: normal;
+    padding: 3px 12px;
+    line-height: 1.63636364em;
+    background: #d6d6d6;
+    color: #737373;
+}
+
+.tweet .list-fav .btn-view-more:hover{
+    background-color: #f15a24;
+    color: #fff;
+}
+
+
+.section-title{
+    font-size: 18px;
+    font-weight: normal;
+    color: #737373;
+    padding: 50px 20px 15px 20px;
+}     
+
+
+/*List FOLLOWERs-FOLLOWING*/
+.list-users .user{
+    margin-left: 0;
+    position: relative;
+    padding: 15px 20px 15px 0;
+    border-bottom: 1px dashed #CECECE;
+}
+.list-users .user:last-child,
+.list-users .user:last-of-type{
+    border-bottom: none;
+}
+.list-users .user .avatar{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-left: 20px;
+    border-color: #ddd;
+}
+.list-users .user .avatar img,
+.list-users .user .avatar{
+    width: 46px;
+    height: 46px;
+}
+
+.list-users .user .latest-tweet,
+.list-users .user .user-info,
+.list-users .user .user-stat{
+    margin-left: 86px;
+}
+
+
+.list-users .user .user-info .display-name,
+.list-users .user .user-info .mention-name{
+    position: relative;
+    //top: -8px;  
+    font-size: 12px;  
+}
+
+/*    .list-users .user .user-info .icon{
+        top: 0;
+    }*/
+
+.list-users .user .user-stat{
+    overflow: hidden;
+}
+.list-users .user .user-stat li{
+    float: left;
+    padding: 0 8px;
+    border-right: 1px solid #ddd;
+    margin-bottom: 0;
+}
+.list-users .user .user-stat li a:hover span{
+    color: #f15a24;
+}
+
+.list-users .user .user-stat li:first-child{
+    padding-left: 0;    
+}
+
+.list-users .user .user-stat li:last-child{
+    border-right: none;
+}
+
+.list-users .user .user-stat li span{
+    display: inline;
+    color: #afafaf;
+}
+
+.list-users .user .user-stat .stat-numb{
+    font-size: 12px;
+}
+.list-users .user .user-stat .stat-type{
+    left: 0;
+    text-transform: none;
+    color: #afafaf;
+}
+
+.list-users .user .latest-tweet{
+    padding: 5px 0 0 0;
+    word-wrap: break-word;
+}
+
+.list-users .user .btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 5;
+    text-transform: none;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    width: 110px;
+    font-size: 11px;
+    padding: 7px 5px 7px 28px;
+    text-align: left;
+}
+
+.list-users .user .btn-follow{
+    background: #8fbf00 url('../images/icon-follow.png') no-repeat 5px 5px;
+}
+
+.list-users .user .btn-follow:hover{
+    background-color: #abdb1b;
+}
+
+.list-users .user .btn-following{
+    background-color: #009acd;
+    text-align: center;
+    padding-left: 7px;
+}
+
+.list-users .user .btn-following.btn-unfollow{
+    background: #ce2013 url('../images/icon-unfollow.png') no-repeat 5px 5px;
+    padding-left: 26px;
+}
+
+
+/*LOADING State cho Tweet Detail*/
+.loading.cmt-box{
+    padding: 0;
+}
+.loading.cmt-box span{
+    padding: 10px;
+    background: url("../images/ajaxloading.gif") no-repeat scroll 0 center #F0F0F0;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+}
+
+.clear-fix{
+    height: 0;
+}
+
+/*BLANK STATE WHEN NO ACTIVITY*/
+.blank-no_ativity{
+    padding: 60px;
+    margin: 0px auto;
+    text-align: center;
+}
+.blank-no_ativity p{
+    margin-top: 15px;
+    color: #737373;
+}
+
+
+/*Profile Infomation Tab*/    
+.profile-info-wrap{
+    overflow: hidden;
+    margin-left: 20px;
+    padding: 30px 0;
+}
+.profile-info-wrap .info-row{
+    padding: 15px 0 0 0;
+    border-bottom: 1px dashed #ddd;
+    color: #333;
+    margin-right: 20px;
+}
+.profile-info-wrap .info-row:last-of-type{
+    border-bottom: none;
+}
+.profile-info-wrap .info-row .label{
+    float: left;
+    width: 180px;
+    color: #737373;
+}
+.profile-info-wrap .info-row .info-content{
+    margin-left: 200px;
+    overflow: hidden;
+}
+.profile-info-wrap .info-row .label,
+.profile-info-wrap .info-row .info-content{
+    margin-bottom: 20px;
+}
+.profile-info-wrap .info-row .hashtag{
+    float: left;
+    clear: both;
+}
+.profile-info-wrap .info-row .user-info{
+    margin-right: 140px;
+}
+.profile-info-wrap .info-row .user-info .display-name{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+.profile-info-wrap .info-row .user-info .mention-name{
+    color: #f15a24;
+}
+
+
+.tweet-ulti{
+    right: 20px;
+}
+
+/*Block Compare User*/
+.compare-content{
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative;
+}
+.compare-content:after{
+    content: "";
+    width: 14px;
+    height: 24px;
+    background: transparent url('../images/icon-sprites-1.03.png') no-repeat -456px -174px;
+    position: absolute;
+    top: 15px;
+    left: 144px;
+    display: block;
+    z-index: 3;
+}
+.compare-content:before{
+    content: "";
+    width: 2px;
+    height: 202px;
+    background: #f15a24;
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    display: block;
+    z-index: 3;
+}
+
+.compare-user .compare-content .user-wrap{
+    width: 50%;
+    height: 240px;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    font-size: 11px;
+    border-bottom: 3px solid #ccc;
+}
+.compare-user .compare-content .user-wrap .avatar{
+    border: 3px solid #ddd;
+    -webkit-transition:all 0.25s ease-in;  
+    -moz-transition:all 0.25s ease-in;  
+    -o-transition:all 0.25s ease-in;  
+    transition:all 0.25s ease-in;
+}
+.compare-user .compare-content .user-wrap .avatar:hover{
+    border: 3px solid #f15a24;
+}
+
+.compare-user .compare-content .user-wrap .bar-col .bar .user-lv{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    color: #737373;
+}
+.compare-user .compare-content .user-wrap .bar-col{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 5px;
+}
+.compare-user .compare-content .user-wrap .bar-col .bar{
+    width: 30px;
+    background-color: #2160a6;
+    border-top: 2px solid #a1bbd7;
+    position: absolute;
+    bottom: -5px;
+    right: 50px;
+    cursor: pointer;
+}
+.compare-user .compare-content .user-wrap .bar-col .score{
+    color: #737373;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    bottom: 0;
+}
+
+.compare-user .compare-content .user-wrap .bar-col .score span{
+    font-size: 15px;
+    color: #2160a6;
+    font-weight: bold;
+    display: block;
+}
+
+/*Login User Column*/
+.compare-user .compare-content .login-user-wrap .avatar{
+    margin-left: 60px;
+}    
+.compare-user .compare-content .login-user-wrap .bar-col .score{
+    text-align: right;
+    right: 90px;
+}
+
+/*Current User Column*/
+.compare-user .compare-content .current-user-wrap .avatar{
+    margin-left: 34px;
+}
+.compare-user .compare-content .current-user-wrap .bar-col .bar{
+    left: 50px;
+    background-color: #a1bbd7;
+    border-top: 2px solid #2160a6;
+}
+.compare-user .compare-content .current-user-wrap .bar-col .score{
+    text-align: left;
+    left: 90px;
+}

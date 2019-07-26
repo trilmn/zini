@@ -1,0 +1,156 @@
+/*CSS for HASHTAG PAGE*/
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background-position: 636px top;
+}
+
+.page-body .col-right .main-content{
+    margin-right: 288px;
+    padding-right: 0;
+}
+
+.page-body .col-right .right-sidebar{
+    width: 288px;
+    padding-left: 15px;  
+}
+
+.page-body .page-head{
+    margin: 0;
+    padding: 40px 0px 15px 20px;
+}
+    .page-body .page-head .icon{
+        margin-right: 8px;
+    }
+    .page-body .page-head .page-util{
+        position: relative;
+        top: 7px;
+    }
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: auto;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 24px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+
+/*Thanh Vien hay binh luan*/
+.top-cmt-users{
+
+}
+
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+
+/*Search Keyword Highlight*/
+.search-keyword{
+    color: #f15a24;  
+}
+
+/*List FOLLOWERs-FOLLOWING*/
+#searchResult .list-users{
+    height: auto;
+}
+
+
+.btn.btn-showmore, .btn-showmore{
+    width: 600px;
+    display: none;
+}
+
+/*BLANK STATE WHEN NO ACTIVITY*/
+.blank-state{
+    padding: 60px 60px 20px 60px;
+    margin: 0px auto;
+    text-align: center;
+}
+    .blank-state p{
+        margin-top: 15px;
+        color: #737373;
+    }
+    
+/*In page Search form*/
+.search-form.form{
+    margin: 0 auto 60px auto;
+    width: auto;
+    padding: 20px 50px;
+    text-align: center;
+}
+    .search-form.form .form-controls{
+        margin-bottom: 0;
+    }
+    .search-form.form .text-field,
+    .search-form.form .btn-submit{
+        height: 34px;
+    }
+    .search-form.form .text-field{
+        width: 400px;
+        float: left;
+        margin-right: 10px;
+        padding: 3px 10px;
+    }
+    .search-form.form .btn-submit{
+        float: left;
+        padding: 0 15px;
+    }

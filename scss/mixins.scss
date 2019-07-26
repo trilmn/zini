@@ -1,0 +1,43 @@
+$bg-color             : #f0f1f2;
+$zini-orange          : #f15a24;
+$zini-orange-alt      : #ff800f;
+$link-color           : #466b8e;
+
+$zme-color            : #1698ce;
+$fb-color             : #547bbd;
+$tt-color             : #78ccf0;
+$gg-color             : #dd4c39;
+$yh-color             : #8d589f;
+
+$font-size-base       : 14px;
+$line-height-base     : 1.5em;
+$border-color         : #ddd;
+$content-width        : 960px;
+
+/* custom selection colors */
+::-moz-selection {
+  color: #fff;
+  background: #ff7f54;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #ff7f54;
+  text-shadow: none;
+}
+
+/* @end */
+
+/* @group GENERAL MIXINS */
+@mixin rounded-corner($radius: 6px) {
+    @include prefixer(border-radius, $radius, webkit moz o);
+    border-radius: $radius;
+}
+
+@mixin cover-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* @end */

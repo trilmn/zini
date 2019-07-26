@@ -1,0 +1,357 @@
+/*CSS for HASHTAG PAGE*/
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background-position: 615px top;
+}
+
+.page-body .col-right .main-content{
+    margin-right: 308px;
+}
+
+.page-body .col-right .right-sidebar{
+    width: 308px;    
+}
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: 64px;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 30px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+
+/*Tweet photo*/
+.tweet .photo-content{
+    width: 568px; /*Ti le 3:2*/
+}
+
+.tweet .photo-content,
+.tweet .photo-content img{
+    max-width: 550px;
+    max-height: 365px;
+    display: block;
+}
+
+.tweet .retweet-content .photo-content{
+    width: 550px;
+    max-height: 365px;
+    background: url("../images/bg-rt-media-content.png") repeat scroll left top transparent;
+}
+
+.tweet .photo-content.superlong-photo img.img-crop-large{
+    width: 100%;
+    height: auto;
+}
+
+.tweet .photo-content.multi-photo{
+    width: 550px;
+    padding-left: 37px;
+    max-height: none;
+}
+
+.tweet .retweet-content .photo-content.multi-photo{
+    width: 550px;
+}
+    .tweet .photo-content.multi-photo.thumbs-2,
+    .tweet .photo-content.multi-photo.thumbs-4{
+        padding-left: 80px;
+    }
+/*HASHTAG Wrap*/
+.hashtag-wrap{
+    padding-top: 10px;
+}
+    /*Hashtag Cover*/
+    .hashtag-cover{
+        background-image: url('../images/bg-cover-df.png');
+        background-color: #555;
+        position: relative;
+        height: 165px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+        .hashtag-cover:after{
+            content: "";
+            background: url("../images/cover-gradient.png") repeat-x scroll left 0px transparent;
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            bottom: 0;
+        }
+    .hashtag-wrap .main-hashtag{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1em;
+        text-shadow: 0px 1px 2px #000;
+        position: absolute;
+        z-index: 4;
+        bottom: 15px;
+        left: 15px;
+    }
+    
+    .hashtag-wrap .main-hashtag:before{
+        content: "#";
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+.hashtag-wrap .page-util{
+    margin-right: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    z-index: 4;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+}
+    .hashtag-wrap .page-util strong{
+        font-size: 16px;
+    }
+
+.hashtag-wrap .media-wrap{
+    overflow: hidden;
+    padding-left: 20px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+    .hashtag-wrap .media-wrap .fancybox,
+    .hashtag-wrap .media-wrap .fancybox img{
+        width: 104px;
+        height: 104px;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox{
+        float: left;
+        margin-left: 10px;
+        border: 2px solid #f2f2f2;
+        overflow: hidden;
+        display: block;
+        -webkit-transition: 0.3s ease-in;  
+        -moz-transition: 0.3s ease-in;  
+        -o-transition: 0.3s ease-in;  
+        transition: 0.3s ease-in;
+        outline: none;
+    }
+    .hashtag-wrap .media-wrap .fancybox:first-of-type{
+        margin-left: 0;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox:hover{
+        border: 2px solid #f15a24;
+    }
+    
+    .hashtag-wrap .media-wrap .fancybox:last-of-type{
+        margin-right: 0;
+    }
+    
+    .hashtag-wrap .media-wrap .viewmore{
+        display: inline-block;
+        margin-left: 12px;
+        margin: 10px 0 10px 0px;
+        font-size: 13px;
+        color: #466b8e;
+    }
+    .hashtag-wrap .media-wrap .viewmore:hover{
+        color: #f15a24;
+    }
+
+.hashtag-wrap .related-fun-facts{
+    background: url("../images/icon-zini_announce.jpg") no-repeat scroll 0px 15px transparent;
+    min-height: 48px;
+    padding: 25px 0px 15px 85px;
+    margin: 0 20px 0 20px;
+    color: #737373;
+    border-bottom: 1px dashed #ccc;
+}
+
+.hashtag-wrap .related-fun-facts .current-hashtag{
+    color: #f15a24;display: inline;
+}
+
+
+/*Block Hashtag's Retated News */
+.related-news{
+    margin-right: 20px;
+    //padding-bottom: 10px;
+    //border-bottom: 1px solid #ccc;
+}
+.related-news .news-thumb{
+    border: 1px solid #ddd;
+    width: 66px;
+    height: 66px;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;
+    float: left;
+    margin: 0 10px 5px 0 ;
+}
+.related-news .news-thumb img{
+    width: 62px;
+    height: 62px;
+    border: 2px solid #f9f9f9;
+    -webkit-transition: 0.3s ease-in;  
+    -moz-transition: 0.3s ease-in;  
+    -o-transition: 0.3s ease-in;  
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.related-news .news-thumb:hover img{
+    border-color: #f15a24;
+}
+
+.related-news .news-title,
+.related-news .news-title a{
+    font-size: 16px;
+    line-height: 1.15em;
+    color: #466b8e;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.related-news .news-title a:hover{
+    color: #f15a24;
+}
+
+.related-news .chapo{
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.related-news .re-tweet{
+    margin: 0;
+}
+
+.related-news .read-more{
+    font-size: 11px;
+    color: #466b8e;
+}
+
+.related-news .read-more:hover{
+    color: #f15a24;
+}
+
+.related-news .read-more:hover .icon{
+    background-position: -199px -40px;
+}
+
+
+/*Thanh Vien hay binh luan*/
+.top-cmt-users{
+
+}
+
+.col-right .list-user li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.col-right .list-user .avatar,
+.col-right .list-user .avatar img{
+    width: 46px;
+    height: 46px;
+}
+
+/*Banner for non-login user*/
+.non-login_user{
+    background: #f1f9fa;
+    border: 1px dashed #afcdd8;
+    padding: 20px 15px;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+.non-login_user .call-to-action{
+    position: relative;
+    top: 4px;
+    padding-left: 10px;
+}
+
+.non-login_user .call-to-action,
+.non-login_user .current-topic{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.non-login_user .call-to-action span{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.non-login_user .current-topic{
+    font-size: 12px;
+    color: #737373;
+    padding-left: 15px;
+    line-height: 36px;
+}
+
+.non-login_user .current-topic .topic-name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #466b8e;
+}
+
+.top-cmt-users ul{
+    overflow: hidden;
+}

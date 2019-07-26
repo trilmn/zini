@@ -1,0 +1,478 @@
+/*CSS for HASHTAG PAGE*/
+.page-body .col-left{
+    width: 50px;
+}
+
+.page-body .col-right{
+    margin-left: 50px;
+    background-position: 615px top;
+}
+
+.page-body .col-right .main-content{
+    margin-right: 308px;
+}
+
+.page-body .col-right .right-sidebar{
+    width: 308px;    
+}
+
+.icon-ranking{
+    background-image: url('../images/icon-sprites-1.04.png');
+    width: 18px;
+    height: 18px;
+    background-position: -335px -202px;
+}
+
+.btn.btn-showmore, .btn-showmore{
+    width: 575px;
+    margin-top: 10px;
+}
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: 64px;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 30px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+
+/*Block Hashtag's Retated News */
+.related-news{
+    margin-right: 20px;
+}
+.related-news .news-thumb{
+    border: 1px solid #ddd;
+    width: 66px;
+    height: 66px;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;
+    float: left;
+    margin: 0 10px 5px 0 ;
+}
+.related-news .news-thumb img{
+    width: 62px;
+    height: 62px;
+    border: 2px solid #f9f9f9;
+    -webkit-transition: 0.3s ease-in;  
+    -moz-transition: 0.3s ease-in;  
+    -o-transition: 0.3s ease-in;  
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.related-news .news-thumb:hover img{
+    border-color: #f15a24;
+}
+
+.related-news .news-title,
+.related-news .news-title a{
+    font-size: 16px;
+    line-height: 1.15em;
+    color: #466b8e;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.related-news .news-title a:hover{
+    color: #f15a24;
+}
+
+.related-news .chapo{
+    font-size: 12px;
+    line-height: 1.25em;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.related-news .re-tweet{
+    margin: 0;
+}
+
+.related-news .read-more{
+    font-size: 11px;
+    color: #466b8e;
+}
+
+.related-news .read-more:hover{
+    color: #f15a24;
+}
+
+.related-news .read-more:hover .icon{
+    background-position: -199px -40px;
+}
+
+/*LIST USER RANKING*/
+.list-ranking .user{
+    display: block;
+    float: none;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    border-top: 1px dashed #ddd;
+}
+    .list-ranking .user:last-of-type{
+        border-bottom: 1px dashed #ddd;
+    }
+
+    .list-ranking .user:nth-of-type(4),
+    .list-ranking .user:first-of-type{
+        border-top: none;
+    }
+    .list-ranking .user:nth-of-type(2n){
+        background-color: #f8f8f8;
+    }
+    
+    .list-ranking .user .user-score,
+    .list-ranking .user .user-rank{
+        position: absolute;
+    }
+        .list-ranking .user .user-rank{
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            padding: 5px 20px 5px 12px;
+            background-color: #d9d9d9;
+            color: #737373;
+            font-family: Verdana;
+            margin: 24px 0;
+            width: 62px;
+            text-indent: 0px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        .list-ranking .user .user-score{
+            right: 20px;
+            top: 0;
+            font-size: 12px;
+            line-height: 73px;
+            color: #737373;
+        }
+            .list-ranking .user .user-score strong{
+                font-size: 16px;
+                color: #333;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+            
+    .list-ranking .user .user-info{
+        margin-left: 68px;
+        margin-right: 180px;
+        font-size: 12px;
+        position: relative;
+        padding-left: 90px;
+        min-height: 46px;
+        padding-top: 6px;
+    }
+        .list-ranking .user .user-info .icon-vip{
+            margin-top: -5px;
+        }
+        .list-ranking .user .user-info.has-vip{
+            padding-top: 0;
+        }
+        .list-ranking .user .avatar{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            margin-top: -24px;
+            border: 2px solid #d9d9d9;
+            overflow: hidden;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            display: block;
+        }
+            .list-ranking .user .avatar:hover{
+                border-color: #f15a24;
+            }
+            .list-ranking .user .user-info.has-vip .avatar{
+                margin-top: -22px;
+            }
+            .list-ranking .user .avatar,
+            .list-ranking .user .avatar img{
+                width: 42px;
+                height: 42px;
+            }
+            
+            .list-ranking .user .avatar img{
+                float: left;
+            }
+        .list-ranking .user .user-info .display-name{
+            color: #333;
+            font-weight: bold;
+        }
+            .list-ranking .user .user-info .display-name:hover{
+                color: #f15a24;
+            }
+        .list-ranking .user .user-info .mention-name{
+            font-size: 12px;
+            color: #737373;
+        }
+        
+        .list-ranking .user .user-info .numb-follower{
+            font-size: 11px;
+            line-height: 15px;
+            position: relative;
+            top: 1px;
+        }
+            .list-ranking .user .user-info .numb-follower,
+            .list-ranking .user .user-info .user-lv{
+                margin-right: 5px;
+                display: inline-block;       
+            }
+            
+     /*1st - 2nd - 3rd Users*/
+     .list-ranking .user.first-rank .user-rank,
+     .list-ranking .user.second-rank .user-rank,
+     .list-ranking .user.third-rank .user-rank{
+         font-size: 18px;
+         width: 58px;
+     }
+         .list-ranking .user.first-rank .user-score strong,
+         .list-ranking .user.second-rank .user-score strong,
+         .list-ranking .user.third-rank .user-score strong{
+             font-weight: bold;
+             font-size: 20px;
+         }
+
+    /*1ST User*/
+    .list-ranking .user.first-rank{
+        height: 94px;
+        background-color: #ffe1dc;
+    }
+    .list-ranking .user.first-rank .user-rank{
+           background-color: #dc2e11;
+           color: #fff;
+           font-size: 24px;
+           padding: 10px 30px 10px 16px;
+           top: 0;
+           margin: 40px 0;
+    }
+    
+    .list-ranking .user.first-rank .user-score{
+        line-height: 24px;
+        margin: 51px 0;
+    }
+        .list-ranking .user.first-rank .user-score strong{
+            font-size: 24px;
+        }
+        .list-ranking .user.first-rank .avatar{
+            border: 3px solid #dc2e11;
+            left: 0;
+        }
+            .list-ranking .user.first-rank .avatar:hover{
+                border-color: #f15a24;
+            }
+        .list-ranking .user.first-rank .avatar,
+        .list-ranking .user.first-rank .avatar img{
+            width: 70px;
+            height: 70px;
+        }
+        .list-ranking .user.first-rank .user-info{
+            padding-top: 6px;
+            margin-top: 12px;
+            font-size: 16px;
+        }
+            .list-ranking .user.first-rank .user-info.has-vip{
+                padding-top: 12px;
+            }
+            .list-ranking .user.first-rank .user-info.has-vip .avatar{
+                margin-top: -32px;
+            }
+            
+            
+    /*2ND User*/
+    .list-ranking .user.second-rank{
+        background-color: #fff1d3;
+        height: 74px;
+        border-top-color: #dc2e11;
+    }
+    .list-ranking .user.second-rank .user-rank{
+           background-color: #ffae00;
+           color: #fff;
+           top: 0;
+           margin: 30px 0;
+           padding: 8px 30px 8px 16px;
+    }
+    
+    .list-ranking .user.second-rank .user-score{
+        line-height: 20px;
+        margin: 37px 0;
+    }
+        .list-ranking .user.second-rank .user-score strong{
+            font-size: 20px;
+        }
+        
+    .list-ranking .user.second-rank .avatar{
+        border: 3px solid #ffae00;
+        margin-top: -30px;
+    }
+        .list-ranking .user.second-rank .avatar:hover{
+            border-color: #f15a24;
+        }
+    .list-ranking .user.second-rank .avatar,
+    .list-ranking .user.second-rank .avatar img{
+        width: 62px;
+        height: 62px;
+    }
+    .list-ranking .user.second-rank .user-info{
+        padding-top: 6px;
+        margin-top: 8px;
+        font-size: 15px;
+    }
+        .list-ranking .user.second-rank .user-info.has-vip{
+            padding-top: 12px;
+            margin-top: 0;
+        }
+        .list-ranking .user.second-rank .user-info.has-vip .avatar{
+            margin-top: -24px;
+        }
+        
+    /*3ND User*/
+    .list-ranking .user.third-rank{
+        background-color: #e7f4c2;
+        height: 60px;
+        border-top-color: #ffae00;
+        border-bottom: 1px dashed #8fbf00;
+    }
+    .list-ranking .user.third-rank .user-rank{
+           background-color: #8fbf00;
+           color: #fff;
+           top: 0;
+           margin: 28px 0;
+           padding: 8px 30px 8px 16px;
+    }
+    .list-ranking .user.third-rank .user-score{
+        line-height: 18px;
+        margin: 31px 0;
+    }
+        .list-ranking .user.third-rank .user-score strong{
+            font-size: 18px;
+        }
+    .list-ranking .user.third-rank .avatar{
+        border: 3px solid #8fbf00;
+        margin-top: -30px;
+    }
+        .list-ranking .user.third-rank .avatar:hover{
+            border-color: #f15a24;
+        }
+    .list-ranking .user.third-rank .avatar,
+    .list-ranking .user.third-rank .avatar img{
+        width: 52px;
+        height: 52px;
+    }
+    .list-ranking .user.third-rank .user-info{
+        padding-top: 6px;
+        margin-top: 6px;
+        font-size: 14px;
+    }
+    .list-ranking .user.third-rank .user-info.has-vip{
+        margin-top: 0;
+    }
+        .list-ranking .user.third-rank .user-info.has-vip .avatar{
+            margin-top: -24px;
+        }
+        
+   .list-ranking .rank-separator{
+       background: transparent url('../images/bg-rank-separator.png') repeat-x left top;
+       height: 20px;
+       border: none;
+       position: relative;
+       top: -7px;
+       z-index: 2;
+   }
+   .list-ranking .rank-separator ~ .user{
+       top: -13px;
+   }
+   
+   /*Current User*/
+   .list-ranking .user.current-user{
+       background: #dcf6ff;
+   }
+      .list-ranking .user.current-user .user-rank{
+          background-color: #009acd;
+          color: #fff;
+      }
+      
+      .list-ranking .user.current-user .avatar{
+          border: 3px solid #009acd;
+          margin-top: -30px;
+      }
+          .list-ranking .user.current-user .avatar:hover{
+              border-color: #f15a24;
+          }
+
+    .list-ranking .user .btn.btn-follow,
+    .list-ranking .user .btn.btn-following{
+        text-indent: -9999px;
+        font-size: 0;
+        line-height: 0;
+        width: 22px;
+        height: 22px;
+        display: block;
+        position: absolute;
+        background: transparent url('../images/icon-sprites-1.02.png') no-repeat -356px -145px;
+        padding: 0;
+        right: 140px;
+        top: 50%;
+        margin-top: -11px;
+        z-index: 2;
+    }
+    
+    .list-ranking .user .btn.btn-following{
+        background-position: -379px -145px;
+    }
+            .list-ranking .user .btn.btn-follow:hover{
+                opacity: 0.8;
+            }

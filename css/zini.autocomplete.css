@@ -1,0 +1,70 @@
+#zme-autocomplete-results {
+	position: absolute;
+	z-index: 1100;
+	outline: none;
+    overflow: auto;
+    font-size: 13px;
+    margin-top:-6px;
+ 
+}
+
+#zme-autocomplete-content{
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    overflow: hidden;
+}
+    #zme-autocomplete-list li{
+        padding:8px 5px;
+        cursor:pointer;
+        border-bottom: 1px solid #ddd;
+        overflow:hidden;
+    }
+    #zme-autocomplete-list li:last-child{
+        border-bottom: none;
+    }
+    
+    #zme-autocomplete-list li span,
+    #zme-autocomplete-list li span img{
+        -webkit-border-radius: 100% 100% 100% 100%;
+        -moz-border-radius: 100% 100% 100% 100%;
+        border-radius: 100% 100% 100% 100%;
+        display:inline-block;
+        overflow:hidden;
+        width:32px;
+        height:32px;
+    }
+
+    #zme-autocomplete-list li span{
+        border: 2px solid #ddd;
+        background: #f0f0f0 url('../images/df-avatar-32x32.png') no-repeat center center;
+        float: left;
+        margin-right:7px;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    
+    #zme-autocomplete-list li p{
+        line-height: 18px;
+        margin-top: 9px;
+        color:#466b8e;
+    }
+
+    #zme-autocomplete-list li.autoserfrd_active,    
+    #zme-autocomplete-list li:hover{
+        background-color:#f8f9e8;
+    } 
+    
+    #zme-autocomplete-list li:only-child:hover{
+        background-color: none;
+    }
+    
+    #zme-autocomplete-list li.autoserfrd_active span,
+    #zme-autocomplete-list li:hover span{
+        border-color:#f15a24;
+    }

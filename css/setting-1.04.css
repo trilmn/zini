@@ -1,0 +1,286 @@
+/*CSS for SETTINGs PAGE*/
+.page-body .content{    margin-top: 70px;}
+.page-body .main-content{
+    min-height: 500px;
+}
+.page-body .col-left{
+    width: 50px;
+    display: none;
+    visibility: hidden;
+}
+
+.page-body .col-right{
+    margin-left: 0px;
+    background-position: 665px top;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;-moz-border-radius: 4px; -webkit-border-radius: 4px;
+}
+
+.page-body .col-right .main-content{
+    margin-right: 308px;
+    padding-right: 0;
+    border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px 0 0 4px;
+}
+
+.page-body .col-right .right-sidebar{
+    width: 308px;
+}
+
+.page-body .page-head{
+    overflow: hidden;
+    margin: 0;
+    padding: 25px 0 15px 20px;
+}
+
+.notif-info{    margin: 20px 50px 10px 50px; background: #e6f1f7; color: #609dbd; padding: 15px; border-radius: 6px;-moz-border-radius: 6px; -webkit-border-radius: 6px; position: relative; font-size: 14px; line-height: 20px;}
+    .notif-info .anchor{    background: transparent url('../images/anchor-notifinfo-msg.png') no-repeat left top; width: 25px; height: 11px; display: block; position: absolute; bottom: -11px; left: 80px;}
+
+/*User info*/
+#user-info{
+    position: relative;
+    margin-left: -25px;
+    width: auto;
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.post-tweet{
+    margin-top: -80px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+#user-info .display-name,
+#user-info .user-acc{
+    display: none;
+}
+#user-info .avatar{
+    -moz-box-shadow: -1px 0 3px #B7B7B7;
+    -webkit-box-shadow: -1px 0 3px #B7B7B7;
+    box-shadow: -1px 0 3px #B7B7B7;
+}
+
+.home-nav{
+    margin-top: 24px;
+    right: 8px;
+}
+
+.home-nav li .noti-badge,
+.home-nav li a{
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+}
+.home-nav li{
+    position: relative;
+}
+.home-nav li a{
+    display: block;
+}
+.home-nav li .noti-badge{
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+}
+
+/*Setting Menu*/
+.setting-menu li{
+    border-bottom: 1px solid #ebebeb;
+}
+.setting-menu li a{
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    color: #737373;
+}
+    .setting-menu li:hover a{
+        color: #f15a24;
+        background: #fff;
+    }
+.setting-menu li.active a{
+    background: #fff;
+    color: #f15a24;
+}
+
+.form{
+    margin: 0;
+    width: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+    .form .form-controls{
+        padding-bottom: 15px;
+        margin: 5px 30px 15px 30px;
+        overflow: hidden;
+        border-bottom: 1px dashed #ddd;
+    }
+    .form .form-controls.last,
+    .form .form-controls:last-of-type{
+        margin-bottom: 0;
+        border-bottom: none;
+        text-align: right;
+    }
+    .form label{
+        width: 180px;
+        float: left;
+        line-height: 40px;
+    }
+    
+    .form .control-content{
+        padding-top: 10px;
+        margin-left: 180px;
+    }
+    
+    .form .text-field{
+        margin-left: 180px;
+        display: block;
+        width: auto;
+    }
+    
+    .form select{
+        height: 34px;
+        line-height: 44px;
+        border: 1px solid #ddd; padding: 5px 8px;
+        margin: 0 15px 0 0;
+        font-size: 14px;
+    }
+    
+    .form #city{
+        width: 300px;
+    }
+
+    .form #hobby,    
+    .form #displayname,
+    .form .textarea{
+        width: 380px;
+    }
+    
+    .form .textarea{
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+    .form .form-controls ul{
+    	margin-left: 180px;
+    }
+    
+    .form .btn,
+    .form .btn.btn-submit{
+        float: none;
+        margin-left: 10px;
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+    
+    .form.changepass-form .text-field{
+        width: 380px;
+    }
+
+.field-username{
+    position: relative;
+}
+    .field-username .df-char{
+        color: #a9a9a9;
+        position: absolute;
+        top: 12px;
+        left: 190px;
+        z-index: 5;
+    }
+
+    .field-username .text-field{
+        padding-left: 27px;
+    }
+
+/*Setting Menu*/
+.setting-menu{
+    margin-top: 100px;
+}
+
+/*Chosing Hashtag's Style*/
+.form .form-controls ul.list-hashtag-style{
+    margin: 0;
+    overflow: hidden;
+}
+.list-hashtag-style li{
+    text-align: center;
+    overflow: hidden;
+    width: 90px;
+    margin: 10px 10px 10px 0;
+    float: left;
+    padding: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.list-hashtag-style li.active,
+.list-hashtag-style li:hover{
+    background-color: #f7f7f7;
+}
+
+.list-hashtag-style li label{
+    width: auto;
+    cursor: pointer;
+    display: block;
+    float: none;
+}
+
+.list-hashtag-style .hashtag{
+    line-height: 1.25em;
+    color: #f15a24;
+}
+
+/*Hashtag - lv6 - Cam*/
+.list-hashtag-style .hashtag.orange{
+    background-color: #ffedd9;
+    color: #f15a24;
+}
+    .list-hashtag-style .hashtag.orange:hover{    background-color: #ffe7cc;}
+    
+/*Hashtag - lv6 - Xanh*/
+.list-hashtag-style .hashtag.green{
+    background-color: #e2f7db;
+    color: #51af34;
+}
+    .list-hashtag-style .hashtag.green:hover{    background-color: #c7f2b8;}
+
+.list-hashtag-style input{
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+
+.form .form-controls .input-guide{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 11.5px;
+    margin-top: 8px;
+    float: right;
+    color: #609DBD;
+}
+    .form .form-controls .input-guide:hover{
+        color: #f15a24;
+    }
+
+/*NEED Edit field*/
+.form .form-controls.need-edit label{    color: #dc5b46; }
+.form .form-controls.need-edit .text-field,
+.form .form-controls.need-edit .textarea{    border: 1px solid #dc5b46; }
+
+/*CORRECT field*/
+.form .form-controls.correct label{    color: #719701; }
+.form .form-controls.correct .text-field,
+.form .form-controls.correct .textarea{    border: 1px solid #adca53; }
+
+.form .form-controls .error-msg{    color: #dc5b46; display: block; margin: 10px 10px 0px 180px; font-size: 12px; background: #ffedeb; padding: 8px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}

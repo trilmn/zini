@@ -1,0 +1,3461 @@
+body{
+    background-color: #ebebeb;
+    color: #333;
+    font-size: 100%;
+    font-family: "Open Sans", Tahoma, arial, sans-serif;
+    line-height: 1.125em;
+/* font-smooth: antialiased; */
+/*	 -webkit-font-smoothing: antialiased; */
+/* -moz-font-smoothing: antialiased; */
+}
+
+/* custom selection colors */
+::-moz-selection {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
+  background: #ff7f54;
+}
+
+::selection {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
+  background: #ff7f54;
+}
+
+a,a:active{	color: #f15a24; text-decoration: none;
+
+}
+//a:visited{	color: #dc450f}
+a:hover{	color: #f78f6a;
+
+}
+
+/*Disable Default Style on iOS devices*/
+input[type='text'],
+input[type='submit'],
+input[type='button'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+textarea {
+	-webkit-appearance: none;
+}
+
+
+.round-corner{
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.clear-fix{
+    float: none;
+    clear: both;
+    width: 100%;
+    height: 1px;
+}
+
+.disabled{
+    cursor: default;
+}
+
+input,
+textarea{
+    outline: none;
+}
+
+
+/*LOGO*/
+#logo{
+    width: 89px;
+    height: 30px;
+    background: transparent url('../images/logo-zini_alpha.png') no-repeat center top;
+}
+    #logo a{
+        width: 89px;
+        height: 30px;
+        display: block;
+    }
+    #logo img{
+        display: none;
+    }
+
+.container-12{
+    margin: 0 auto;
+    width: 980px;
+    font-size: 0.875em; /*13px/16px(100%)*/
+}
+
+.hide-text{
+    margin: 0;
+    border: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+	outline:none;
+}
+
+.align-left { float: left;}
+.align-right{ float: right;}
+
+.ok-delete-tweet-box,
+.close-delete-tweet-box,
+.zme-boxy .zme-boxy-footer .btn_L5,
+.zme-boxy .zme-boxy-footer .btn_L3,
+input.btn,
+a.btn,
+.btn{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px 15px;
+    max-height: 40px;
+    border: none;
+    -webkit-border-radius: 40px;
+       -moz-border-radius: 40px;
+            border-radius: 40px;
+    background: #808080;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font: 700 0.875em/1.25em "Open Sans", Tahoma, arial, sans-serif;/*14px/16px*/
+    font-style: normal;
+    cursor: pointer;
+    -webkit-transition:background-color 0.3s ease-in;  
+       -moz-transition:background-color 0.3s ease-in;  
+       -o-transition:background-color 0.3s ease-in;  
+       transition:background-color 0.3s ease-in;
+       outline: none;
+}
+
+    input.btn:hover, a.btn:hover,.btn:hover{
+        background-color: #999;
+        -webkit-transition:background-color 0.3s ease-in;  
+           -moz-transition:background-color 0.3s ease-in;  
+           -o-transition:background-color 0.3s ease-in;  
+           transition:background-color 0.3s ease-in;
+    }
+    
+    .zme-boxy .zme-boxy-footer .btn_L3,
+    .btn.btn-submit{
+        background-color: #8fbf00;
+    }
+    
+        .zme-boxy .zme-boxy-footer .btn_L3:hover,
+        .btn.btn-submit:hover{
+            background-color: #9fd401;
+        }
+    
+    .btn.btn-info{
+        background-color: #009acd;
+    }
+    
+    .btn.btn.btn-info:hover{
+        background-color: #67ade4;
+    }
+    
+    .btn.btn-disabled,
+    .btn.btn-disabled:hover{
+        background-color: #ccc;
+        color: #999;
+        cursor: default;
+    }
+    
+    .btn.btn-warning{
+        background-color: #f15a24;
+    }
+    
+    .btn.btn-warning:hover{
+        background-color: #ff800f;
+    }
+    
+    .btn.btn-follow,
+    .btn.btn-following,
+    .btn.btn-unfollow{
+        border-radius: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        width: 120px;
+        font-size: 11px;
+        padding: 7px 5px 7px 28px;
+        text-align: left;
+        text-transform: none;
+    }
+    
+    .btn.btn-follow{
+            background: #8fbf00 url('../images/icon-follow.png') no-repeat 5px 5px;
+        }
+        
+            .profile-info .btn-follow:hover{
+                background-color: #abdb1b;
+            }
+            
+        .btn.btn-following{
+            background-color: #009acd;
+            text-align: center;
+            padding-left: 7px;
+        }
+        
+        .btn.btn-following.btn-unfollow{
+            background: #cb3535 url('../images/icon-unfollow.png') no-repeat 5px 5px;
+            padding-left: 26px;
+        }
+
+/*Textfield*/
+.textarea,
+.text-field{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 40px;
+    border: none;
+    border: 1px solid #E6E6E6;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background: #fff;
+    font-size: 0.875em;
+    font-size: 1em;
+    font-family: "Open Sans", Tahoma, arial, sans-serif;
+}
+
+.form-title{
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 1.5em;
+    -moz-text-shadow: 1px 1px 1px #fff;
+    -webkit-text-shadow: 1px 1px 1px #fff;
+}
+
+
+/*FOOTER*/
+#footer{
+    border-top: 4px solid #ccc;
+    background: #dcdcdc;
+    font-size: 12px;
+    color: #777;
+}
+
+    #footer .content{
+        min-height: 40px;
+        overflow: hidden;
+        padding: 20px 0 10px 0;
+    }    
+        #footer .align-left{
+            width: 40%;
+        }
+        #footer #logoFooter{
+            display: block;
+            width: 89px;
+            height: 30px;
+            background: transparent url('../images/logo-zini_alpha.png') no-repeat center bottom;
+            float: left;
+        }
+            #footer #logoFooter:hover{
+                background-position: center top;
+            }
+        #footer .info{
+            margin-left: 105px;
+            line-height: 1em;
+            margin-top: -5px;
+        }
+            #footer .info .intro{
+                font-size: 12px;
+                text-transform: uppercase;position: relative;
+                top: 5px;
+            }
+            
+            #footer #logo-Zing-footer{
+                display: inline-block;
+                background: transparent url('../images/logo-footer-zing.png') no-repeat left bottom;
+                width: 43px;
+                height: 23px;
+                margin: 0 2px;
+                position: relative;
+                top: 7px;
+            }
+                #footer #logo-Zing-footer:hover{
+                    background-position: left top;
+                }
+
+        #footer .align-right{
+            color: #999;
+            font-size: 11px;
+            line-height: 3.63636364em;
+            width: 240px;
+            text-align: right;
+        }	
+            #footer a img{
+                position: relative;
+                top: 8px;
+                margin: 0 5px;
+                max-height: 25px;
+            }
+            
+        #logo-ePi{
+            background: transparent url('../images/epi_25.png') no-repeat 0 -25px;
+            width: 31px;
+            height: 25px;
+            position: relative;
+            top: 6px;
+            display: block;
+            float: right;
+            margin-left: 5px;
+        }
+            #logo-ePi:hover{
+                background-position: 0 0;
+            }
+
+/* Top Navigator */
+#top-nav{
+    clear: both;
+    padding: 15px 0;
+    min-height: 40px;
+}
+
+.form{
+    position: relative;
+    margin: 105px auto 0 auto;
+    width: 340px;
+}
+
+    .form .text-field{
+        width: 100%;
+    }
+    
+    .form .form-controls{
+        margin-bottom: 15px;
+    }
+    /*
+        .form .text-field,
+        .form .text-field:-webkit-autofill{
+            padding-left: 58px;
+            background: #fff url('../images/bg-input-sprite.png') no-repeat -10px 0px;
+        }*/
+        
+        .form .text-field.field-error{
+            background: #fff url('../images/bg-input-sprite-error.png') no-repeat -10px 0px;
+        }
+        
+        .form .text-field.text-pass{
+            background-position: -10px -40px;
+        }
+        
+        .form .text-field.text-email{
+            background-position: -10px -80px;
+        }
+        
+        .form .forgot-pass{
+            display: inline-block;
+            float: right;
+            clear: both;
+            margin-top: 10px;
+            font-size: 0.75em;
+        }
+        
+        .form .btn-submit{
+            float: right;
+        }
+        
+        .form .btn-info{
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .form .remember-login{
+            position: relative;
+            top: 10px;
+        }
+        
+        .form .form-controls:last-of-type{
+            overflow: hidden;
+        }
+        
+        .form-controls .guideline{
+            color: #999;
+            display: block;
+            clear: both;
+            font-size: 12px;
+        }
+        
+    .separate-title{
+        background: transparent url('../images/bg-separate-title.gif') repeat-x left center;
+    }
+    
+        .separate-title span{
+            display: inline-block;
+            margin-left: 70px;
+            padding: 5px 10px;
+            background: #fff;
+            font-style: italic;
+        }
+    
+    .form .separate-title{
+        clear: both;
+        margin: 20px 0;
+    }	
+    .form .separate-title span{
+        margin-left: 100px;
+        background: #ebebeb;
+    }
+
+#login-content + #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*List Login SNS*/
+.list-login-sns .btn{
+    display: inline-block;
+    margin-right: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+    .list-login-sns .btn-zingme{
+        width: 130px;
+        background:  url('../images/login-zingme.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn-fb{
+        background:  url('../images/login-fb.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn-tt{
+        background:  url('../images/login-tt.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn-yahoo{
+        margin-right: 0;
+        background: url('../images/login-ym.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn-google{
+        background: url('../images/login-google.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn-email{
+        background: url('../images/icon-reg-email.png') no-repeat center center;
+    }
+    
+    .list-login-sns .btn:hover{
+        background-color: #f15a24;
+    }
+    
+
+/*GLOBAL-NAV*/
+#globalNav{
+    position: fixed;
+    top: 0;
+    z-index: 401;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 54px;
+    width: 100%;
+    border-bottom: 2px solid #f1ab92;
+    background: #fff;
+    -moz-border-sizing: border-box;
+    box-shadow: 0 1px 2px #ccc;
+    -moz-box-shadow: 0 1px 2px #ccc;
+    -webkit-box-shadow: 0 1px 2px #ccc;
+}
+
+    #globalNav .content{
+        padding: 12px 0;
+        position: relative;
+    }
+    
+        #globalNav .content .no-login a{
+            float: right;
+            line-height: 18px;
+            font-size: 13px;
+            padding: 5px 10px;
+            border-radius: 40px;
+            -moz-border-radius: 40px;
+            -webkit-border-radius: 40px;
+            cursor: pointer;
+            -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+        }
+        #globalNav .content .no-login a:hover{
+            color: #fff;
+            background: #f15a24;
+        }
+    
+    #globalMenu{
+        float: left;
+        margin-top: 5px;
+        margin-left: 20px;
+        font-weight: normal;
+        font-size: 0.85714286em; /*12px/14px*/
+        line-height: 1.66666667em; /*20px/12px*/
+    }
+        #globalMenu li{
+            float: left;
+        }
+        
+        #globalMenu a{
+            margin: 0 5px;
+            padding: 5px 10px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            color: #333;
+        }
+        
+        #globalMenu a.active,
+        #globalMenu a:hover{
+            background: #fff7f4;
+            color: #F15A24;
+        }
+        
+        #globalNav .welcome-text{
+            line-height: 38px;
+        }
+    
+/*GLOBAL SEARCH*/	
+.search-bar{
+    position: relative;
+    width: 220px;
+}
+
+#globalSearch{
+    position: absolute;
+    //margin-left: 120px;
+    //margin-left: 90px;
+    right: 160px;
+}
+
+    .search-bar input{
+        border: none;
+    }
+    
+    .search-bar .text-search{
+        padding: 0 10px 0 30px;
+        width: 100%;
+        height: 29px;
+        outline: none;
+        border: 1px solid #e6e6e6;
+        font-size: 0.85714286em; /* 12px/14px */
+    }
+    
+    .search-bar .btn-submit{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        width: 29px;
+        height: 29px;
+        background: transparent url('../images/icon-search.png') no-repeat center center;
+    }
+        .search-bar .btn-submit:hover{
+            background-color: transparent;
+        }
+    
+    
+/*GLOBAL USER CONTROL*/
+.avatar{
+    display: inline-block;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+-webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+        border-radius: 100%;
+        background: #c8c8c8 url('../images/df-avatar.png') no-repeat center center;
+}
+
+    .avatar img{
+        width: 48px;
+    }
+    
+#globalUserControl li{
+    float: left;
+    margin: -4px 10px 0 10px;
+}
+
+    #globalUserControl .new-tweet a,
+    #globalUserControl .notif-msg a.icon{
+        position: relative;
+        top: 8px;
+        display: block;
+        width: 21px;
+        height: 21px;
+        background: transparent url('../images/sprite-user-control.png') no-repeat left top;
+    }
+    
+    #globalUserControl .new-tweet a:hover{ background-position: 0 -21px;}
+    
+    #globalUserControl .notif-msg a.icon{	background-position: -29px 0;}
+    #globalUserControl .notif-msg a.icon:hover{	background-position: -29px -21px;}
+    
+    .list-notif .avatar,
+    .list-notif .avatar img,
+    #globalUserControl .avatar,
+    #globalUserControl .avatar img{
+        width: 32px;
+        height: 32px;
+    }
+    
+        #globalUserControl .avatar{
+            border: 2px solid #ddd;
+        }
+    
+    #globalUserControl .notif-msg .noti-badge{
+        background: none repeat scroll 0 0 #F15A24;
+        border: 2px solid #FFFFFF;
+        border-radius: 100px 100px 100px 100px;
+        color: #FFFFFF;
+        display: block;
+        font-size: 9px;
+        font-weight: bold;
+        height: 8px;
+        line-height: 7px;
+        padding: 3px 5px;
+        position: absolute;
+        right: -10px;
+        text-indent: 0;
+        top: -3px;
+        vertical-align: middle;
+        width: auto;
+        z-index: 3;
+    }
+        
+         /*Dropdown của Notification*/
+         #globalUserControl .notif-msg .list-notif li{
+             background: none;
+         }
+         
+    /*Dropdown menu*/
+    #globalUserControl .notif-msg,
+    #globalUserControl .profile-settings{
+        position: relative;
+    }
+    
+        #globalUserControl .profile-settings{
+            margin: -4px 0 0 10px;
+            padding: 0;
+            cursor: pointer;
+        }
+        
+    #globalUserControl .notif-msg .list-notif,    
+    #globalUserControl .list-settings{
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #ccc;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+        font-size: 0.92857143em; /*13px/14px*/
+        margin-bottom: 11px;
+        position: absolute;
+        right: -9px;
+        z-index: 3;
+        width: 170px;
+        padding: 0px 15px;
+        margin-top: -10px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+    }
+            #globalUserControl .notif-msg .list-notif .overlay-trick,
+        #globalUserControl .list-settings .overlay-trick{
+            border-bottom: none;
+            position: absolute;
+            top: -5px;
+            left: 0px;
+            right: 0px;
+            height: 5px;
+            display: block;
+            cursor: default;
+        }
+    
+        #globalUserControl .notif-msg .list-notif,
+        #globalUserControl .profile-settings:hover .list-settings{
+            visibility: visible;
+            opacity: 1;
+            margin-top: 7px;
+        }
+        
+        #globalUserControl .profile-settings .avatar{
+            background: #c8c8c8 url('../images/df-avatar-36x36.png') no-repeat center center;
+        }
+        .list-notif .avatar:hover,    
+        #globalUserControl .notif-msg .list-notif .avatar:hover,
+        #globalUserControl .profile-settings:hover .avatar{
+            border-color: #f15a24;
+            -webkit-transition: 0.5s ease;
+            -moz-transition: 0.5s ease;
+            -ms-transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+            transition: 0.5s ease;
+        }
+        
+            #globalUserControl .profile-settings .icon-smallcog{
+                position: absolute;
+                bottom: 14px;
+                right: 2px;
+                display: none;
+            }
+        
+        #globalUserControl .list-settings li{
+            float: none;
+            margin: 0;
+            border-bottom: 1px dashed #CECECE;
+        }
+        
+            #globalUserControl .notif-msg .list-notif .list-anchor,
+            #globalUserControl .list-settings .list-anchor{
+                background: url("../images/list-anchor.png") no-repeat scroll left top transparent;
+                display: block;
+                height: 11px;
+                right: 20px;
+                position: absolute;
+                top: -9px;
+                width: 14px;
+            }
+            
+            #globalUserControl .notif-msg .list-notif .list-anchor,
+            #globalUserControl .list-settings .list-anchor,
+            #globalUserControl .list-settings li:last-of-type{
+                border-bottom: none;
+            }
+        
+        #globalUserControl .list-settings li a{
+            color: #333;
+            padding: 10px 0;
+            display: block;
+            overflow: hidden;
+        }
+        
+            #globalUserControl .list-settings li a:hover{
+                color: #f15a24;
+            }
+            
+            #globalUserControl .list-settings li a .icon{
+                margin-right: 10px;
+                position: relative;
+            }
+                #globalUserControl .list-settings li a .icon.icon-to_profile{
+                    top: 2px;
+                }
+
+                #globalUserControl .list-settings li a .icon.icon-logout{
+                    top: 3px;
+                }
+                
+                #globalUserControl .list-settings li a:hover .icon-to_profile{
+                    background-position: -422px 0;
+                }
+                
+                #globalUserControl .list-settings li a:hover .icon-to_setting{
+                    background-position: -422px -17px;
+                }
+                
+                #globalUserControl .list-settings li a:hover .icon-logout{
+                    background-position: -422px -28px;
+                }
+
+    #globalUserControl .notif-msg .list-notif{
+        margin-top: 15px;
+        width: 350px;
+        right: -46px;
+        padding: 0;
+        display: none;
+    }    
+        #globalUserControl .notif-msg .list-notif .list-wrap{
+            max-height: 490px;
+            overflow-y: auto;
+        }
+    
+        #globalUserControl .notif-msg .list-notif img{
+            max-width: 288px;
+        }
+        
+        .list-notif li.notif-item,
+        #globalUserControl .notif-msg .list-notif li.notif-item{
+            float: none;
+            margin: 0;
+            border-bottom: 1px dashed #CECECE;
+        }
+                    
+        #globalUserControl .notif-msg .list-notif .list-anchor{
+            margin: 0;
+            padding: 0;
+            right: 49px;
+        }
+
+            .list-notif li,
+            #globalUserControl .notif-msg .list-notif li{
+                overflow: hidden;
+            }
+            
+            .list-notif li.unread,
+            #globalUserControl .notif-msg .list-notif li.unread{
+                background-color: #fffff7;    
+            }
+            
+                .list-notif li:hover,
+                #globalUserControl .notif-msg .list-notif li:hover{
+                    background-color: #f5faff;
+                }
+            
+            .list-notif li .notif-wrap,
+            #globalUserControl .notif-msg .list-notif li .notif-wrap{
+                display: block;
+                overflow: hidden;
+                padding: 10px;
+            }
+            
+            .list-notif li.notif-item:first-of-type,
+            #globalUserControl .notif-msg .list-notif li.notif-item:first-of-type{
+                border-radius: 4px 4px 0 0;
+                -moz-border-radius: 4px 4px 0 0 ;
+                -webkit-border-radius: 4px 4px 0 0;
+            }
+
+            .list-notif li.notif-item:last-child,            
+            .list-notif li.notif-item:last-of-type,
+            #globalUserControl .notif-msg .list-notif li.notif-item:last-of-type{
+                border-radius: 0 0 4px 4px;
+                -webkit-border-radius: 0 0 4px 4px;
+                -moz-border-radius: 0 0 4px 4px;
+                border-bottom: none;
+            }
+            
+            .list-notif li.last,
+            .list-notif li:last-child{
+                border-bottom: none;
+            }
+            
+            .list-notif li .avatar,
+            #globalUserControl .notif-msg .list-notif li .avatar{
+                float: left;
+                border: 2px solid #ddd;
+            }
+            
+            .list-notif li .timestamp,
+            #globalUserControl .notif-msg .list-notif li .timestamp{
+                display: block;
+                font-size: 11px;
+                line-height: 16px;
+                color: #ababab;
+                margin-top: 6px;
+            }
+          
+         .list-notif li .notif-content,  
+         #globalUserControl .notif-msg .list-notif li .notif-content{
+             margin-left: 48px;
+             overflow: hidden;
+             font-size: 12px;
+             color: #333;
+         }
+         
+             .list-notif li .notif-content .img-thumb,
+             .list-notif li .notif-content .img-thumb img,
+            #globalUserControl .notif-msg .list-notif li .notif-content .img-thumb,
+            #globalUserControl .notif-msg .list-notif li .notif-content .img-thumb img{
+                width: 60px;
+                height: 38px;
+                background: #fff;
+            }
+                .list-notif li .notif-content .img-thumb img,
+                #globalUserControl .notif-msg .list-notif li .notif-content .img-thumb img{
+                    height: auto;
+                    min-height: 38px;
+                }
+            
+            .list-notif li .notif-content .img-thumb,
+            #globalUserControl .notif-msg .list-notif li .notif-content .img-thumb{
+                border: 1px solid #ccc;
+                display: block;
+                padding: 2px;
+                float: right;
+                margin-left: 10px;
+                z-index: 2;
+                position: relative;
+                overflow: hidden;
+            }
+           
+           .list-notif li .notif-content .img-thumb:after,
+           #globalUserControl .notif-msg .list-notif li .notif-content .img-thumb:after{
+                content: " ";
+                position: absolute;
+                z-index: 2;
+                top: 5px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                border-bottom: 2px solid #fff;
+           }
+                
+                .list-notif li .notif-content .actor,
+                #globalUserControl .notif-msg .list-notif li .notif-content .actor{
+                    color: #466b8e;
+                    font-weight: bold;
+                }
+                
+                .list-notif li .notif-content a{
+                    color: #466b8e;
+                }
+                
+                .list-notif li .notif-content a:hover{
+                    color: #f15a24;
+                }
+            
+            .list-notif li .notif-content .tweet-quote,
+            #globalUserControl .notif-msg .list-notif li .notif-content .tweet-quote{
+                color: #c69c6d;
+                font-style: italic;
+            }
+            
+            #globalUserControl .notif-msg .list-notif .list-wrap .scroll-to-load{
+                display: block;
+                height: 40px;
+                width: 100%;
+                margin: 0;
+                background: #f0f0f0 url('../images/ajaxloading.gif') no-repeat center center;    
+            }
+            
+            #globalUserControl .notif-msg .list-notif .view-all{
+                display: block;
+                color: #466b8e;
+                padding: 10px 15px;
+                border-top: 1px solid #ddd;
+                display: none;
+            }
+
+                #globalUserControl .notif-msg .list-notif .view-all:hover{
+                    color: #f15a24;
+                }            
+                #globalUserControl .notif-msg .list-notif .view-all:hover .icon-chervon-right{
+                    background-position: -199px -40px;
+                }
+            
+     
+        #globalUserControl .notif-msg .list-notif li.blank-notif{
+             line-height: 44px;
+             border-bottom: none;
+        }   
+            #globalUserControl .notif-msg .list-notif li.blank-notif .icon{
+                vertical-align: middle;
+                margin: 0 10px 0 5px;
+            }      
+        #globalUserControl .notif-msg .list-notif li.blank-notif:hover{
+            background: none;
+        }
+       
+    
+/*PAGE BODY*/
+.page-body .content{
+    margin: auto;
+    margin-top: 54px;
+    min-height: 500px;
+    width: 978px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.page-body .col-left{
+    width: 188px;
+}
+
+.page-body .col-right{
+    margin-left: 190px;
+    position: relative;
+    z-index: 3;
+}
+
+.page-body .col-mid{
+}
+
+
+/* ICON */
+.icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: transparent url('../images/icon-sprites-1.10.png') no-repeat left top;
+    position: relative;
+}
+
+    .icon-vip{
+        position: relative; 
+        top: 6px; 
+        width: 20px;
+        height: 23px;
+    }
+    
+        .icon-vip.icon-celeb{
+            background-position: -66px -197px;
+        }
+        .icon-vip.icon-business{
+            background-position: -88px -197px;
+        }
+        .icon-vip.icon-community{
+			background-position: -44px -197px;
+        }
+        .icon-vip.icon-blogger{
+        	background-position: 0 -197px;
+        }
+        .icon-vip.icon-newspaper{
+        	background-position: -22px -197px;
+        }
+        
+    
+    .icon-photo{
+        background-position: 0 0;
+    }
+    .icon-audio{
+        background-position: -24px 0;
+    }
+    
+    .icon-video{
+        background-position: -48px 0;
+    }
+    
+    .icon-link{
+        background-position: -72px 0;
+    }
+    
+    .icon-hashtags{
+        background-position: -120px 0;
+    }
+    
+    .icon-emo{
+        width: 24px;
+        height: 24px;
+        background-position: -96px 0;
+    }
+    
+    .icon-zoom-out,
+    .icon-zoom-in{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .icon-zoom-in{	background-position: -148px -4px;}
+    .icon-zoom-out{	background-position: -148px -28px;}
+    .icon-drag{	background-position: -76px -51px;}
+    
+    .icon-chervon-down{
+        width: 12px;
+        height: 8px;
+        background-position: -168px -40px;
+    }
+        .icon-chervon-down:hover{
+            background-position: -180px -40px;
+        }
+    
+    .icon-chervon-right{
+        width: 7px;
+        height: 9px;
+        background-position: -192px -40px;
+    }
+    
+    .icon-chevron-right-white{
+        background-position: -336px -142px;
+        width: 9px;
+        height: 16px;
+    }
+    
+    .icon-face-puzzle-xxl{
+        width: 51px;
+        height: 51px;
+        background-position: -249px -1px;
+    }
+    
+    .icon-face-dead-xxl2,
+    .icon-face-dead-xxl{
+        width: 51px;
+        height: 51px;
+        background-position: -301px -1px; 
+    }
+    
+        .icon-face-dead-xxl2{
+            background-position: -353px -1px;
+        }
+    
+    .icon-emo-tab{
+        width: 17px;
+        height: 17px;
+        background-position: -96px -49px;
+    }
+    
+    .icon-multiPhoto{
+        width: 20px;
+        height: 19px;
+        background-position: -132px -48px;
+        vertical-align: middle;
+    }
+    
+    .icon-deletePhoto{
+        width: 12px;height: 12px;
+        background-position: -153px -48px;
+    }
+    
+    .icon-checkmark{
+        width: 22px;
+        height: 22px;
+        background-position: -177px -49px;
+    }
+    
+    .icon-viewlarge-small{
+        width: 33px;
+        height: 33px;
+        background-position: -351px -88px;    
+    }
+    
+    .icon-viewlarge-big{
+        width: 54px;
+        height: 54px;
+        background-position: -281px -122px;    
+    }
+    
+    .icon-isGif-big{
+        width: 68px;
+        height: 68px;
+        background-position: -280px -53px;    
+    }
+    
+    .icon-isGif-small{
+        width: 34px;
+        height: 34px;
+        background-position: -349px -53px;    
+    }
+    
+    .icon-to_profile{
+        width: 16px;
+        height: 16px;
+        background-position: -405px 0;    
+    }
+    
+    .icon-to_setting{
+        width: 14px;
+        height: 10px;
+        background-position: -405px -17px;    
+    }
+    
+    .icon-logout{
+        background-position: -405px -28px;
+    }
+    
+    .icon-smallcog{
+        width: 12px;
+        height: 12px;
+        background-position: -384px -53px;
+    }
+    
+        #globalUserControl .profile-settings:hover .icon-smallcog{
+            background-position: -396px -53px;
+        }
+        
+     .icon-cog{
+        width: 22px;
+        height: 22px;
+        background-position: -462px -144px;
+    }   
+        
+        
+    .icon-face-fury-xxl{
+        width: 51px;
+        height: 51px;
+        background-position: -439px -51px;
+    }
+    
+    .icon-ok-xxl{
+        width: 50px;
+        height: 50px;
+        background-position: -439px -1px; 
+    }
+    
+    .icon-notif{
+        width: 22px;
+        height: 21px;
+        background-position: -336px -120px;
+    }
+    
+    .icon-search-black{
+        width: 22px;
+        height: 22px;
+        background-position: -359px -122px;
+    }
+    
+    .icon-arrow-down{
+        width: 16px;
+        height: 16px;
+        background-position: -402px -145px;
+    }
+    
+    .icon-blank-notif{
+        width: 51px;
+        height: 44px;
+        background-position: -281px -178px;
+    }
+    
+    .icon-alert-ok{
+        width: 32px;
+        height: 32px;
+        background-position: -336px -168px;
+    }
+    
+    .icon-alert-fail{
+        width: 32px;
+        height: 32px;
+        background-position: -368px -168px;
+    }
+    
+    .icon-error-s{
+        width: 18px;
+        height: 18px;
+        background: transparent url('../images/icon-sprites-1.10.png') no-repeat -219px -52px;
+    }
+    
+    .icon-arrow-up{
+        width: 20px;
+        height: 20px;
+        background: transparent url('../images/icon-sprites-1.10.png') no-repeat -435px -173px;
+    }
+    
+    .icon-hot-topic{
+        width: 19px;
+        height: 24px;
+        background: transparent url('../images/icon-sprites-1.10.png') no-repeat -476px -175px;
+        position: relative;
+        top: -5px;
+        float: right;
+        margin-right: 15px;
+        border-radius: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+    }
+    
+    .icon-kiss-xxl{
+    	width: 50px;
+    	height: 50px;
+    	background-position: -225px -176px;	
+    }
+    
+/*EMOTICONs LIST*/
+    .emoicon{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+    
+    .icon-lo-lang{    background-position: -240px -92px;}
+    .icon-cung-qua{    background-position: -20px -72px;}
+    .icon-ben-len{    background-position: 0px -72px;}
+    .icon-cuoi-nhan-rang{    background-position: -40px -72px;}
+    .icon-cuoi-to{    background-position: -60px -72px;}
+    .icon-doi-van-dep{    background-position: -80px -72px;}
+    .icon-hinh-su{    background-position: -100px -72px;}
+    .icon-kinh-hai{    background-position: -120px -72px;}
+    .icon-leu-leu{    background-position: -140px -72px;}
+    
+    .icon-mac-cuoi,
+    .icon-nhay-mat{    background-position: -160px -72px;}
+    
+    .icon-lua-tui-ha,
+    .icon-cool{    background-position: -180px -72px;}
+    .icon-ngac-nhien{    background-position: -200px -72px;}
+    .icon-nguong-mo{    background-position: -220px -72px;}
+    .icon-vui{    background-position: -240px -72px;}
+    .icon-yeu-roi{    background-position: -260px -72px;}
+    
+    .icon-benh-roi{    background-position: 0px -92px;}
+    .icon-sung-suong{    background-position: -20px -92px;}
+    .icon-buon{    background-position: -40px -92px;}
+    .icon-biet-chet-lien{    background-position: -60px -92px;}
+    .icon-gian-du{    background-position: -80px -92px;}
+    .icon-ke-tui{    background-position: -100px -92px;}
+    .icon-kha-kha{    background-position: -120px -92px;}
+    .icon-khoc-ngat{    background-position: -140px -92px;}
+    .icon-hai-vai{    background-position: -160px -92px;}
+    .icon-khong-hieu{    background-position: -180px -92px;}
+    .icon-khong-phai-tai-em{    background-position: -200px -92px;}
+    .icon-lo-duoc-cu-lo{    background-position: -220px -92px;}
+    .icon-lo-lang{    background-position: -240px -92px;}
+    .icon-hehe{    background-position: -260px -92px;}
+    
+    .icon-cafe{    background-position: 0px -112px;}
+    .icon-cat{    background-position: -20px -112px;}
+    .icon-dog{    background-position: -40px -112px;}
+    .icon-dong-cam{    background-position: -60px -112px;}
+    .icon-met-moi{    background-position: -80px -112px;}
+    .icon-oanh-bom-dau{    background-position: -100px -112px;}
+    .icon-sieu-nhan{    background-position: -120px -112px;}
+    .icon-biu-moi{    background-position: -140px -112px;}
+    .icon-cang-thang{    background-position: -160px -112px;}
+    
+    .icon-the-moi-vui,
+    .icon-gameover{    background-position: -180px -112px;}
+    .icon-da-long-nheo{    background-position: -200px -112px;}
+    .icon-thut-thit{    background-position: -220px -112px;}
+    .icon-ufo{    background-position: -240px -112px;}
+    .icon-khung-khiep{    background-position: -260px -112px;}
+
+    .icon-dong-y{    background-position: 0px -132px;}
+    .icon-chem-gio{    background-position: -20px -132px;}
+    .icon-nguoi-ta-noi{    background-position: -40px -132px;}
+    .icon-buon-chi-la-sau{    background-position: -60px -132px;}
+    .icon-bye{    background-position: -80px -132px;}
+    .icon-suyt{    background-position: -100px -132px;}
+    
+    .icon-chien-thang,
+    .icon-qui-su{    background-position: -120px -132px;}
+    .icon-khong{    background-position: -140px -132px;}
+    .icon-that-tinh{    background-position: -160px -132px;}
+    .icon-yeu{    background-position: -180px -132px;}
+    .icon-ngau{    background-position: -200px -132px;}
+    .icon-ngu-roi{    background-position: -220px -132px;}
+    .icon-nguoi-nhen{    background-position: -240px -132px;}
+    .icon-mic{    background-position: -260px -132px;}
+    
+    .icon-food{    background-position: 0px -152px;}
+    .icon-tip{    background-position: -20px -152px;}
+    .icon-cake{    background-position: -40px -152px;}
+    
+    .icon-bom-qua,
+    .icon-xit{    background-position: -60px -152px;}
+    .icon-game{    background-position: -80px -152px;}
+    .icon-camera{    background-position: -100px -152px;}
+    .icon-sex{    background-position: -120px -152px;}
+    .icon-tech{    background-position: -140px -152px;}
+    .icon-vietnam{    background-position: -160px -152px;}
+    .icon-xe{    background-position: -180px -152px;}
+    .icon-finance{    background-position: -200px -152px;}
+    .icon-baby{    background-position: -220px -152px;}
+    .icon-zing{    background-position: -240px -152px;}
+    
+    .icon-tech{    background-position: -140px -153px;}
+    .icon-thumb-down{    background-position: 2px -175px;}
+    .icon-thumb-up{    background-position: -18px -175px;}
+    .icon-ba-dao{    background-position: -40px -174px;}
+    .icon-luu-manh{    background-position: -260px -72px;}
+    
+    .icon-emo-dead{    background-position: -221px -93px;}
+        
+/*User Statistics*/
+.user-stat li{
+    margin-bottom: 5px;
+}
+.user-stat .stat-numb{
+    display: inline-block;
+    min-width: 35%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.28571429em; /*18px/14px*/
+    line-height: 1em;
+}
+
+.user-stat .stat-type{
+    position: relative;
+    top: 0px;
+    left: 5px;
+    display: inline-block;
+    color: #595959;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 0.78571429em; /*11px/14px*/
+}
+
+
+/*Post Tweet*/
+.post-tweet{
+    overflow: hidden;
+    margin: 0px 0px 0px 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    //border-bottom: 2px solid #ebebeb;
+}
+    
+    .post-tweet .lbl-share-zingme,
+    .post-tweet .char-counter,
+    .post-tweet .intro{
+        color: #737373;
+        font-size: 0.85714286em; /*12px/14px*/
+    }
+    
+        .post-tweet .char-counter .remain-char{
+            font-weight: bold;
+            font-size: 1.33333333em; /* 16px/ 12px */
+        }
+        
+        .post-tweet .char-counter{
+            position: relative;
+            margin-bottom: 5px;
+            color: #b0b0b0;
+        }
+     
+    .report-msg .form-controls .textarea,    
+    .post-tweet .textarea{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        min-height: 86px;
+        border: 1px solid #d9d9d9;
+        -webkit-box-shadow: 0px 0px 6px #ccc inset;
+        -moz-box-shadow: 0px 0px 6px #ccc inset;
+        box-shadow: 0px 0px 6px #ccc inset;
+        font-size: 0.92857143em;
+        resize: none;
+		overflow-y:hidden;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        display: block;
+    }
+    
+        .post-tweet.active .textarea{
+            border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+/*            margin-bottom: 0;*/
+        }
+    
+    .post-tweet .btn{
+        float: right;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    .add-media{
+        position: relative;
+        top: 3px;
+    }
+    
+        .add-media.align-left{
+            left: 10px;    
+        }
+        
+    .add-media li{
+        float: left;
+        margin: 0 10px 0 0;
+        overflow: hidden;
+    }
+
+/*FIX for Alpha*/
+        .add-media.align-left li:first-child a.hide-text{
+            font-size: 12px;
+            text-indent: 0;
+            color: #8e8e8e;
+            line-height: 26px;
+            overflow: hidden;
+            display: block;
+        }
+        .add-media.align-left li:first-child a.hide-text:hover{
+            color: #f15a24;
+        }
+        .add-media.align-left li:first-child a.hide-text .icon{
+            float: left;
+            margin-right: 7px;
+            display: block;
+        }
+        .add-media.align-left li:first-child a.hide-text .icon.active + span{
+            color: #f15a24;
+        }
+/*END FIX for Alpha*/        
+        .add-media .icon{
+            width: 24px;
+            height: 24px;
+        }
+        
+        .add-media li a .icon-photo.active,
+        .add-media li a:hover .icon-photo{	background-position: 0 -24px;}
+        
+        .add-media li a .icon-audio.active,
+        .add-media li a:hover .icon-audio{	background-position: -24px -25px;}
+        
+        .add-media li a .icon-video.active,
+        .add-media li a:hover .icon-video{	background-position: -48px -24px;}
+        
+        .add-media li a .icon-link.active,
+        .add-media li a:hover .icon-link{	background-position: -72px -24px;}
+        
+        .add-media li a .icon-hashtags.active,
+        .add-media li a:hover .icon-hashtags{	background-position: -120px -24px;}
+        
+        .add-media li a .icon-emo.active,
+        .add-media li a:hover .icon-emo{	background-position: -96px -24px;}
+    
+.form-add-media{
+    background: #f8f9fb;
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    margin-bottom: 3px;
+    font-size: 0.92857143em;/*13px/16px*/
+    position: relative;
+    top: -10px;
+    display: none;
+}
+
+    .form-add-media .box-anchor{
+        background: transparent url('../images/box-anchor.png') no-repeat left top;
+        display: block;
+        width: 21px;
+        height: 13px;
+        position: absolute;
+        bottom: -11px;
+        left: 12px;
+        z-index: 2;
+    }
+    
+    .form-add-media .add-media-type{
+        position: relative;
+        z-index: 5;
+        display: none;
+        font-size: 1em;
+    }
+    
+/*Form PostTweet khi Collapse*/
+.post-tweet.collapsed{
+    max-height: 85px;
+}
+.post-tweet.collapsed .textarea{
+    min-height: 0;
+}
+.post-tweet.collapsed .char-counter,
+.post-tweet.collapsed .form-add-media,
+.post-tweet.collapsed .add-media,
+.post-tweet.collapsed .btn{
+    visibility: hidden;
+    display: none;
+}
+
+    
+/*FEED STREAM*/
+/*Stream Header*/
+.stream-head{
+    overflow: hidden;
+    padding: 20px 0 5px 0px;
+}
+    
+    .stream-head .sort-tweet li{
+        float: left;
+        margin-left: 20px;
+    }
+    
+        .stream-head .sort-tweet li a{
+            display: inline-block;
+            padding: 0 5px 10px 5px;
+            color: #8E8E8E;
+        }
+        
+            .stream-head .sort-tweet li.active a{
+                background: transparent url('../images/bg-active-menu.png') no-repeat center bottom;
+                color: #f15a24;
+            }
+            
+            .stream-head .sort-tweet li a:hover{
+                color: #f15a24;
+            }
+    
+/*Notify message*/
+.notify{
+    
+}
+    .notify a{
+        padding: 12px 20px;
+        display: block;
+    }
+    .notify .num-newfeed{
+        font-weight: bold;
+        font-size: 1.28571429em;
+    }
+    
+    /*Information notification*/
+    .noti-info a{
+        padding-left: 40px;
+        //border-right: 4px solid #009bd5;
+        background: #e7f8fe url('../images/icon-notify.png') no-repeat 10px 12px;
+        color: #009bd5;
+        margin-left: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        font-size: 0.85714286em; /* 12px/14px */
+        -moz-transition: all .35s ease;
+        -ms-transition: all .35s ease;
+        -o-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    
+        .noti-info a:hover{
+            background-color: #fff7f4;
+            color: #f15a24;
+            
+        }
+    
+    /*Error/Warning notification*/	
+    .noti-error{	
+        padding-left: 38px;
+        background: #c62221 url(../images/error-icon.png) no-repeat 10px center;
+        color: #fff;
+    }
+        
+    
+/*STYLE FOR A TWEET/FEED*/	
+.tweet{
+    position: relative;
+    padding: 10px 0 0px 0px;
+    border-bottom: 1px solid #ebebeb;
+	//margin-bottom: 5px;
+}
+
+.tweet:nth-of-type(2n){
+    //background-color: #f7f7f7
+}
+
+    #tweet-stream{
+        //background-color: #f8f8f8;
+        padding-bottom: 20px;
+        min-height: 300px;
+    }
+    
+    .tweet .link,
+    .tweet .displayname{
+        color: #466B8E;
+    }
+        .tweet .link:hover,
+        .tweet .displayname:hover{
+            color: #f15a24;
+        }
+
+.list-users .user .avatar,
+.tweet .avatar,
+.tweet .avatar img{
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 100% 100% 100% 100%;
+    -moz-border-radius: 100% 100% 100% 100%;
+    border-radius: 100% 100% 100% 100%;
+}
+
+    .list-users .user .avatar,
+    .tweet .avatar{
+        margin-left: -20px;
+        border: 3px solid #fff;
+        -webkit-box-shadow: -1px 0 3px #B7B7B7;
+        -moz-box-shadow: -1px 0 3px #B7B7B7;
+        box-shadow: -1px 0 3px #B7B7B7;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+        background: #f0f0f0 url('../images/df-avatar.png') no-repeat center center;
+        position: relative;
+        z-index: 2;
+    }
+    
+        .list-users .user .avatar:hover,
+        .tweet .avatar:hover{
+            border: 3px solid #f15a24;
+        }
+
+.list-users .user .user-info,
+.tweet .user-info{
+    position: relative;
+    //top: -5px;
+    display: block;
+//    margin-left: 12px;
+    margin-left: 86px;
+}
+
+    .list-users .user .display-name,
+    .tweet .user-info .display-name{
+        color: #466b8e;
+        font-weight: bold;
+        font-size: 0.92857143em; /*13px/14px*/
+    }
+    
+    .list-users .user .display-name:hover,
+    .tweet .user-info .display-name:hover{
+        color: #f15a24;
+    }
+
+    .list-users .user .icon-info,
+    .tweet .user-info .icon-info{
+        cursor: default;
+    }    
+    .list-users .user .icon,
+    .tweet .user-info .icon{
+        position: relative;
+        top: 6px;
+        margin-left: 5px;
+    }
+    
+    .list-users .user .mention-name{
+        color: #AFAFAF;
+    }
+
+.tweet-interact,
+.tweet .post-time,
+.tweet .tweet-interact{
+    color: #bfbfbf;
+}
+
+    .tweet-interact a,
+    .tweet .tweet-interact a{
+        color: #8f8f8f;
+        font-size: 0.78571429em;  /*11px/14px*/
+        line-height: 1.5em; /*181px/12px*/
+        cursor: pointer;
+        height: 20px;
+        display: inline-block;
+    }
+        .tweet-interact a:hover,
+        .tweet .tweet-interact a:hover{
+            color: #f15a24;
+        }
+        
+.tweet .photo-content{
+    position: relative;
+    overflow: hidden;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 1px solid #E7E7E7;
+    background: url("../images/bg-rtcontent.png") repeat scroll left top #F5F5F5;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+    .tweet .photo-content,
+    .tweet .photo-content img{
+        display: block;
+        max-width: 488px; /*Ti le 3:2*/
+        max-height: 325px;
+    }
+
+    .tweet .photo-content img{
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .tweet .photo-content.superlong-photo img{
+        width: auto;
+        height: 327px;
+    }
+    
+    .tweet .photo-content.superlong-photo img.img-thumb{
+        border-right: 1px solid #ddd;
+    }
+        .tweet .photo-content.superlong-photo img.img-crop-large{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+/*Tweet 2 ảnh*/
+
+.tweet .photo-content.multi-photo{
+        max-width: none;
+        max-height: none;
+        position: relative;
+}
+    .tweet .photo-content.multi-photo{
+        padding: 10px;
+    }
+    .tweet .photo-content.multi-photo .fancybox{
+        display: block;
+        float: left;
+        background: #fff;
+        border: 1px solid #d6d6d6;
+        padding: 5px 5px 0 5px;
+        overflow: hidden;
+        height: 144px;
+        position: relative;
+
+    }
+            
+    .tweet .photo-content.multi-photo .fancybox:after{
+        content: " ";
+           position: absolute;
+           z-index: 2;
+           top: 5px;
+           left: 5px;
+           right: 5px;
+           bottom: 0px;
+           border-bottom: 5px solid #fff;
+    }
+    
+    .tweet .photo-content.thumbs-2 .fancybox:nth-of-type(2n-1){
+        margin-right: 10px;
+    }
+    
+    .tweet .photo-content.multi-photo .img-thumb{
+        width: 216px;
+        min-height: 144px;
+        max-height: none;
+        position: relative;
+    }
+
+
+/*Tweet 3 ảnh*/
+.tweet .photo-content.thumbs-5 .first-photo,
+.tweet .photo-content.thumbs-3 .first-photo{
+    margin-bottom: 10px;
+    height: 303px;
+}
+    .tweet .photo-content.thumbs-5 .first-photo .img-thumb,
+    .tweet .photo-content.thumbs-3 .first-photo .img-thumb{
+        width: 454px;
+        min-height: 303px;
+    }
+    
+    .tweet .photo-content.thumbs-3 .fancybox:nth-of-type(2n-2){
+        margin-right: 10px;
+    }
+
+/*Tweet 4 ảnh*/
+    .tweet .photo-content.thumbs-4 .fancybox:nth-of-type(2n-1){
+        margin-right: 10px;
+    }
+    
+    .tweet .photo-content.thumbs-4 .fancybox:nth-of-type(1),
+    .tweet .photo-content.thumbs-4 .fancybox:nth-of-type(2){
+        margin-bottom: 10px;
+    }
+    
+/*Tweet 5 ảnh*/ 
+.tweet .photo-content.thumbs-5 .fancybox:nth-of-type(2n-2){
+    margin-right: 10px;
+}
+
+.tweet .photo-content.thumbs-5 .fancybox:nth-of-type(2),
+.tweet .photo-content.thumbs-5 .fancybox:nth-of-type(3){
+    margin-bottom: 10px;
+}
+
+
+/*Icon GIF Indicator*/
+.tweet .photo-content .fancybox .icon-isGif-big,
+.tweet .photo-content .fancybox .icon-isGif-small{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+    .tweet .photo-content .fancybox .icon-isGif-small{
+        margin-left: -17px;
+        margin-top: -17px;
+    }
+    
+    .tweet .photo-content .fancybox .icon-isGif-big{
+        margin-left: -32px;
+        margin-top: -32px;
+    }
+    
+    .tweet .photo-content .fancybox:hover .icon-isGif-big,
+    .tweet .photo-content .fancybox:hover .icon-isGif-small{
+        display: none;
+    }
+
+/*Hover State cho Tweet Photo*/
+.hover-indicator{
+    display: none;
+}
+/*.tweet .photo-content .fancybox .hover-indicator,
+.tweet .photo-content.multi-photo .fancybox .hover-indicator{
+    position: absolute;
+    z-index: 3;
+    display: block;
+    background: none;
+   
+}
+
+.tweet .photo-content .fancybox .hover-indicator{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.tweet .photo-content.multi-photo .fancybox .hover-indicator{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+    .tweet .photo-content .fancybox .hover-indicator .icon{
+        display: none;
+    }
+
+.tweet .photo-content .fancybox:hover .hover-indicator{
+    background: rgba(86,196,233,0.3);
+}
+    .tweet .photo-content .fancybox:hover .hover-indicator .icon{
+        display: block;
+    }
+    
+    .tweet .photo-content .fancybox .hover-indicator .icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -16px;
+        margin-top: -16px;
+        display: none;
+    }
+    
+    .tweet .photo-content .fancybox .hover-indicator .icon.icon-viewlarge-big{
+        margin-left: -27px;
+        margin-top: -27px;
+    }*/
+
+
+
+/*Style for EMOTICONS*/
+.tweet .tweet-content img {
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+/*TWEET INTERACT*/
+.tweet .user-info,
+.tweet .tweet-interact,
+.tweet .tweet-content{
+    margin-left: 48px;
+}
+
+.tweet .tweet-content{
+    margin-top: 7px;
+}
+    
+    .tweet .tweet-content p{
+        line-height: 1.42857143em;/*20px/14px*/
+        word-wrap: break-word;
+    }
+    
+    .tweet .tweet-content .lvup-content{
+    	margin-top: 10px;
+    }
+
+.tweet .tweet-interact{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.tweet-ulti a,
+.tweet-ulti .delete-tweet,
+.list-notif li .timestamp,
+#globalUserControl .notif-msg .list-notif li .timestamp,
+.tweet-interact .re-tweet,
+.tweet-interact .fav-tweet,
+.tweet-interact .comt-tweet,
+.tweet-interact .share-tweet,
+.tweet .tweet-ulti .delete-tweet,
+.tweet .tweet-ulti .report-tweet,
+.tweet .tweet-interact .re-tweet,
+.tweet .tweet-interact .fav-tweet,
+.tweet .tweet-interact .comt-tweet,
+.tweet .tweet-interact a{
+    margin-right: 15px;
+    padding-left: 24px;
+    background: transparent url('../images/tweet-interact-sprites-1.03.png') no-repeat left top;
+}
+	.tweet .tweet-interact .post-time{
+		padding-left: 0;
+		margin-right: 0;
+		background: none;
+	}
+    
+    .tweet-interact .share-tweet span,
+    .tweet-interact .re-tweet span,
+    .tweet-interact .fav-tweet span, 
+    .tweet-interact .comt-tweet span,
+    .tweet .tweet-interact .re-tweet span,
+    .tweet .tweet-interact .fav-tweet span, 
+    .tweet .tweet-interact .comt-tweet span{
+        color: #F15A24;
+        font-weight: bold;
+        font-size: 1.18181818em;
+    }
+
+    .list-notif li.notif-tweet .timestamp,
+    #globalUserControl .notif-msg .list-notif li.notif-tweet .timestamp,
+    .tweet-interact .re-tweet,
+    .tweet .tweet-interact .re-tweet{	background-position: 0 -43px;}
+
+    .tweet-interact .re-tweet.active,
+    .tweet-interact .re-tweet:hover,    
+    .tweet .tweet-interact .re-tweet.active,
+    .tweet .tweet-interact .re-tweet:hover{	background-position: 0 -103px; color: #F15A24;}
+    .tweet .tweet-interact .re-tweet.clicked{ background-position: 0 -123px; color: #8fbf00;}
+    .tweet .tweet-interact .re-tweet.clicked:hover{	background-position: 0 -103px; color: #F15A24;}
+        
+    .list-notif li.notif-fav .timestamp,
+    #globalUserControl .notif-msg .list-notif li.notif-fav .timestamp,
+    .tweet .tweet-interact .fav-tweet{ background-position: 0 -3px; padding-left: 21px;}
+    
+    .tweet .tweet-interact .fav-tweet.active,
+    .tweet .tweet-interact .fav-tweet:hover{	background-position: 0 -63px;color: #F15A24;}
+    .tweet .tweet-interact .fav-tweet.clicked{
+        background-position: 0 -143px; color: #8fbf00;
+    }
+        .tweet .tweet-interact .fav-tweet.clicked:hover{	background-position: 0 -63px; color: #F15A24;}
+        
+        
+    
+    .list-notif li.notif-cmt .timestamp,
+    #globalUserControl .notif-msg .list-notif li.notif-cmt .timestamp,
+    .tweet .tweet-interact .comt-tweet{
+        background-position: 0px -23px;
+        padding-left: 21px;
+    }
+    
+    .tweet .tweet-interact .comt-tweet.active,
+    .tweet .tweet-interact .comt-tweet:hover{
+        background-position: 0px -83px; color: #F15A24;
+    }
+
+        .tweet .tweet-interact .re-tweet.active,
+        .tweet .tweet-interact .comt-tweet.active,    
+        .tweet .tweet-interact .fav-tweet.active{
+            position: relative;
+            margin-bottom: 10px;
+            color: #F15A24;
+        }
+
+        .tweet .tweet-interact .re-tweet.active:after,        
+        .tweet .tweet-interact .fav-tweet.active:after,
+        .tweet .tweet-interact .comt-tweet.active:after{
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 100%;
+            height: 7px;
+            background: transparent url('../images/bg-active-menu.png') no-repeat center bottom;
+            content: " ";
+        }
+        
+    .tweet .tweet-interact .share-tweet{
+        background-position: 0 -321px;
+    }
+    .tweet .tweet-interact .share-tweet:hover{
+        background-position: 0 -341px;
+    }
+    
+	.tweet .tweet-interact .embed-tweet{
+	    background-position: 0 -363px;
+	}
+	.tweet .tweet-interact .embed-tweet:hover{
+	    background-position: 0 -382px;
+	}
+	
+    #globalUserControl .notif-msg .list-notif li.notif-featured .timestamp,
+	.list-notif li.notif-featured .timestamp{
+		background-position: 0 -400px;
+	}
+    
+/*TWEET ULTILITIES*/
+.tweet-ulti{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    z-index: 10;
+    display: none;
+}
+/* .tweet-ulti .anchor{
+        position: absolute; */
+/* right: 0; */
+/* top: 0; */
+/* background: transparent url('../images/icon-sprites-1.10.png') no-repeat 0 -48px; */
+/* width: 28px; */
+/* height: 18px; */
+/* .tweet .anchor:hover{
+            background-position: -30px -48px; */
+
+        .tweet-ulti .list-ulti{
+            display: block;
+            margin-top: 0px;
+            -webkit-transition: all .25s ease;
+            -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s ease;
+
+        }
+        
+        .tweet:hover .tweet-ulti,
+        .tweet:hover .tweet-ulti .list-ulti{
+            display: block;
+        }
+            .tweet-ulti .list-ulti li{
+                border-bottom: 1px solid #ddd;
+            }
+            
+                .tweet-ulti .list-ulti li:last-child{
+                    border-bottom: none;
+                }
+                
+                    .tweet-ulti .list-ulti li a{
+                        display: block;
+                        margin-right: 0;
+                        color: #8F8F8F;
+                        font-size: 0.78571429em; /*11px/14px*/
+                    }
+                    .tweet-ulti .list-ulti li a:hover{
+                        color: #f15a24;
+                    }
+                    
+                    .tweet-ulti .list-ulti li a.delete-tweet{
+                        background-position: 0 -241px;
+                    }
+                    .tweet-ulti .list-ulti li a.delete-tweet:hover{
+                        background-position: 0 -261px;
+                    }
+                    
+                    .tweet-ulti .list-ulti li a.report-tweet{
+                        background-position: 0 -201px;
+                    }
+                    .tweet-ulti .list-ulti li a.report-tweet:hover{
+                        background-position: 0 -221px;
+                    }
+                    
+                    .tweet-ulti .list-ulti .hide-tweet,
+                    .tweet-ulti .list-ulti .hide-tweet:hover{
+                        background-position: 0 -421px;
+                        color: #d7a538;
+                        margin-right: 15px;
+                    }
+        
+        .tweet-ulti:hover .list-ulti{
+            display: block;
+            opacity: 1;
+        }
+        
+
+    /*RETWEET CONTENT*/
+    .retweet-content{
+        position: relative;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        border: 1px solid #e7e7e7;
+        background: #f5f5f5 url('../images/bg-rtcontent.png') repeat left top;
+        min-height: 70px;
+    }
+    
+    .retweet-content .photo-content{
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+    .retweet-content.deleted-content{
+        overflow: hidden;
+        padding: 10px 15px;
+        min-height: 0;
+    }
+    
+        .retweet-content.deleted-content .icon{
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .retweet-content.deleted-content p{
+            margin-top: 18px;
+            color: #737373;
+            font-size: 0.92857143em; /*13px/14px*/
+        }
+    
+        .retweet-content .icon-retweet{
+            position: absolute;
+            top: 20px;
+            left: -40px;
+            z-index: 19;
+            width: 28px;
+            height: 28px;
+            background: transparent url('../images/icon-retweet.png') no-repeat left top;
+        }
+
+        .retweet-content .avatar{
+            position: relative;
+            top: 5px;
+            z-index: 3;
+        }
+        
+        .tweet .retweet-content .display-name{
+            margin-left: 0;
+        }
+        .tweet .retweet-content .tweet-interact, .tweet .retweet-content .tweet-content{
+            margin-left: 48px;
+        }
+        
+        .tweet .retweet-content .tweet-interact a{
+            position: relative;
+            padding: 0;
+            background: none;
+        }
+        
+            .tweet .retweet-content .tweet-interact .share-tweet:before,
+            .tweet .retweet-content .tweet-interact .fav-tweet:before,
+            .tweet .retweet-content .tweet-interact .comt-tweet:before{
+                position: absolute;
+                bottom: 3px;
+                left: -10px;
+                width: 2px;
+                height: 15px;
+                border-left: 1px solid #ccc;
+                content: "";
+            }
+            
+        .tweet .retweet-content .photo-content{
+            margin: 15px 0 0 -49px;
+            max-height: 324px;
+            width: 486px;
+            background: url("../images/bg-rt-media-content.png") repeat scroll left top transparent;
+        }
+        
+            .tweet .retweet-content .photo-content img{
+                max-width: 486px;
+                max-height: 324px;
+            }
+            
+        
+        .tweet .retweet-content .photo-content.multi-photo{
+            width: 466px;
+            max-height: none;
+        }			
+
+            
+/*Button Xem Them*/
+.btn.btn-showmore,
+.btn-showmore{
+    margin: 20px;
+    width: 500px;
+    background: #fceee8 /*url('../images/icon-arrow-down.png') no-repeat 295px center*/;
+    color: #f15a24;
+    font-weight: normal;
+    font-size: 0.85714286em;  /*12px/14px*/
+}
+    .btn.btn-showmore:hover,
+    .btn-showmore:hover{
+        background-color: #fff6f2;
+    }
+    
+    
+/*Comment Box*/	
+.cmt-box{
+    display: none;
+    overflow: hidden;
+    border-right: 4px solid #f3ac5d;
+    background: #f3f5f5;
+    font-size: 0.85714286em; /*12px/14px*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: -5px;
+}
+
+    .cmt-box .view-more-cmt{
+        display: block;
+        margin-left: 48px;
+        padding: 13px 0 10px 0px;
+        border-top: 1px dashed #BFBFBF;
+    }
+        .cmt-box .view-more-cmt a{
+            padding-right: 25px;
+            color: #466b8e;
+        }
+    
+        .cmt-box .view-more-cmt a:hover{
+            /* background: #fcf7f5; */
+            color: #f15a24;
+        }
+        
+        .cmt-box .view-more-cmt a:hover .icon-chervon-right{
+            background-position: -199px -40px;
+        }
+
+    .cmt-box .cmt{
+        position: relative;
+        margin-left: 48px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        border-top: 1px dashed #bfbfbf;
+    }
+        
+        /*Ask login in Comment Box*/
+        .cmt-box .cmt.ask-login{
+            border-top: none;
+            padding: 10px 10px 15px 0; 
+        }
+            .cmt-box .cmt.ask-login .btn{
+                margin-right: 8px;
+            }
+        
+        .tweet:hover .cmt-box .cmt .tweet-ulti,
+        .cmt-box .cmt .tweet-ulti{
+            top: 10px;
+            right: 0px;
+            display: none;
+            background: none;
+        }	
+        	.cmt-box .cmt:hover .tweet-ulti,
+            .tweet:hover .cmt-box .cmt:hover .tweet-ulti{
+                display: block;
+            }
+            
+                .cmt-box .cmt:hover .tweet-ulti .list-ulti{
+                    background: none;
+                }
+                
+                .cmt-box .cmt .tweet-ulti .list-ulti a{
+                    font-size: 0.84615385em; /*11px/13px*/
+                }
+    
+        .cmt-box .cmt .avatar,
+        .cmt-box .cmt .avatar img{
+            width: 36px;
+            height: 36px;
+        }
+        
+        .cmt-box .cmt .avatar{
+            margin-left: 0;
+            border: 2px solid #fff;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: 0.5s ease;
+            -moz-transition: 0.5s ease;
+            -ms-transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+            transition: 0.5s ease;
+            position: relative;
+            z-index: 3;
+            background: #c8c8c8 url('../images/df-avatar-36x36.png') no-repeat center center;
+            overflow: hidden;
+        }
+        
+            .cmt-box .cmt .avatar:hover{
+                border-color: #f15a24;
+            }
+    
+    .cmt-box .cmt .cmt-head,
+    .cmt-box .cmt .cmt-content{
+        padding-left: 51px;
+    }
+    
+    .cmt-box .cmt .cmt-interact{
+        margin-left: 51px;
+    }
+        
+    .cmt-box .cmt .cmt-head{
+        display: block;
+        color: #bfbfbf;
+        //font-size: 0.84615385em;  /*11px/13px*/
+        font-size: 11px;
+    }
+    
+        .cmt-box .cmt .cmt-head .display-name{
+            top: 0;
+            float: none;
+            margin: 0 3px 0 0;
+            color: #466b8e;
+            font-weight: bold;
+            //font-size: 1.18181818em; /*13px/11px*/
+            font-size: 13px;
+        }
+        
+            .cmt-box .cmt .cmt-head .display-name:hover{
+                color: #f15a24;
+            }
+    
+	    .cmt-box .cmt .cmt-head .post-time,
+        .cmt-box .cmt .cmt-head span{
+            font-size: 0.91666667em;/*11px/12px*/
+        }
+        	.cmt-box .cmt .cmt-head .post-time{
+        		color: #bfbfbf;
+        	}
+        		.cmt-box .cmt .cmt-head .post-time:hover{
+        			color: #f15a24;
+        		}
+        
+    .cmt-box .cmt .cmt-content{
+        margin: 2px 0 4px 0;
+        //margin: 5px 0 10px 0;
+        font-size: 1.08333333em; /*14px/12px*/
+        word-wrap: break-word;
+    }
+    
+    .cmt-box .cmt .cmt-interact{
+        //margin-bottom: 5px;
+    }
+    
+        .cmt-box .cmt .cmt-interact a{
+            font-size: 0.91666667em; /*11p/12px*/
+        }
+        
+        .cmt-box .cmt .cmt-interact .delete-cmt,
+        .cmt-box .cmt .cmt-interact .reply-cmt,
+        .cmt-box .cmt .cmt-interact .report-cmt{
+            margin-right: 20px;
+            padding: 0 0 0 22px;
+            background: transparent url('../images/tweet-interact-sprites-1.01.png') no-repeat left top;
+            color: #a2a3a3;
+        }
+        
+        .cmt-box .cmt .cmt-interact .reply-cmt{ background-position: 0 -163px;}
+            .cmt-box .cmt .cmt-interact .reply-cmt:hover{ background-position: 0 -183px; color: #f15a24;}
+            
+        .cmt-box .cmt .cmt-interact .report-cmt{ background-position: 0 -202px;}
+            .cmt-box .cmt .cmt-interact .report-cmt:hover{ background-position: 0 -222px;color: #f15a24;}
+            
+        .cmt-box .cmt .cmt-interact .delete-cmt{ background-position: 0 -242px;}
+            .cmt-box .cmt .cmt-interact .delete-cmt:hover{ background-position: 0 -262px;color: #f15a24;}
+    
+    /*Post comment*/
+    .cmt-box .post-cmt{
+        overflow: hidden;
+        padding-bottom: 10px;
+        border-top: none;
+        padding-top: 0;
+    }
+    
+        .cmt-box .post-cmt .avatar{
+            border-color: #f15a24;
+        }
+        
+    .cmt-box .post-cmt .post-cmt-form{
+        margin-left: 55px;
+    }
+    .cmt-box .post-cmt .textarea{
+        min-height: 40px;
+        width: 100%;
+        border: 1px solid #d6d6d6;
+        resize: none;
+		overflow-y:hidden;
+        -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    }
+    
+/* .cmt-box .post-cmt .textarea.active{
+            resize: vertical; */
+    
+/* height: 80px; */
+    
+/* -webkit-transition: all 0.3s ease; */
+    
+/* -moz-transition: all 0.3s ease; */
+    
+/* -o-transition: all 0.3s ease; */
+    
+/* transition: all 0.3s ease; */
+    
+        .cmt-box .post-cmt .post-guide{
+            display: block;
+            float: left;
+            color: #737373;
+            font-weight: bold;
+            position: relative;
+            top: 7px;
+        }
+            .cmt-box .post-cmt .post-guide span{
+                color: #c40000;
+            }
+        
+        .cmt-box .post-cmt .form-more-info{
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+            .cmt-box .post-cmt .form-more-info .error{
+                display: block;
+                color: red;
+            }
+
+.post-cmt .post-cmt-form .form-controls{
+    position: relative;
+    margin-left: -12px;
+    padding-left: 10px;
+}		
+.post-cmt .post-cmt-form .text-box-decor{
+    position: absolute;
+    top: 13px;
+    left: 1px;
+    z-index: 10;
+    padding-left: 10px;
+    width: 11px;height: 17px;
+    background: transparent url('../images/textbox-decor.png') no-repeat left center;
+}
+        
+/*MEDIA TWEETS*/
+.mediatweet-content{
+    padding: 10px;
+    font-size: 0.85714286em; /*12px/14px*/
+    overflow: hidden;
+}
+
+    .mediatweet-content a{
+        color: #466b8e;
+    }
+        .mediatweet-content a:hover{
+            color: #f15a24;	
+        }
+        
+    .mediatweet-content .media-thumb{
+        position: relative;
+        float: left;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        line-height: 96px;
+        border: 1px solid #ddd;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .mediatweet-content .media-thumb,
+    .mediatweet-content .media-thumb img{
+        width: 100px;
+        height: 100px;
+    }
+        .mediatweet-content .media-thumb img{
+            height: auto;
+            vertical-align: middle;
+            display: none;
+        }
+    
+        .mediatweet-content .media-thumb .play-icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 5;
+            display: block;
+            margin: -20px 0 0 -20px;
+            width: 40px;
+            height: 40px;
+            background: transparent url('../images/btn-play-media.png') no-repeat 0 0;
+        }
+            .mediatweet-content .media-thumb:hover .play-icon{
+                background-position: 0 -40px;
+            }
+        
+    .mediatweet-content .media-content{
+        position: relative;
+        z-index: 5;
+        margin-left: 112px;
+        height: auto;
+    }
+        .mediatweet-content .media-content.no-thumb{
+            margin-left: 0;
+        }
+        
+        .mediatweet-content .media-content .media-chapo{
+            //font-size: 0.85714286em; /*12px/16px*/
+            //max-height: 36px;
+            overflow: hidden;
+        }
+        
+        .mediatweet-content.media-type-link .media-content{
+            //background-image: url('../images/bg-tw-link.png');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+        
+        .mediatweet-content.media-type-audio .media-content{
+            //background-image: url('../images/bg-tw-audio.png');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+        
+        .mediatweet-content.media-type-video .media-content{
+            //background-image: url('../images/bg-tw-video.png');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+        
+        .mediatweet-content .media-content .media-title{
+            margin-bottom: 6px;
+        }
+        
+    .mediatweet-content .media-content .media-src{
+        position: relative;
+        color: #808080;
+        font-size: 0.91666667em; /*11px/12px*/
+    }
+    
+        .mediatweet-content .media-content .media-src:hover{
+            color: #f15a24;
+        }
+        .mediatweet-content .media-content .media-src img{
+            position: relative;
+            top: 5px;
+            margin-right: 6px;
+            width: 16px;
+            height: 16px;
+        }
+        
+    .tweet .retweet-content .mediatweet-content{
+        background: transparent url('../images/bg-rt-media-content.png') repeat left top;
+    }
+    
+    
+    .mediatweet-content.media-type-video.media-type-video-playing{
+        padding: 10px 10px 0 10px;
+        height: auto;
+    }
+    
+        .mediatweet-content.media-type-video.media-type-video-playing .media-content{
+            margin-left: 0;
+            padding: 10px 0;
+        }
+        
+/*RIGHT COLUMN BLOCK*/
+.block{
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 15px 15px 15px 0;
+    float: none;
+    clear: both;
+    border-bottom: 1px dashed #d6d6d6;
+}
+.block .block-title{
+    margin-bottom: 10px;
+    color: #737373;
+    text-shadow: 1px 1px 0px #fff;
+    font-weight: normal;
+    font-size: 12px; /*121px/13px*/
+    line-height: 1.5em; /*18px/12px*/
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    .block .block-title a{
+        color: #737373;
+    }
+        .block .block-title a:hover{
+            color: #f15a24;
+        }
+
+    .block .block-title .type-numb{
+        color: #b2b2b2;
+        font-size: 1em;  /*12px/12px*/
+        line-height: 1em;
+        font-weight: normal;
+    }
+    
+    
+.list-hashtag li{
+    margin-bottom: 7px;
+}
+
+.list-hashtag li a{
+    font-size: 0.92857143em; /*13px/14px*/
+}
+
+/*Block HOT TOPICs*/
+.block.top-hashtag{
+    padding-top: 5px;
+    padding-right: 0;
+    margin-left: 0;
+}
+.block.top-hashtag .block-title{
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+.block.top-hashtag .list-hashtag li{
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+    .block.top-hashtag .list-hashtag li a{
+        padding: 2px 15px 2px 15px;
+        display: block;
+        overflow: hidden;
+        line-height: 24px;
+        border-radius: 40px 0 0 40px;
+        -moz-border-radius: 40px 0 0 40px;
+        -webkit-border-radius: 40px 0 0 40px;
+    }
+    .block.top-hashtag .list-hashtag li a:hover{
+        background-color: #fff;
+        color: #f15a24;
+    }
+.block.top-hashtag .list-hashtag span{
+    display: inline-block;
+    color: #999;
+    padding: 0;
+    margin-left: 6px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    font-size: 11px;
+
+    position: relative;
+    top: 2px;
+    float: right;
+}
+    
+    
+/*EMOTICONS LIST*/
+#topicList,
+#emoList {
+    width: 384px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 0.875em; /*13px/16px(100%)*/
+    position: absolute;
+    z-index: 400;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+#topicList .list-anchor,
+#emoList .list-anchor{
+    background: transparent url('../images/list-anchor.png') no-repeat left top;    
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    top: -9px;
+    right: 97px;
+}
+
+#emoList .nav { overflow: hidden;}
+#emoList .nav li { width: 54px; height: 28px; float: left; margin: 0 10px 0 0px; overflow: hidden;
+    border: 1px solid #EBEBEB;
+    background: url("../images/bg-rtcontent.png") repeat scroll left top #F5F5F5;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}
+
+#emoList .nav li.current{
+    border-bottom: 1px solid #fff;
+}
+#emoList .nav li.last { margin-right: 0; }
+#emoList .nav li a { display: block; padding: 5px; color: #737373; font-size: 12px; font-weight: bold;
+    text-align: center;background: url("../images/bg-rtcontent.png") repeat scroll left top #F5F5F5;}
+    
+#emoList .nav li a:hover { background-color: #fff7f4; color: #f15a24;}
+
+#emoList .nav li.current a{
+    background: #fff;
+    color: #f15a24;
+}
+
+    #emoList .nav li.current a:hover{
+        background: #fff;
+        color: #f15a24;
+    }
+    
+    #emoList .nav li a:hover .icon-emo-tab,
+    #emoList .nav li.current a .icon-emo-tab{
+        background-position: -114px -49px;
+    }
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+    
+    #emoList img{
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #emoList .emoti-details{
+        padding: 8px 10px 8px 13px;
+        border-bottom: 1px solid #ebebeb;
+        position: relative;
+        z-index: 1;
+        vertical-align: middle;
+    }
+    #emoList .emoti-details .emoti-shortcut{
+        color: #f15a24;
+        font-weight: bold;
+        margin-left: 7px;
+        vertical-align: middle;
+    }
+    
+    #emoList .emoti-details .emoti-meaning{
+        margin-left: 7px;
+        color: #737373;
+        vertical-align: middle;
+    }
+    
+    #emoList .emoti-type-tabs{
+        position: absolute;
+        top: 7px;
+        right: 0;
+        z-index: 3;
+    }
+    
+    #emoList .list-wrap{
+        overflow: hidden;
+        margin-top: 10px;
+        padding: 0 10px 10px 10px;
+    }
+
+#emotiImg span{
+    padding: 3px;
+    display: table;
+    float: left;
+    vertical-align: middle;
+}
+
+    #emotiImg span:hover{
+        cursor: pointer;
+        background: #faefeb;
+    }
+    
+#emotiSharp .item{
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    padding: 5px;
+}
+
+#emotiSharp .item:nth-child(n-3){
+    width: 110px;
+}
+
+#emotiSharp .item:nth-child(n-2){
+    margin-right: 0;
+}
+
+    #emotiSharp .item:hover{
+        cursor: pointer;
+        background: #faefeb;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    } 
+    
+    #emotiSharp .item .hashtag{
+        font-size: 0.92307692em;/*12px/13px*/
+    }
+        #emotiSharp .item:hover .hashtag{
+            color: #f15a24;
+        }
+    #emotiSharp .item .emoicon{
+        position: relative;
+        left: 4px;
+        top: -1px;
+        opacity: 0.3;
+    }
+    
+        #emotiSharp .item:hover .emoicon{
+            opacity: 1;
+        }
+        
+/*HASHTAG List Tooltip*/
+#topicList{
+    width: 440px;
+    height: auto;
+}
+#topicList h4{
+    font-size: 13px;
+    color: #737373;
+}
+
+#topicList .insert-topic{
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
+}
+    #topicList .insert-topic h4,
+    #topicList .insert-topic .text-field,
+    #topicList .insert-topic .btn{
+        float: left;
+        line-height: 30px;
+        margin-right: 7px;
+        max-height: 30px;
+    }
+    
+    #topicList .insert-topic .text-field{
+        padding: 3px 5px;
+        font-size: 13px;
+        line-height: 16px;
+        height: 30px;
+        width: 220px;
+    }
+    
+    #topicList .insert-topic .btn-submit{
+        font-size: 12px;
+        text-transform: none;
+        padding: 0px 10px;
+        margin-right: 0;
+        height: 30px;
+    }
+
+#topicList .hot-topic-list{
+    padding: 10px 10px 7px 10px;
+    overflow: hidden;
+}
+
+    #topicList .hot-topic-list h4{
+        margin-bottom: 7px;
+    }
+
+#topicList .list-hashtag{
+    font-size: 13px;
+}
+#topicList .list-hashtag li{
+    margin-bottom: 8px;
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+}
+
+    #topicList .list-hashtag li:nth-child(3n){
+        margin-right: 0;
+    }
+        
+/*Paging*/    
+.paging a{
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      display: inline-block;
+      text-align: center;
+      padding: 2px;
+      width: 18px;
+      height: 18px;
+      background: #d6d6d6;
+      color: #737373;
+      margin-right: 3px;
+      font-size: 11px;
+      line-height: 1.63636364em; /*18px/11px*/
+}
+
+    .paging a:hover,
+    .paging a.active{
+        background-color: #f15a24;
+        color: #fff;
+    }
+
+    .paging a.page-next,
+    .paging a.page-prev{
+        width: auto;
+        padding: 3px 6px;
+    }
+    
+        .paging a.page-next{
+            margin-right: 0;
+        }
+            .paging a.page-next span{
+                margin-left: 2px;
+            }    
+            .paging a.page-prev span{
+                margin-right: 2px;
+            }
+            
+        .paging a.page-next span,
+        .paging a.page-prev span{
+            font-size: 14px;
+        }
+    
+    .cmt-box .paging{
+        border-top: 1px dashed #BFBFBF;
+        text-align: right;
+        margin: 10px 15px 20px 48px;
+        padding-top: 10px;
+    }
+    
+    
+/*Auto Suggestion*/
+.auto-suggestion{
+    position: absolute;
+    width: 516px;
+    z-index: 402;
+    display: none;
+}
+.auto-suggestion .list-users{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    max-height: 276px;
+    overflow: auto;
+}
+.auto-suggestion .list-users .user{
+    padding: 0;
+    overflow: hidden;
+}
+    .auto-suggestion .list-users .user:last-of-type{
+        border-bottom: none;    
+    }
+    
+    .auto-suggestion .list-users .user a{
+        display: block;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+    .auto-suggestion .list-users .user .avatar{
+        margin-left: 0;
+        border: 2px solid #ddd;
+    }  
+    .auto-suggestion .list-users .user .avatar,
+    .auto-suggestion .list-users .user .avatar img{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .auto-suggestion .list-users .user .user-info{
+        margin-left: 55px;
+    }
+        .auto-suggestion .list-users .user .user-info span{
+            display: block;
+            top: 0;
+        }
+            .auto-suggestion .list-users .user .user-info .mention-name{
+                color: #f15a24;
+            }
+            .auto-suggestion .list-users .user .user-info .display-name{
+                color: #466b8e;
+            }
+    .auto-suggestion .list-users .user .user-info .icon{
+        position: absolute;
+        z-index: 10;
+        left: -30px;
+        top: 23px;
+    }
+
+
+.blank-state.related-fun-facts{
+    margin-bottom: 20px;
+    padding: 15px 20px 20px 85px;
+}
+    .blank-state.related-fun-facts span{
+        line-height: 1em;
+        vertical-align: middle;        
+    }
+    
+    
+/*CSS for Badges*/
+.badge-friendly{
+    background: transparent url('../images/badges/badge-friendly-xxl.png') no-repeat center center;
+    display: block;
+    width: 132px;
+    height: 132px;
+}
+
+/*Alert Post tweet*/
+.alert-info{
+    overflow: hidden;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 516px;height: 86px;
+    border: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0px 0px 6px #ccc inset;
+    -moz-box-shadow: 0px 0px 6px #ccc inset;
+    box-shadow: 0px 0px 6px #ccc inset;
+    font-size: 14px;
+    color: #737373;
+    resize: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    padding-top: 18px;
+    position: absolute;
+    top: 88px;
+    z-index: 100;
+}
+    .alert-info .alert-content{
+        display: inline-block;
+        line-height: 32px;
+    }
+    .alert-info .icon{
+        display: inline-block;
+        margin-right: 7px;
+        top: 10px;
+    }
+    
+    /*post tweet Successful*/
+    .alert-info.post-tweet-success{
+        background: #fff;
+    }
+    /*post tweet FAIL*/
+    .alert-info.post-tweet-fail{
+        background: #fff4f1;
+    }
+    
+/*! Hint.css - v1.2.0 - 2013-03-04
+* http://kushagragour.in/lab/hint/
+* Copyright (c) 2013 Kushagra Gour; Licensed MIT */
+
+.hint,[data-hint]{position:relative;display:inline-block}.hint:before,.hint:after,[data-hint]:before,[data-hint]:after{position:absolute;opacity:0;z-index:1000000;pointer-events:none;-webkit-transition:.3s ease;-moz-transition:.3s ease;transition:.3s ease;}.hint:hover:before,.hint:hover:after,[data-hint]:hover:before,[data-hint]:hover:after{opacity:1}.hint:before,[data-hint]:before{content:'';position:absolute;background:transparent;border:6px solid transparent;z-index:1000001}.hint:after,[data-hint]:after{content:attr(data-hint);background:#383838;color:#fff;text-shadow:0 -1px 0 black;padding:8px 10px;font-size:12px;line-height:12px;white-space:nowrap;}.hint--top:before{border-top-color:#383838}.hint--bottom:before{border-bottom-color:#383838}.hint--left:before{border-left-color:#383838}.hint--right:before{border-right-color:#383838}.hint--top:before{margin-bottom:-12px;text-align: center;
+}.hint--top:after{margin-left:-15px}.hint--top:before,.hint--top:after{bottom:100%;left:50%}.hint--top:hover:before,.hint--top:hover:after{-webkit-transform:translateY(-8px);-moz-transform:translateY(-8px);transform:translateY(-8px)}.hint--bottom:before{margin-top:-12px}.hint--bottom:after{margin-left:-18px}.hint--bottom:before,.hint--bottom:after{top:100%;left:50%}.hint--bottom:hover:before,.hint--bottom:hover:after{-webkit-transform:translateY(8px);-moz-transform:translateY(8px);transform:translateY(8px)}.hint--right:before{margin-left:-12px;margin-bottom:-6px}.hint--right:after{margin-bottom:-14px}.hint--right:before,.hint--right:after{left:100%;bottom:50%}.hint--right:hover:before,.hint--right:hover:after{-webkit-transform:translateX(8px);-moz-transform:translateX(8px);transform:translateX(8px)}.hint--left:before{margin-right:-12px;margin-bottom:-6px}.hint--left:after{margin-bottom:-14px}.hint--left:before,.hint--left:after{right:100%;bottom:50%}.hint--left:hover:before,.hint--left:hover:after{-webkit-transform:translateX(-8px);-moz-transform:translateX(-8px);transform:translateX(-8px)}.hint--error:after{background-color:#b34e4d;text-shadow:0 -1px 0 #5a2626}.hint--error.hint--top:before{border-top-color:#b34e4d}.hint--error.hint--bottom:before{border-bottom-color:#b34e4d}.hint--error.hint--left:before{border-left-color:#b34e4d}.hint--error.hint--right:before{border-right-color:#b34e4d}.hint--warning:after{background-color:#c09854;text-shadow:0 -1px 0 #6d5228}.hint--warning.hint--top:before{border-top-color:#c09854}.hint--warning.hint--bottom:before{border-bottom-color:#c09854}.hint--warning.hint--left:before{border-left-color:#c09854}.hint--warning.hint--right:before{border-right-color:#c09854}.hint--info:after{background-color:#3986ac;text-shadow:0 -1px 0 #193c4c}.hint--info.hint--top:before{border-top-color:#3986ac}.hint--info.hint--bottom:before{border-bottom-color:#3986ac}.hint--info.hint--left:before{border-left-color:#3986ac}.hint--info.hint--right:before{border-right-color:#3986ac}.hint--success:after{background-color:#458746;text-shadow:0 -1px 0 #1a331a}.hint--success.hint--top:before{border-top-color:#458746}.hint--success.hint--bottom:before{border-bottom-color:#458746}.hint--success.hint--left:before{border-left-color:#458746}.hint--success.hint--right:before{border-right-color:#458746}.hint--always:after,.hint--always:before{opacity:1}.hint--always.hint--top:after,.hint--always.hint--top:before{-webkit-transform:translateY(-8px);-moz-transform:translateY(-8px);transform:translateY(-8px)}.hint--always.hint--bottom:after,.hint--always.hint--bottom:before{-webkit-transform:translateY(8px);-moz-transform:translateY(8px);transform:translateY(8px)}.hint--always.hint--left:after,.hint--always.hint--left:before{-webkit-transform:translateX(-8px);-moz-transform:translateX(-8px);transform:translateX(-8px)}.hint--always.hint--right:after,.hint--always.hint--right:before{-webkit-transform:translateX(8px);-moz-transform:translateX(8px);transform:translateX(8px)}.hint--rounded:after{border-radius:7px}
+
+.status-wrapper{
+    clear: both;
+}
+
+/*Back to top button*/
+.back2top{
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0 7px 5px 15px;
+    border-radius: 0 40px 40px 0px;
+    -moz-border-radius: 0 40px 40px 0px;
+    -webkit-border-radius: 0 40px 40px 0px;
+    font-size: 13px;
+    line-height: 20px;
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    margin-left: 395px;
+    -webkit-transition: margin-left 0.15s ease-in;  
+    -moz-transition: margin-left 0.15s ease-in;  
+    -o-transition: margin-left 0.15s ease-in;  
+    transition: margin-left 0.15s ease-in;
+    z-index: 1;
+    display: none;
+}
+    .back2top .icon{
+        position: relative;
+        top: 5px;
+        margin-left: 5px;
+    }
+.back2top:hover{
+    margin-left: 480px;
+}
+
+/*ANIMATED NOTIFICATION*/
+.notif-score{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0px 10px 0px 37px;
+	display: inline-block;
+	position: relative;
+	line-height: 30px;
+	overflow: hidden;
+}	
+	.notif-score .icon{
+		background: transparent url('../images/icon-sprites-1.07.png') no-repeat left top;
+		left: 8px;
+	}
+	
+	.notif-score span{
+		display: block;
+		height: 30px;
+		width: 30px;
+		background: red;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	/*Cong điem*/
+	.notif-score.plus-score{
+		background: #85b76f;
+	}
+		.plus-score span{
+			background-color: #77a164;
+		}
+		.plus-score .icon{
+			background-position: -425px -208px;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
+		}
+	
+	/*Tru điem*/
+	.notif-score.min-score{
+		background: #c55e5e;
+	}	
+		.min-score span{
+			background-color: #9a0707;
+		}
+		.min-score .icon{
+			background-position: -425px -204px;
+			width: 15px;
+			height: 2px;
+			position: absolute;
+			top: 50%;
+			margin-top: -1px;
+		}
+		
+.inpage-notif{
+	position: fixed;
+	bottom: 120px;
+	left: 50%;
+	width: 300px;
+	margin-left: -480px;
+	z-index: 5000;
+	opacity: 0;
+	visibility:hidden;
+}
+.animated{
+	visibility: visible;
+}		
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2.5s;-moz-animation-duration:2.5s;-ms-animation-duration:2.5s;-o-animation-duration:2.5s;animation-duration:2.5s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
+
+	@-webkit-keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(50px);
+		}	
+		
+		30%{
+			opacity: 1;
+			-webkit-transform: translateY(0);
+		}
+		
+		70%{
+			opacity: 1;
+			-webkit-transform: translateY(0);
+		}
+		
+		80%{
+			opacity: 1;
+			-webkit-transform: translateY(0);
+		}
+		
+		100% {
+			opacity: 0;
+			-webkit-transform: translateY(0);
+		}
+	}
+	
+	@-moz-keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			-moz-transform: translateY(50px);
+		}
+		
+		30%{
+			opacity: 1;
+			-moz-transform: translateY(0);
+		}
+		
+		70%{
+			opacity: 1;
+			-moz-transform: translateY(0);
+		}
+		
+		80%{
+			opacity: 1;
+			-moz-transform: translateY(0);
+		}
+		
+		100% {
+			opacity: 0;
+			-moz-transform: translateY(0);
+		}
+	}
+	
+	@-o-keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			-o-transform: translateY(50px);
+		}
+		
+		100% {
+			opacity: 1;
+			-o-transform: translateY(0);
+		}
+	}
+	
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(50px);
+		}	
+		
+		30%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+		
+		70%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+		
+		80%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+		
+		100% {
+			opacity: 0;
+			transform: translateY(0);
+		}
+	}
+	
+	.fadeInUp {
+		-webkit-animation-name: fadeInUp;
+		-moz-animation-name: fadeInUp;
+		-o-animation-name: fadeInUp;
+		animation-name: fadeInUp;
+
+	}
+	@-webkit-keyframes fadeOut {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+	
+	@-moz-keyframes fadeOut {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+	
+	@-o-keyframes fadeOut {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+	
+	@keyframes fadeOut {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+	
+	.fadeOut {
+		-webkit-animation-name: fadeOut;
+		-moz-animation-name: fadeOut;
+		-o-animation-name: fadeOut;
+		animation-name: fadeOut;
+	}
+	
+/*FEATURED TWEET*/
+.retweet-content.featured,
+.tweet.featured{
+	box-shadow: inset 4px 0px 0px #5abada;
+}
+
+.featured-tweet{
+	width: 50px;
+	height: 29px;
+	background-position: -444px -200px;
+	position: absolute;
+	top: 70px;
+	left: -8px;
+	z-index: 5;
+	opacity: 0;
+	-webkit-transition: all 0.20s ease-in;  
+	-moz-transition: all 0.20s ease-in;  
+	-o-transition: all 0.20s ease-in;  
+	transition: all 0.20s ease-in;
+}
+	.retweet-content.featured:hover .featured-tweet,
+	.tweet.featured:hover .featured-tweet{
+		opacity: 1;
+	}
+	
+/*STICKY TWEET*/
+.tweet.sticky{
+    background-color: #fffbf1;
+	box-shadow: inset 4px 0px 0px #f3c052;
+    border: 1px solid #f8e8c5;
+    border-left: 0; border-right: 0;
+    margin-top: 15px;
+}
+
+/*STICKY FEATURED TWeet*/
+.tweet.sticky.featured:after{
+    content: "";
+    border-left: 4px solid #5abada;
+    margin-left: 4px;
+    width: 4px;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/*Block : Nong trong ngay*/
+.block.hot-today .icon-hot-topic{
+      background-position: -481px -230px;
+      margin-right: 0;
+}
+    .block.hot-today ul{
+        overflow: hidden;
+    }
+    .block.hot-today li{
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+        .block.hot-today li a{
+            display: block;
+            padding: 3px 5px;
+            background: #eca93c;
+            color: #ffeccb;
+            font-size: 12px;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+            .block.hot-today li.hot-1 a{
+                background: #e74c3c;
+            }
+            .block.hot-today li.hot-2 a{
+                background: #cc4839;
+            }
+            .block.hot-today li.hot-3 a{
+                background: #e35b01;
+            }
+        .block.hot-today li a:hover{
+            background: #e67e22;
+        }
+
+/* Smaller screens */
+/* ===== == = === 63.9375em (1023px) === = == ===== */
+@media only screen and (max-width: 63.9375em) {
+    /*GLOBAL-NAV*/
+    #globalNav{
+        position: static;
+        z-index: 4;
+        width: auto;
+        border-bottom: 0;
+    }
+        #globalNav .content{
+            background: #fff;
+            min-height: 30px;
+            border-bottom: 2px solid #F1AB92;
+        }
+    .page-body .content{
+        margin-top: 0;
+    }
+}
+
